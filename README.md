@@ -1,43 +1,29 @@
-# DefinitelyTyped [![Build Status](https://travis-ci.org/DefinitelyTyped/DefinitelyTyped.png?branch=master)](https://travis-ci.org/DefinitelyTyped/DefinitelyTyped)
+# DefinitelyTyped Java Libraries
+
+<!--
+[![Build Status](https://travis-ci.org/DefinitelyTyped/DefinitelyTyped.png?branch=master)](https://travis-ci.org/DefinitelyTyped/DefinitelyTyped)
 
 [![Join the chat at https://gitter.im/borisyankov/DefinitelyTyped](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/borisyankov/DefinitelyTyped?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+-->
 
-> The repository for *high quality* TypeScript type definitions.
+The repository of Java APIs providing access to *high quality* libraries wrapping any [JavaScript library and its TypeScript definition](https://github.com/DefinitelyTyped/DefinitelyTyped). Contribute to this project by forking and converting more of existing typings in this repository. It is easy. Clone the repository. Select a project, like `underscore` and:
 
-For more information see the [definitelytyped.org](http://definitelytyped.org) website.
-
-## Usage
-
-Include a line like this:
-
-```typescript
-/// <reference path="jquery.d.ts" />
+```bash
+$ cp jquery/pom.xml underscore/pom.xml
+$ cd underscore
+$ open pom.xml
+# replace references to jquery with underscore
+$ mvn install
 ```
+
+A Java wrapper giving you access to the `underscore` library will be created for you in your local [Maven](http://maven.apache.org) repository. In addition to that write some tests to verify the generated
+library works. Then create a pull request.
 
 ## Contributions
 
-DefinitelyTyped only works because of contributions by users like you!
-
-Please see the [contribution guide](http://definitelytyped.org/guides/contributing.html) on how to contribute to DefinitelyTyped.
-
-## How to get the definitions
-
-* Directly from the GitHub repos
-* [NuGet packages](http://nuget.org/packages?q=DefinitelyTyped)
-* [TypeScript Definition manager](https://github.com/DefinitelyTyped/tsd)
-
-## List of definitions
-
-* See [CONTRIBUTORS.md](CONTRIBUTORS.md)
-
-## Requested definitions
-
-Here is are the [currently requested definitions](https://github.com/DefinitelyTyped/DefinitelyTyped/labels/Definition%3ARequest).
+DefinitelyTyped Java Libraries only works because of contributions by users like you! There is so many typings definition
+that are waiting for conversion to Java!
 
 ## License
 
-This project is licensed under the MIT license.
-
-Copyrights on the definition files are respective of each contributor listed at the beginning of each definition file.
-
-[![Analytics](https://ga-beacon.appspot.com/UA-47495295-4/borisyankov/DefinitelyTyped)](https://github.com/igrigorik/ga-beacon)
+This project is licensed under the MIT license. Copyrights on the definition files are respective of each contributor listed at the beginning of each definition file. The copyrights of individual Java wrappers can be found in history. This project is sponsored by [[http://dukescript.com]].
