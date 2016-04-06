@@ -25,11 +25,58 @@ to the typings definition file to make the conversion to *Java* successful.
 Alternatively you can improve the [Maven Typings Plugin](https://github.com/dukescript/maven-typings-plugin)
 to handle the conversion in a better way.
 
+## Using Latest Version of the Libraries
+
+The snapshots of the *DefinitelyTyped Java Libraries* are being uploaded to
+a [Maven repository](https://oss.sonatype.org/content/repositories/snapshots/) and are ready for your immediate consumption.
+The current [list of available libraries](https://oss.sonatype.org/content/repositories/snapshots/com/dukescript/libraries/)
+contains the core JavaScript (**net.java.html.lib**), generic access to DOM (**net.java.html.lib.dom**)
+and popular JavaScript libraries like [JQuery](https://oss.sonatype.org/content/repositories/snapshots/com/dukescript/libraries/net.java.html.lib.jquery/),
+[Angular](https://oss.sonatype.org/content/repositories/snapshots/com/dukescript/libraries/net.java.html.lib.angular/)
+and [Knockout](https://oss.sonatype.org/content/repositories/snapshots/com/dukescript/libraries/net.java.html.lib.ko/).
+To include these libraries in your application add a repository definition to
+your `pom.xml` file:
+
+```xml
+<repositories>
+    <repository>
+        <id>typings-snapshots</id>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+        <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+    </repository>
+</repositories>
+```
+
+and then you can depend on any of these libraries in a regular Maven way:
+
+```xml
+<dependency>
+    <groupId>${project.groupId}</groupId>
+    <artifactId>net.java.html.lib</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+<dependency>
+    <groupId>${project.groupId}</groupId>
+    <artifactId>net.java.html.lib.jquery</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+```
+
 ## Contributions
 
-DefinitelyTyped Java Libraries only works because of contributions of users like you!
-There is so many typings definition that are waiting conversion to Java!
+DefinitelyTyped Java Libraries project can only move forward
+thanks to contributions of users like you!
+There is so many typings definitions that are waiting for conversion to Java!
 
 ## License
 
-This project is licensed under the MIT license. Copyrights on the definition files are respective of each contributor listed at the beginning of each definition file. The copyrights of individual Java wrappers can be found in history. This project is sponsored by [[http://dukescript.com]].
+This project is licensed under the MIT license.
+Copyrights on the definition files are respective of each contributor listed
+at the beginning of each definition file.
+The copyrights of individual Java wrappers can be found in history.
+This work is sponsored by [DukeScript project](http://dukescript.com).
