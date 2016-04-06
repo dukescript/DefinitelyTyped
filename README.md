@@ -19,10 +19,16 @@ $ mvn install
 A Java wrapper giving you access to the `underscore` library will be created for you in your local [Maven](http://maven.apache.org) repository. In addition to that write some tests to verify the generated
 library works. Then create a pull request.
 
+You may need to do some tweaks (e.g. [comment something out](https://github.com/dukescript/maven-typings-plugin/commit/c5b6a2121f3ad069973a118c96e72ff5268298f9)
+or to [remove not typeable definition](https://github.com/dukescript/maven-typings-plugin/commit/19c15abd88dd1b50b087e46f5c9e929be666a6c0))
+to the typings definition file to make the conversion to *Java* successful.
+Alternatively you can improve the [Maven Typings Plugin](https://github.com/dukescript/maven-typings-plugin)
+to handle the conversion in a better way.
+
 ## Contributions
 
-DefinitelyTyped Java Libraries only works because of contributions by users like you! There is so many typings definition
-that are waiting for conversion to Java!
+DefinitelyTyped Java Libraries only works because of contributions of users like you!
+There is so many typings definition that are waiting conversion to Java!
 
 ## License
 
