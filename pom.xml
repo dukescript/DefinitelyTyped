@@ -90,6 +90,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <net.java.html.version>1.2.3</net.java.html.version>
+        <bck2brwsr.version>0.18</bck2brwsr.version>
         <typings.version>1.0-SNAPSHOT</typings.version>
         <netbeans.compile.on.save>none</netbeans.compile.on.save>
     </properties>
@@ -205,6 +206,62 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.dukescript.api</groupId>
+            <artifactId>junit-browser-runner</artifactId>
+            <version>0.6</version>
+        </dependency>
+
+
+        <!-- run tests in JavaFX WebView -->
+        <dependency>
+            <groupId>org.netbeans.html</groupId>
+            <artifactId>net.java.html.boot.fx</artifactId>
+            <version>${net.java.html.version}</version>
+        </dependency>
+
+
+        <!-- run tests in a browser presenter
+        <dependency>
+            <groupId>com.dukescript.presenters</groupId>
+            <artifactId>browser</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        -->
+        <!-- run tests in a webkit presenter
+        <dependency>
+            <groupId>com.dukescript.presenters</groupId>
+            <artifactId>webkit</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        -->
+
+        <!-- run tests in bck2brwsr -->
+        <dependency>
+            <groupId>org.apidesign.bck2brwsr</groupId>
+            <artifactId>launcher.http</artifactId>
+            <version>${bck2brwsr.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apidesign.bck2brwsr</groupId>
+            <artifactId>emul</artifactId>
+            <classifier>rt</classifier>
+            <version>${bck2brwsr.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apidesign.bck2brwsr</groupId>
+            <artifactId>emul</artifactId>
+            <version>${bck2brwsr.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apidesign.bck2brwsr</groupId>
+            <artifactId>emul</artifactId>
+            <classifier>bck2brwsr</classifier>
+            <version>${bck2brwsr.version}</version>
+        </dependency>
+    </dependencies>
 
     <profiles>
         <profile>

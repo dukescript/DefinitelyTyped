@@ -94,9 +94,10 @@
         </dependency>
         <dependency>
             <groupId>com.dukescript.libraries</groupId>
-            <artifactId>typings-testing</artifactId>
+            <artifactId>typings</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
+            <type>pom</type>
         </dependency>
     </dependencies>
 </project>
