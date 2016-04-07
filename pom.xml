@@ -97,6 +97,7 @@
     </properties>
     <modules>
         <module>jquery</module>
+        <module>knockout</module>
     </modules>
 
     <build>
