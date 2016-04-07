@@ -47,7 +47,7 @@
             <plugin>
                 <groupId>com.dukescript.libraries</groupId>
                 <artifactId>typings-maven-plugin</artifactId>
-                <version>${project.version}</version>
+                <version>${typings.version}</version>
                 <executions>
                     <execution>
                         <id>generate-sources</id>
