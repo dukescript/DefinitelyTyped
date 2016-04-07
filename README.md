@@ -22,6 +22,9 @@ library works. Then create a pull request.
 You may need to do some tweaks (e.g. [comment something out](https://github.com/dukescript/maven-typings-plugin/commit/c5b6a2121f3ad069973a118c96e72ff5268298f9)
 or to [remove not typeable definition](https://github.com/dukescript/maven-typings-plugin/commit/19c15abd88dd1b50b087e46f5c9e929be666a6c0))
 to the typings definition file to make the conversion to *Java* successful.
+Here is a [sample commit](https://github.com/dukescript/DefinitelyTyped/commit/cdb90723425283f44c0a5a3de7a370284fd217b4)
+that integrates [knockout](http://knockoutjs.com/) Java bindings.
+
 Alternatively you can improve the [Maven Typings Plugin](https://github.com/dukescript/maven-typings-plugin)
 to handle the conversion in a better way.
 
