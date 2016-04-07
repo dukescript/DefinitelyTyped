@@ -33,9 +33,9 @@
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:https://github.com/dukescript/maven-typings-plugin.git</connection>
-        <url>https://github.com/dukescript/maven-typings-plugin.git</url>
-        <developerConnection>scm:git:https://github.com/dukescript/maven-typings-plugin.git</developerConnection>
+        <connection>scm:git:https://github.com/dukescript/definitelytyped.git</connection>
+        <url>https://github.com/dukescript/definitelytyped.git</url>
+        <developerConnection>scm:git:https://github.com/dukescript/definitelytyped.git</developerConnection>
         <tag>release-${releaseVersion}</tag>
     </scm>
 
