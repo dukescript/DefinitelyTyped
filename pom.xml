@@ -94,6 +94,7 @@
         <netbeans.compile.on.save>none</netbeans.compile.on.save>
     </properties>
     <modules>
+        <module>angularjs</module>
         <module>jquery</module>
         <module>knockout</module>
     </modules>

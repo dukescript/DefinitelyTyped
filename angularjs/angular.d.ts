@@ -6,7 +6,7 @@
 
 /// <reference path="../jquery/jquery.d.ts" />
 
-declare var angular: angular.IAngularStatic;
+declare var angular: IAngularStatic;
 
 // Support for painless dependency injection
 interface Function {
@@ -23,7 +23,7 @@ declare module 'angular' {
 ///////////////////////////////////////////////////////////////////////////////
 // ng module (angular.js)
 ///////////////////////////////////////////////////////////////////////////////
-declare namespace angular {
+declare module angular {
 
     // not directly implemented, but ensures that constructed class implements $get
     interface IServiceProviderClass {
