@@ -1058,7 +1058,7 @@ declare module "child_process" {
         timeout?: number;
         killSignal?: string;
         maxBuffer?: number;
-        encoding?: string;
+        encoding?: any;
         shell?: boolean | string;
     }
     export interface SpawnSyncOptionsWithStringEncoding extends SpawnSyncOptions {
@@ -1095,7 +1095,7 @@ declare module "child_process" {
         timeout?: number;
         killSignal?: string;
         maxBuffer?: number;
-        encoding?: string;
+        encoding?: any;
     }
     export interface ExecSyncOptionsWithStringEncoding extends ExecSyncOptions {
         encoding: BufferEncoding;
@@ -1118,7 +1118,7 @@ declare module "child_process" {
         timeout?: number;
         killSignal?: string;
         maxBuffer?: number;
-        encoding?: string;
+        encoding?: any;
     }
     export interface ExecFileSyncOptionsWithStringEncoding extends ExecFileSyncOptions {
         encoding: BufferEncoding;
