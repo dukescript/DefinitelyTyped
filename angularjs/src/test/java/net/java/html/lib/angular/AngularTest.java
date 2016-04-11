@@ -73,7 +73,7 @@ public class AngularTest {
             });
             return null;
         });
-        net.java.html.lib.angular.Function.$as(initFn).$inject.call(new String[] { "$scope" });
+        net.java.html.lib.angular.Function.$as(initFn).$inject.set(new String[] { "$scope" });
 
         assertTrue("is function", angular.isFunction(initFn));
         module.controller("SampleController", new Object[] { "$scope", Function.$js(initFn) });
