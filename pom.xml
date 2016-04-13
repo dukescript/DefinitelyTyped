@@ -235,6 +235,25 @@
                 <configuration>
                     <additionalparam>-Xdoclint:none</additionalparam>
                     <detectOfflineLinks>false</detectOfflineLinks>
+                    <includeDependencySources>true</includeDependencySources>
+                    <includeTransitiveDependencySources>false</includeTransitiveDependencySources>
+                    <dependencySourceIncludes>
+                        <dependencySourceInclude>com.dukescript.libraries:*</dependencySourceInclude>
+                    </dependencySourceIncludes>
+                    <groups>
+                        <group>
+                            <title>Core API</title>
+                            <packages>net.java.html.lib</packages>
+                        </group>
+                        <group>
+                            <title>Popular Libraries</title>
+                            <packages>net.java.html.lib.*</packages>
+                        </group>
+                        <group>
+                            <title>DOM API</title>
+                            <packages>net.java.html.lib.dom</packages>
+                        </group>
+                    </groups>
                 </configuration>
             </plugin>
         </plugins>
@@ -293,6 +312,20 @@
             <artifactId>emul</artifactId>
             <classifier>bck2brwsr</classifier>
             <version>${bck2brwsr.version}</version>
+        </dependency>
+
+        <!-- javadoc dependencies -->
+        <dependency>
+            <groupId>com.dukescript.libraries</groupId>
+            <artifactId>net.java.html.lib</artifactId>
+            <version>${typings.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.dukescript.libraries</groupId>
+            <artifactId>net.java.html.lib.dom</artifactId>
+            <version>${typings.version}</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
