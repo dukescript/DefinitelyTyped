@@ -38,7 +38,11 @@ import static net.java.html.lib.jquery.Exports.$;
  */
 
 @RunWith(BrowserRunner.class)
-@HTMLContent("<span id='text'>Nothing yet</span>")
+@HTMLContent("\n"
+    + "<button id='press'>Press me!</button>\n"
+    + "<button id='clear'>Clear me!</button>\n"
+    + "<span id='text'>Nothing yet</span>\n"
+)
 public class JQueryTest {
     String assertText(String msg) {
         final Document doc = window.document();
@@ -54,7 +58,20 @@ public class JQueryTest {
     @Test
     public void simpleJQuerySelector() throws Exception {
         final String message = "Hello from JQuery!";
-        $("#text").text(message);
+        final JQuery textElement = $("#text");
+        textElement.text(message);
         assertText(message);
+        $("#press").click((Object eventAsObject) -> {
+            textElement.text("Clicked!");
+            return null;
+        });
+        $("#press").click();
+        assertText("Clicked!");
+        $("#clear").click((JQueryEventObject event) -> {
+            textElement.text("Cleared!");
+            return null;
+        });
+        $("#clear").click();
+        assertText("Cleared!");
     }
 }
