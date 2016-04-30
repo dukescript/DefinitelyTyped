@@ -16,10 +16,9 @@ meth public int hashCode()
 meth public java.lang.String toString()
 
 CLSS public net.java.html.lib.Function
-cons protected init(java.lang.Class<?>,java.lang.Object)
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 cons public !varargs init(java.lang.String[])
-fld public final net.java.html.lib.Function$A0<java.lang.Number> length
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.Function> $AS
+fld public final net.java.html.lib.Objs$Property<java.lang.Number> length
 fld public java.lang.Object prototype
 innr public abstract interface static A0
 innr public abstract interface static A1
@@ -31,20 +30,26 @@ meth public !varargs java.lang.Object apply(java.lang.Object,java.lang.Object[])
 meth public !varargs java.lang.Object bind(java.lang.Object,java.lang.Object[])
 meth public !varargs static java.lang.Object $call(java.lang.Object,java.lang.Object[])
 meth public !varargs static net.java.html.lib.Function newFunction(java.lang.String[])
-meth public static <%0 extends java.lang.Object> net.java.html.lib.Function$A0<{%%0}> $read(java.lang.Object,java.lang.String)
-meth public static <%0 extends java.lang.Object> net.java.html.lib.Function$A0<{%%0}> $read(net.java.html.lib.Function$A1<java.lang.Object,?>,java.lang.Object,java.lang.String)
+meth public static <%0 extends java.lang.Object, %1 extends java.lang.Object, %2 extends java.lang.Object, %3 extends java.lang.Object, %4 extends java.lang.Object> net.java.html.lib.Function newFunction(net.java.html.lib.Function$A5<? super {%%0},? super {%%1},? super {%%2},? super {%%3},? super {%%4},?>,java.lang.Class<{%%0}>,java.lang.Class<{%%1}>,java.lang.Class<{%%2}>,java.lang.Class<{%%3}>,java.lang.Class<{%%4}>)
+meth public static <%0 extends java.lang.Object, %1 extends java.lang.Object, %2 extends java.lang.Object, %3 extends java.lang.Object> net.java.html.lib.Function newFunction(net.java.html.lib.Function$A4<? super {%%0},? super {%%1},? super {%%2},? super {%%3},?>,java.lang.Class<{%%0}>,java.lang.Class<{%%1}>,java.lang.Class<{%%2}>,java.lang.Class<{%%3}>)
+meth public static <%0 extends java.lang.Object, %1 extends java.lang.Object, %2 extends java.lang.Object> net.java.html.lib.Function newFunction(net.java.html.lib.Function$A3<? super {%%0},? super {%%1},? super {%%2},?>,java.lang.Class<{%%0}>,java.lang.Class<{%%1}>,java.lang.Class<{%%2}>)
+meth public static <%0 extends java.lang.Object, %1 extends java.lang.Object> net.java.html.lib.Function newFunction(net.java.html.lib.Function$A2<? super {%%0},? super {%%1},?>,java.lang.Class<{%%0}>,java.lang.Class<{%%1}>)
+meth public static <%0 extends java.lang.Object> net.java.html.lib.Function newFunction(net.java.html.lib.Function$A1<? super {%%0},?>,java.lang.Class<{%%0}>)
 meth public static net.java.html.lib.Function $as(java.lang.Object)
 meth public static net.java.html.lib.Function newFunction(net.java.html.lib.Function$A5<?,?,?,?,?,?>)
+meth public static net.java.html.lib.Function newFunction(net.java.html.lib.Function$A5<?,?,?,?,?,?>,java.lang.Class[])
 supr net.java.html.lib.Objs
-hfds $$fn$$callFunction_3,$$fn$$isFunction_2,$$fn$$wrap_1
-hcls JSFn
+hfds $$fn$$callFunction_2,$$fn$$isFunction_1,$AS
+hcls JSFn,JavaFn
 
 CLSS public net.java.html.lib.Objs
-cons protected init(java.lang.Class<?>,java.lang.Object)
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 cons public init()
 cons public init(java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.Objs> $AS
 fld public static java.lang.Object prototype
+innr protected abstract static Constructor
+innr public final static Property
+meth public <%0 extends net.java.html.lib.Objs> {%%0} $cast(java.lang.Class<{%%0}>)
 meth public java.lang.Boolean hasOwnProperty(java.lang.String)
 meth public java.lang.Boolean isPrototypeOf(java.lang.Object)
 meth public java.lang.Boolean propertyIsEnumerable(java.lang.String)
@@ -52,6 +57,7 @@ meth public java.lang.Object $get(java.lang.String)
 meth public java.lang.Object valueOf()
 meth public java.lang.String toLocaleString()
 meth public java.lang.String toString()
+meth public static <%0 extends java.lang.Object> {%%0} $as(java.lang.Class<{%%0}>,java.lang.Object)
 meth public static <%0 extends java.lang.Object> {%%0} freeze({%%0})
 meth public static <%0 extends java.lang.Object> {%%0} preventExtensions({%%0})
 meth public static <%0 extends java.lang.Object> {%%0} seal({%%0})
@@ -59,7 +65,6 @@ meth public static java.lang.Boolean isExtensible(java.lang.Object)
 meth public static java.lang.Boolean isFrozen(java.lang.Object)
 meth public static java.lang.Boolean isSealed(java.lang.Object)
 meth public static java.lang.Object $js(java.lang.Object)
-meth public static java.lang.Object $lazy(java.lang.Object,java.lang.String)
 meth public static java.lang.Object create(java.lang.Object)
 meth public static java.lang.Object create(java.lang.Object,net.java.html.lib.PropertyDescriptorMap)
 meth public static java.lang.Object defineProperties(java.lang.Object,net.java.html.lib.PropertyDescriptorMap)
@@ -74,7 +79,7 @@ meth public static net.java.html.lib.PropertyDescriptor getOwnPropertyDescriptor
 meth public void $delete(java.lang.String)
 meth public void $set(java.lang.String,java.lang.Object)
 supr java.lang.Object
-hfds $$fn$$deleteRaw_3,$$fn$$getRaw_1,$$fn$$setRaw_2,js
+hfds $$fn$$deleteRaw_3,$$fn$$getRaw_1,$$fn$$setRaw_2,$AS,js
 
 CLSS public final net.java.html.lib.angular.$JsCallbacks$
 meth public java.lang.Object net_java_html_lib_Function$$call$Ljava_lang_Object_2_3Ljava_lang_Object_2(java.lang.Object,java.lang.Object) throws java.lang.Throwable
@@ -82,64 +87,68 @@ supr java.lang.Object
 hfds VM,last,p
 
 CLSS public net.java.html.lib.angular.ComponentDefinition
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ComponentDefinition> $AS
-fld public net.java.html.lib.Function$A0<java.lang.String> type
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function> loader
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.Type> component
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.String> type
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function> loader
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.Type> component
 meth public java.lang.String type()
 meth public net.java.html.lib.Function loader()
 meth public net.java.html.lib.angular.Type component()
 meth public static net.java.html.lib.angular.ComponentDefinition $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public final net.java.html.lib.angular.Exports
 fld public static net.java.html.lib.angular.IAngularStatic angular
 supr net.java.html.lib.Objs
 
 CLSS public net.java.html.lib.angular.Function
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.Function> $AS
-fld public net.java.html.lib.Function$A0<java.lang.String[]> $inject
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.String[]> $inject
 meth public java.lang.String[] $inject()
 meth public static net.java.html.lib.angular.Function $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IAnchorScrollProvider
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IAnchorScrollProvider> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public static net.java.html.lib.angular.IAnchorScrollProvider $as(java.lang.Object)
 meth public void disableAutoScrolling()
 supr net.java.html.lib.angular.IServiceProvider
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IAnchorScrollService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IAnchorScrollService> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Object> yOffset
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Object> yOffset
 meth public static net.java.html.lib.angular.IAnchorScrollService $as(java.lang.Object)
 meth public void $apply()
 meth public void $apply(java.lang.String)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IAngularBootstrapConfig
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IAngularBootstrapConfig> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> debugInfoEnabled
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> strictDi
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> debugInfoEnabled
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> strictDi
 meth public java.lang.Boolean debugInfoEnabled()
 meth public java.lang.Boolean strictDi()
 meth public static net.java.html.lib.angular.IAngularBootstrapConfig $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IAngularEvent
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IAngularEvent> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> defaultPrevented
-fld public net.java.html.lib.Function$A0<java.lang.String> name
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function> preventDefault
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function> stopPropagation
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IScope> currentScope
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IScope> targetScope
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> defaultPrevented
+fld public net.java.html.lib.Objs$Property<java.lang.String> name
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function> preventDefault
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function> stopPropagation
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IScope> currentScope
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IScope> targetScope
 meth public java.lang.Boolean defaultPrevented()
 meth public java.lang.String name()
 meth public net.java.html.lib.Function preventDefault()
@@ -148,12 +157,13 @@ meth public net.java.html.lib.angular.IScope currentScope()
 meth public net.java.html.lib.angular.IScope targetScope()
 meth public static net.java.html.lib.angular.IAngularEvent $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IAngularStatic
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IAngularStatic> $AS
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Objs> version
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IAugmentedJQueryStatic> element
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Objs> version
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IAugmentedJQueryStatic> element
 meth public !varargs java.lang.Object extend(java.lang.Object,java.lang.Object[])
 meth public !varargs java.lang.Object merge(java.lang.Object,java.lang.Object[])
 meth public !varargs net.java.html.lib.Function bind(java.lang.Object,net.java.html.lib.Function,java.lang.Object[])
@@ -183,23 +193,6 @@ meth public java.lang.String lowercase(java.lang.String)
 meth public java.lang.String toJson(java.lang.Object)
 meth public java.lang.String toJson(java.lang.Object,java.lang.Boolean)
 meth public java.lang.String uppercase(java.lang.String)
-meth public net.java.html.lib.Objs bootstrap(java.lang.String)
-meth public net.java.html.lib.Objs bootstrap(java.lang.String,net.java.html.lib.Objs[])
-meth public net.java.html.lib.Objs bootstrap(java.lang.String,net.java.html.lib.Objs[],net.java.html.lib.angular.IAngularBootstrapConfig)
-meth public net.java.html.lib.Objs bootstrap(net.java.html.lib.dom.Document)
-meth public net.java.html.lib.Objs bootstrap(net.java.html.lib.dom.Document,net.java.html.lib.Objs[])
-meth public net.java.html.lib.Objs bootstrap(net.java.html.lib.dom.Document,net.java.html.lib.Objs[],net.java.html.lib.angular.IAngularBootstrapConfig)
-meth public net.java.html.lib.Objs bootstrap(net.java.html.lib.dom.Element)
-meth public net.java.html.lib.Objs bootstrap(net.java.html.lib.dom.Element,net.java.html.lib.Objs[])
-meth public net.java.html.lib.Objs bootstrap(net.java.html.lib.dom.Element,net.java.html.lib.Objs[],net.java.html.lib.angular.IAngularBootstrapConfig)
-meth public net.java.html.lib.Objs bootstrap(net.java.html.lib.jquery.JQuery)
-meth public net.java.html.lib.Objs bootstrap(net.java.html.lib.jquery.JQuery,net.java.html.lib.Objs[])
-meth public net.java.html.lib.Objs bootstrap(net.java.html.lib.jquery.JQuery,net.java.html.lib.Objs[],net.java.html.lib.angular.IAngularBootstrapConfig)
-meth public net.java.html.lib.Objs injector()
-meth public net.java.html.lib.Objs injector(java.lang.Object[])
-meth public net.java.html.lib.Objs injector(java.lang.Object[],java.lang.Boolean)
-meth public net.java.html.lib.Objs resumeBootstrap()
-meth public net.java.html.lib.Objs resumeBootstrap(java.lang.String[])
 meth public net.java.html.lib.angular.IAugmentedJQuery element()
 meth public net.java.html.lib.angular.IAugmentedJQuery element(java.lang.Object[])
 meth public net.java.html.lib.angular.IAugmentedJQuery element(java.lang.String)
@@ -209,38 +202,58 @@ meth public net.java.html.lib.angular.IAugmentedJQuery element(net.java.html.lib
 meth public net.java.html.lib.angular.IAugmentedJQuery element(net.java.html.lib.dom.Element)
 meth public net.java.html.lib.angular.IAugmentedJQuery element(net.java.html.lib.dom.Element[])
 meth public net.java.html.lib.angular.IAugmentedJQuery element(net.java.html.lib.jquery.JQuery)
+meth public net.java.html.lib.angular.IInjectorService bootstrap(java.lang.String)
+meth public net.java.html.lib.angular.IInjectorService bootstrap(java.lang.String,net.java.html.lib.Objs[])
+meth public net.java.html.lib.angular.IInjectorService bootstrap(java.lang.String,net.java.html.lib.Objs[],net.java.html.lib.angular.IAngularBootstrapConfig)
+meth public net.java.html.lib.angular.IInjectorService bootstrap(net.java.html.lib.dom.Document)
+meth public net.java.html.lib.angular.IInjectorService bootstrap(net.java.html.lib.dom.Document,net.java.html.lib.Objs[])
+meth public net.java.html.lib.angular.IInjectorService bootstrap(net.java.html.lib.dom.Document,net.java.html.lib.Objs[],net.java.html.lib.angular.IAngularBootstrapConfig)
+meth public net.java.html.lib.angular.IInjectorService bootstrap(net.java.html.lib.dom.Element)
+meth public net.java.html.lib.angular.IInjectorService bootstrap(net.java.html.lib.dom.Element,net.java.html.lib.Objs[])
+meth public net.java.html.lib.angular.IInjectorService bootstrap(net.java.html.lib.dom.Element,net.java.html.lib.Objs[],net.java.html.lib.angular.IAngularBootstrapConfig)
+meth public net.java.html.lib.angular.IInjectorService bootstrap(net.java.html.lib.jquery.JQuery)
+meth public net.java.html.lib.angular.IInjectorService bootstrap(net.java.html.lib.jquery.JQuery,net.java.html.lib.Objs[])
+meth public net.java.html.lib.angular.IInjectorService bootstrap(net.java.html.lib.jquery.JQuery,net.java.html.lib.Objs[],net.java.html.lib.angular.IAngularBootstrapConfig)
+meth public net.java.html.lib.angular.IInjectorService injector()
+meth public net.java.html.lib.angular.IInjectorService injector(java.lang.Object[])
+meth public net.java.html.lib.angular.IInjectorService injector(java.lang.Object[],java.lang.Boolean)
+meth public net.java.html.lib.angular.IInjectorService resumeBootstrap()
+meth public net.java.html.lib.angular.IInjectorService resumeBootstrap(java.lang.String[])
 meth public net.java.html.lib.angular.IModule module(java.lang.String)
 meth public net.java.html.lib.angular.IModule module(java.lang.String,java.lang.String[])
 meth public net.java.html.lib.angular.IModule module(java.lang.String,java.lang.String[],net.java.html.lib.Function)
 meth public static net.java.html.lib.angular.IAngularStatic $as(java.lang.Object)
 meth public void reloadWithDebugInfo()
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IAsyncModelValidators
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IAsyncModelValidators> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public net.java.html.lib.Function$A2<? super java.lang.Object,? super java.lang.Object,? extends net.java.html.lib.angular.IPromise<java.lang.Object>> $get(java.lang.String)
 meth public static net.java.html.lib.angular.IAsyncModelValidators $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IAttributes
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IAttributes> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Object> $attr
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Objs> $attr
 meth public <%0 extends java.lang.Object> net.java.html.lib.Function $observe(java.lang.String,net.java.html.lib.Function$A1<? super {%%0},?>)
-meth public java.lang.Object $attr()
 meth public java.lang.Object $get(java.lang.String)
 meth public java.lang.String $normalize(java.lang.String)
+meth public net.java.html.lib.Objs $attr()
 meth public static net.java.html.lib.angular.IAttributes $as(java.lang.Object)
 meth public void $addClass(java.lang.String)
 meth public void $removeClass(java.lang.String)
 meth public void $set(java.lang.String,java.lang.Object)
 meth public void $updateClass(java.lang.String,java.lang.String)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IAugmentedJQuery
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IAugmentedJQuery> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public <%0 extends java.lang.Object> {%%0} scope()
 meth public java.lang.Object controller()
 meth public java.lang.Object controller(java.lang.String)
@@ -255,10 +268,11 @@ meth public net.java.html.lib.jquery.JQuery inheritedData(java.lang.String,java.
 meth public net.java.html.lib.jquery.JQuery inheritedData(net.java.html.lib.Objs)
 meth public static net.java.html.lib.angular.IAugmentedJQuery $as(java.lang.Object)
 supr net.java.html.lib.jquery.JQuery
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IAugmentedJQueryStatic
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IAugmentedJQueryStatic> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public net.java.html.lib.angular.IAugmentedJQuery $apply()
 meth public net.java.html.lib.angular.IAugmentedJQuery $apply(java.lang.Object[])
 meth public net.java.html.lib.angular.IAugmentedJQuery $apply(java.lang.String)
@@ -270,20 +284,22 @@ meth public net.java.html.lib.angular.IAugmentedJQuery $apply(net.java.html.lib.
 meth public net.java.html.lib.angular.IAugmentedJQuery $apply(net.java.html.lib.jquery.JQuery)
 meth public static net.java.html.lib.angular.IAugmentedJQueryStatic $as(java.lang.Object)
 supr net.java.html.lib.jquery.JQueryStatic
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ICacheFactoryService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ICacheFactoryService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Object info()
 meth public net.java.html.lib.angular.ICacheObject $apply(java.lang.String)
 meth public net.java.html.lib.angular.ICacheObject $apply(java.lang.String,net.java.html.lib.Objs)
 meth public net.java.html.lib.angular.ICacheObject get(java.lang.String)
 meth public static net.java.html.lib.angular.ICacheFactoryService $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ICacheObject
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ICacheObject> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public <%0 extends java.lang.Object> {%%0} get(java.lang.String)
 meth public <%0 extends java.lang.Object> {%%0} put(java.lang.String)
 meth public <%0 extends java.lang.Object> {%%0} put(java.lang.String,{%%0})
@@ -293,19 +309,21 @@ meth public void destroy()
 meth public void remove(java.lang.String)
 meth public void removeAll()
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ICloneAttachFunction
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ICloneAttachFunction> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Object $apply()
 meth public java.lang.Object $apply(net.java.html.lib.jquery.JQuery)
 meth public java.lang.Object $apply(net.java.html.lib.jquery.JQuery,net.java.html.lib.angular.IScope)
 meth public static net.java.html.lib.angular.ICloneAttachFunction $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ICompileProvider
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ICompileProvider> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Object debugInfoEnabled()
 meth public java.lang.Object debugInfoEnabled(java.lang.Boolean)
 meth public net.java.html.lib.RegExp aHrefSanitizationWhitelist()
@@ -313,17 +331,18 @@ meth public net.java.html.lib.RegExp imgSrcSanitizationWhitelist()
 meth public net.java.html.lib.angular.ICompileProvider aHrefSanitizationWhitelist(net.java.html.lib.RegExp)
 meth public net.java.html.lib.angular.ICompileProvider component(java.lang.String,net.java.html.lib.angular.IComponentOptions)
 meth public net.java.html.lib.angular.ICompileProvider directive(java.lang.Object)
-meth public net.java.html.lib.angular.ICompileProvider directive(java.lang.Object,java.lang.Object[])
-meth public net.java.html.lib.angular.ICompileProvider directive(java.lang.Object,net.java.html.lib.Function)
 meth public net.java.html.lib.angular.ICompileProvider directive(java.lang.String,java.lang.Object[])
 meth public net.java.html.lib.angular.ICompileProvider directive(java.lang.String,net.java.html.lib.Function)
+meth public net.java.html.lib.angular.ICompileProvider directive(net.java.html.lib.Objs,java.lang.Object[])
+meth public net.java.html.lib.angular.ICompileProvider directive(net.java.html.lib.Objs,net.java.html.lib.Function)
 meth public net.java.html.lib.angular.ICompileProvider imgSrcSanitizationWhitelist(net.java.html.lib.RegExp)
 meth public static net.java.html.lib.angular.ICompileProvider $as(java.lang.Object)
 supr net.java.html.lib.angular.IServiceProvider
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ICompileService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ICompileService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public net.java.html.lib.angular.ITemplateLinkingFunction $apply(java.lang.String)
 meth public net.java.html.lib.angular.ITemplateLinkingFunction $apply(java.lang.String,net.java.html.lib.angular.ITranscludeFunction)
 meth public net.java.html.lib.angular.ITemplateLinkingFunction $apply(java.lang.String,net.java.html.lib.angular.ITranscludeFunction,double)
@@ -335,12 +354,13 @@ meth public net.java.html.lib.angular.ITemplateLinkingFunction $apply(net.java.h
 meth public net.java.html.lib.angular.ITemplateLinkingFunction $apply(net.java.html.lib.jquery.JQuery,net.java.html.lib.angular.ITranscludeFunction,double)
 meth public static net.java.html.lib.angular.ICompileService $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ICompiledExpression
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ICompiledExpression> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> constant
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> literal
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> constant
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> literal
 meth public java.lang.Boolean constant()
 meth public java.lang.Boolean literal()
 meth public java.lang.Object $apply(java.lang.Object)
@@ -348,42 +368,46 @@ meth public java.lang.Object $apply(java.lang.Object,java.lang.Object)
 meth public java.lang.Object assign(java.lang.Object,java.lang.Object)
 meth public static net.java.html.lib.angular.ICompiledExpression $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IComponentOptions
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IComponentOptions> $AS
-fld public net.java.html.lib.Function$A0<java.lang.String> controllerAs
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Objs> bindings
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A3<java.lang.Boolean,java.lang.String,net.java.html.lib.Objs>> transclude
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A3<java.lang.String,java.lang.String[],net.java.html.lib.Objs>> require
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A3<java.lang.String,net.java.html.lib.Function,net.java.html.lib.Objs[]>> controller
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A3<java.lang.String,net.java.html.lib.Function,net.java.html.lib.Objs[]>> template
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A3<java.lang.String,net.java.html.lib.Function,net.java.html.lib.Objs[]>> templateUrl
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.String> controllerAs
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Objs> bindings
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A3<java.lang.Boolean,java.lang.String,net.java.html.lib.Objs>> transclude
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A3<java.lang.String,java.lang.String[],net.java.html.lib.Objs>> require
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A3<java.lang.String,net.java.html.lib.Function,net.java.html.lib.Objs[]>> controller
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A3<java.lang.String,net.java.html.lib.Function,net.java.html.lib.Objs[]>> template
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A3<java.lang.String,net.java.html.lib.Function,net.java.html.lib.Objs[]>> templateUrl
 meth public java.lang.String controllerAs()
 meth public static net.java.html.lib.angular.IComponentOptions $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IComponentTemplateFn
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IComponentTemplateFn> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.String $apply()
 meth public java.lang.String $apply(net.java.html.lib.angular.IAugmentedJQuery)
 meth public java.lang.String $apply(net.java.html.lib.angular.IAugmentedJQuery,net.java.html.lib.angular.IAttributes)
 meth public static net.java.html.lib.angular.IComponentTemplateFn $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IControllerProvider
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IControllerProvider> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public static net.java.html.lib.angular.IControllerProvider $as(java.lang.Object)
 meth public void allowGlobals()
 meth public void register(java.lang.String,java.lang.Object[])
 meth public void register(java.lang.String,net.java.html.lib.Function)
 supr net.java.html.lib.angular.IServiceProvider
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IControllerService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IControllerService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public <%0 extends java.lang.Object> {%%0} $apply(java.lang.Object)
 meth public <%0 extends java.lang.Object> {%%0} $apply(java.lang.Object,java.lang.Object)
 meth public <%0 extends java.lang.Object> {%%0} $apply(java.lang.Object,java.lang.Object,java.lang.Boolean)
@@ -398,11 +422,12 @@ meth public <%0 extends java.lang.Object> {%%0} $apply(net.java.html.lib.Functio
 meth public <%0 extends java.lang.Object> {%%0} $apply(net.java.html.lib.Function,java.lang.Object,java.lang.Boolean,java.lang.String)
 meth public static net.java.html.lib.angular.IControllerService $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IDeferred<%0 extends java.lang.Object>
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IDeferred> $AS
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IPromise<{net.java.html.lib.angular.IDeferred%0}>> promise
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IPromise<{net.java.html.lib.angular.IDeferred%0}>> promise
 meth public net.java.html.lib.angular.IPromise<{net.java.html.lib.angular.IDeferred%0}> promise()
 meth public static net.java.html.lib.angular.IDeferred $as(java.lang.Object)
 meth public void notify(java.lang.Object)
@@ -412,27 +437,28 @@ meth public void resolve()
 meth public void resolve(net.java.html.lib.angular.IPromise<{net.java.html.lib.angular.IDeferred%0}>)
 meth public void resolve({net.java.html.lib.angular.IDeferred%0})
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IDirective
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IDirective> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> multiElement
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> replace
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> terminal
-fld public net.java.html.lib.Function$A0<java.lang.Number> priority
-fld public net.java.html.lib.Function$A0<java.lang.Object> controller
-fld public net.java.html.lib.Function$A0<java.lang.String> controllerAs
-fld public net.java.html.lib.Function$A0<java.lang.String> name
-fld public net.java.html.lib.Function$A0<java.lang.String> restrict
-fld public net.java.html.lib.Function$A0<java.lang.String> templateNamespace
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A2<java.lang.Boolean,java.lang.Object>> bindToController
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A2<java.lang.Boolean,java.lang.Object>> scope
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A2<java.lang.String,net.java.html.lib.Function>> template
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A2<java.lang.String,net.java.html.lib.Function>> templateUrl
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A2<net.java.html.lib.angular.IDirectiveLinkFn,net.java.html.lib.angular.IDirectivePrePost>> link
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A3<java.lang.Boolean,java.lang.String,net.java.html.lib.Objs>> transclude
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A3<java.lang.String,java.lang.String[],net.java.html.lib.Objs>> require
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IDirectiveCompileFn> compile
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> multiElement
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> replace
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> terminal
+fld public net.java.html.lib.Objs$Property<java.lang.Number> priority
+fld public net.java.html.lib.Objs$Property<java.lang.Object> controller
+fld public net.java.html.lib.Objs$Property<java.lang.String> controllerAs
+fld public net.java.html.lib.Objs$Property<java.lang.String> name
+fld public net.java.html.lib.Objs$Property<java.lang.String> restrict
+fld public net.java.html.lib.Objs$Property<java.lang.String> templateNamespace
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A2<java.lang.Boolean,net.java.html.lib.Objs>> bindToController
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A2<java.lang.Boolean,net.java.html.lib.Objs>> scope
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A2<java.lang.String,net.java.html.lib.Function>> template
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A2<java.lang.String,net.java.html.lib.Function>> templateUrl
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A2<net.java.html.lib.angular.IDirectiveLinkFn,net.java.html.lib.angular.IDirectivePrePost>> link
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A3<java.lang.Boolean,java.lang.String,net.java.html.lib.Objs>> transclude
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A3<java.lang.String,java.lang.String[],net.java.html.lib.Objs>> require
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IDirectiveCompileFn> compile
 meth public java.lang.Boolean multiElement()
 meth public java.lang.Boolean replace()
 meth public java.lang.Boolean terminal()
@@ -444,64 +470,72 @@ meth public java.lang.String templateNamespace()
 meth public net.java.html.lib.angular.IDirectivePrePost compile(net.java.html.lib.angular.IAugmentedJQuery,net.java.html.lib.angular.IAttributes,net.java.html.lib.angular.ITranscludeFunction)
 meth public static net.java.html.lib.angular.IDirective $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IDirectiveCompileFn
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IDirectiveCompileFn> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public net.java.html.lib.angular.IDirectivePrePost $apply(net.java.html.lib.angular.IAugmentedJQuery,net.java.html.lib.angular.IAttributes,net.java.html.lib.angular.ITranscludeFunction)
 meth public static net.java.html.lib.angular.IDirectiveCompileFn $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IDirectiveFactory
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IDirectiveFactory> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public !varargs net.java.html.lib.angular.IDirective $apply(java.lang.Object[])
 meth public static net.java.html.lib.angular.IDirectiveFactory $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IDirectiveLinkFn
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IDirectiveLinkFn> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public static net.java.html.lib.angular.IDirectiveLinkFn $as(java.lang.Object)
 meth public void $apply(net.java.html.lib.angular.IScope,net.java.html.lib.angular.IAugmentedJQuery,net.java.html.lib.angular.IAttributes,net.java.html.lib.Objs,net.java.html.lib.angular.ITranscludeFunction)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IDirectivePrePost
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IDirectivePrePost> $AS
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IDirectiveLinkFn> post
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IDirectiveLinkFn> pre
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IDirectiveLinkFn> post
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IDirectiveLinkFn> pre
 meth public static net.java.html.lib.angular.IDirectivePrePost $as(java.lang.Object)
 meth public void post(net.java.html.lib.angular.IScope,net.java.html.lib.angular.IAugmentedJQuery,net.java.html.lib.angular.IAttributes,net.java.html.lib.Objs,net.java.html.lib.angular.ITranscludeFunction)
 meth public void pre(net.java.html.lib.angular.IScope,net.java.html.lib.angular.IAugmentedJQuery,net.java.html.lib.angular.IAttributes,net.java.html.lib.Objs,net.java.html.lib.angular.ITranscludeFunction)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IDocumentService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IDocumentService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public static net.java.html.lib.angular.IDocumentService $as(java.lang.Object)
 supr net.java.html.lib.angular.IAugmentedJQuery
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IExceptionHandlerService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IExceptionHandlerService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public static net.java.html.lib.angular.IExceptionHandlerService $as(java.lang.Object)
 meth public void $apply(net.java.html.lib.Error)
 meth public void $apply(net.java.html.lib.Error,java.lang.String)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IFilterCurrency
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IFilterCurrency> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.String $apply(double)
 meth public java.lang.String $apply(double,java.lang.String)
 meth public java.lang.String $apply(double,java.lang.String,double)
 meth public static net.java.html.lib.angular.IFilterCurrency $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IFilterDate
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IFilterDate> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.String $apply(double)
 meth public java.lang.String $apply(double,java.lang.String)
 meth public java.lang.String $apply(double,java.lang.String,java.lang.String)
@@ -513,10 +547,11 @@ meth public java.lang.String $apply(net.java.html.lib.Date,java.lang.String)
 meth public java.lang.String $apply(net.java.html.lib.Date,java.lang.String,java.lang.String)
 meth public static net.java.html.lib.angular.IFilterDate $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IFilterFilter
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IFilterFilter> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public <%0 extends java.lang.Object> net.java.html.lib.Array<{%%0}> $apply({%%0}[],java.lang.String)
 meth public <%0 extends java.lang.Object> net.java.html.lib.Array<{%%0}> $apply({%%0}[],java.lang.String,java.lang.Boolean)
 meth public <%0 extends java.lang.Object> net.java.html.lib.Array<{%%0}> $apply({%%0}[],java.lang.String,net.java.html.lib.angular.IFilterFilterComparatorFunc<{%%0}>)
@@ -528,39 +563,44 @@ meth public <%0 extends java.lang.Object> net.java.html.lib.Array<{%%0}> $apply(
 meth public <%0 extends java.lang.Object> net.java.html.lib.Array<{%%0}> $apply({%%0}[],net.java.html.lib.angular.IFilterFilterPredicateFunc<{%%0}>,net.java.html.lib.angular.IFilterFilterComparatorFunc<{%%0}>)
 meth public static net.java.html.lib.angular.IFilterFilter $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IFilterFilterComparatorFunc<%0 extends java.lang.Object>
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IFilterFilterComparatorFunc> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Boolean $apply({net.java.html.lib.angular.IFilterFilterComparatorFunc%0},{net.java.html.lib.angular.IFilterFilterComparatorFunc%0})
 meth public static net.java.html.lib.angular.IFilterFilterComparatorFunc $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IFilterFilterPatternObject
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IFilterFilterPatternObject> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Object $get(java.lang.String)
 meth public static net.java.html.lib.angular.IFilterFilterPatternObject $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IFilterFilterPredicateFunc<%0 extends java.lang.Object>
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IFilterFilterPredicateFunc> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Boolean $apply({net.java.html.lib.angular.IFilterFilterPredicateFunc%0},double,{net.java.html.lib.angular.IFilterFilterPredicateFunc%0}[])
 meth public static net.java.html.lib.angular.IFilterFilterPredicateFunc $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IFilterJson
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IFilterJson> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.String $apply(java.lang.Object)
 meth public java.lang.String $apply(java.lang.Object,double)
 meth public static net.java.html.lib.angular.IFilterJson $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IFilterLimitTo
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IFilterLimitTo> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public <%0 extends java.lang.Object> net.java.html.lib.Array<{%%0}> $apply({%%0}[],double)
 meth public <%0 extends java.lang.Object> net.java.html.lib.Array<{%%0}> $apply({%%0}[],double,double)
 meth public <%0 extends java.lang.Object> net.java.html.lib.Array<{%%0}> $apply({%%0}[],double,java.lang.String)
@@ -581,17 +621,19 @@ meth public java.lang.String $apply(java.lang.String,java.lang.String,double)
 meth public java.lang.String $apply(java.lang.String,java.lang.String,java.lang.String)
 meth public static net.java.html.lib.angular.IFilterLimitTo $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IFilterLowercase
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IFilterLowercase> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.String $apply(java.lang.String)
 meth public static net.java.html.lib.angular.IFilterLowercase $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IFilterNumber
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IFilterNumber> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.String $apply(double)
 meth public java.lang.String $apply(double,double)
 meth public java.lang.String $apply(double,java.lang.String)
@@ -600,10 +642,11 @@ meth public java.lang.String $apply(java.lang.String,double)
 meth public java.lang.String $apply(java.lang.String,java.lang.String)
 meth public static net.java.html.lib.angular.IFilterNumber $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IFilterOrderBy
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IFilterOrderBy> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public <%0 extends java.lang.Object> net.java.html.lib.Array<{%%0}> $apply({%%0}[],java.lang.String)
 meth public <%0 extends java.lang.Object> net.java.html.lib.Array<{%%0}> $apply({%%0}[],java.lang.String,java.lang.Boolean)
 meth public <%0 extends java.lang.Object> net.java.html.lib.Array<{%%0}> $apply({%%0}[],net.java.html.lib.Objs)
@@ -612,18 +655,20 @@ meth public <%0 extends java.lang.Object> net.java.html.lib.Array<{%%0}> $apply(
 meth public <%0 extends java.lang.Object> net.java.html.lib.Array<{%%0}> $apply({%%0}[],net.java.html.lib.Objs[],java.lang.Boolean)
 meth public static net.java.html.lib.angular.IFilterOrderBy $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IFilterProvider
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IFilterProvider> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public net.java.html.lib.angular.IServiceProvider register(java.lang.String)
 meth public net.java.html.lib.angular.IServiceProvider register(net.java.html.lib.Objs)
 meth public static net.java.html.lib.angular.IFilterProvider $as(java.lang.Object)
 supr net.java.html.lib.angular.IServiceProvider
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IFilterService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IFilterService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public <%0 extends java.lang.Object> {%%0} $apply(java.lang.String)
 meth public net.java.html.lib.angular.IFilterCurrency $apply(net.java.html.lib.angular.IFilterCurrency)
 meth public net.java.html.lib.angular.IFilterDate $apply(net.java.html.lib.angular.IFilterDate)
@@ -636,24 +681,26 @@ meth public net.java.html.lib.angular.IFilterOrderBy $apply(net.java.html.lib.an
 meth public net.java.html.lib.angular.IFilterUppercase $apply(net.java.html.lib.angular.IFilterUppercase)
 meth public static net.java.html.lib.angular.IFilterService $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IFilterUppercase
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IFilterUppercase> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.String $apply(java.lang.String)
 meth public static net.java.html.lib.angular.IFilterUppercase $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IFormController
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IFormController> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> $dirty
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> $invalid
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> $pristine
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> $submitted
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> $valid
-fld public net.java.html.lib.Function$A0<java.lang.Object> $error
-fld public net.java.html.lib.Function$A0<java.lang.Object> $pending
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> $dirty
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> $invalid
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> $pristine
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> $submitted
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> $valid
+fld public net.java.html.lib.Objs$Property<java.lang.Object> $error
+fld public net.java.html.lib.Objs$Property<java.lang.Object> $pending
 meth public java.lang.Boolean $dirty()
 meth public java.lang.Boolean $invalid()
 meth public java.lang.Boolean $pristine()
@@ -671,10 +718,11 @@ meth public void $setSubmitted()
 meth public void $setUntouched()
 meth public void $setValidity(java.lang.String,java.lang.Boolean,net.java.html.lib.angular.INgModelController)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IHttpBackendService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IHttpBackendService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public static net.java.html.lib.angular.IHttpBackendService $as(java.lang.Object)
 meth public void $apply(java.lang.String,java.lang.String)
 meth public void $apply(java.lang.String,java.lang.String,java.lang.Object)
@@ -683,66 +731,73 @@ meth public void $apply(java.lang.String,java.lang.String,java.lang.Object,net.j
 meth public void $apply(java.lang.String,java.lang.String,java.lang.Object,net.java.html.lib.Function,java.lang.Object,double)
 meth public void $apply(java.lang.String,java.lang.String,java.lang.Object,net.java.html.lib.Function,java.lang.Object,double,java.lang.Boolean)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IHttpHeadersGetter
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IHttpHeadersGetter> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.String $apply(java.lang.String)
 meth public net.java.html.lib.Objs $apply()
 meth public static net.java.html.lib.angular.IHttpHeadersGetter $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IHttpInterceptor
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IHttpInterceptor> $AS
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super java.lang.Object,?>> requestError
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super java.lang.Object,?>> responseError
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.angular.IHttpPromiseCallbackArg<?>,? extends net.java.html.lib.Union$A2<net.java.html.lib.angular.IPromise<net.java.html.lib.angular.IHttpPromiseCallbackArg<?>>,net.java.html.lib.angular.IHttpPromiseCallbackArg<?>>>> response
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.angular.IRequestConfig,? extends net.java.html.lib.Union$A2<net.java.html.lib.angular.IRequestConfig,net.java.html.lib.angular.IPromise<net.java.html.lib.angular.IRequestConfig>>>> request
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super java.lang.Object,?>> requestError
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super java.lang.Object,?>> responseError
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.angular.IHttpPromiseCallbackArg<?>,? extends net.java.html.lib.Union$A2<net.java.html.lib.angular.IPromise<net.java.html.lib.angular.IHttpPromiseCallbackArg<?>>,net.java.html.lib.angular.IHttpPromiseCallbackArg<?>>>> response
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.angular.IRequestConfig,? extends net.java.html.lib.Union$A2<net.java.html.lib.angular.IRequestConfig,net.java.html.lib.angular.IPromise<net.java.html.lib.angular.IRequestConfig>>>> request
 meth public net.java.html.lib.Function$A1<? super java.lang.Object,?> requestError()
 meth public net.java.html.lib.Function$A1<? super java.lang.Object,?> responseError()
 meth public net.java.html.lib.Function$A1<? super net.java.html.lib.angular.IHttpPromiseCallbackArg<?>,? extends net.java.html.lib.Union$A2<net.java.html.lib.angular.IPromise<net.java.html.lib.angular.IHttpPromiseCallbackArg<?>>,net.java.html.lib.angular.IHttpPromiseCallbackArg<?>>> response()
 meth public net.java.html.lib.Function$A1<? super net.java.html.lib.angular.IRequestConfig,? extends net.java.html.lib.Union$A2<net.java.html.lib.angular.IRequestConfig,net.java.html.lib.angular.IPromise<net.java.html.lib.angular.IRequestConfig>>> request()
 meth public static net.java.html.lib.angular.IHttpInterceptor $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IHttpInterceptorFactory
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IHttpInterceptorFactory> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public !varargs net.java.html.lib.angular.IHttpInterceptor $apply(java.lang.Object[])
 meth public static net.java.html.lib.angular.IHttpInterceptorFactory $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IHttpParamSerializer
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IHttpParamSerializer> $AS
-meth public java.lang.String $apply(java.lang.Object)
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+meth public java.lang.String $apply(net.java.html.lib.Objs)
 meth public static net.java.html.lib.angular.IHttpParamSerializer $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IHttpPromise<%0 extends java.lang.Object>
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IHttpPromise> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public net.java.html.lib.angular.IHttpPromise<{net.java.html.lib.angular.IHttpPromise%0}> error(net.java.html.lib.angular.IHttpPromiseCallback<java.lang.Object>)
 meth public net.java.html.lib.angular.IHttpPromise<{net.java.html.lib.angular.IHttpPromise%0}> success(net.java.html.lib.angular.IHttpPromiseCallback<{net.java.html.lib.angular.IHttpPromise%0}>)
 meth public static net.java.html.lib.angular.IHttpPromise $as(java.lang.Object)
 supr net.java.html.lib.angular.IPromise<net.java.html.lib.angular.IHttpPromiseCallbackArg<{net.java.html.lib.angular.IHttpPromise%0}>>
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IHttpPromiseCallback<%0 extends java.lang.Object>
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IHttpPromiseCallback> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public static net.java.html.lib.angular.IHttpPromiseCallback $as(java.lang.Object)
 meth public void $apply({net.java.html.lib.angular.IHttpPromiseCallback%0},double,net.java.html.lib.angular.IHttpHeadersGetter,net.java.html.lib.angular.IRequestConfig)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IHttpPromiseCallbackArg<%0 extends java.lang.Object>
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IHttpPromiseCallbackArg> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Number> status
-fld public net.java.html.lib.Function$A0<java.lang.String> statusText
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Objs> data
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IHttpHeadersGetter> headers
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IRequestConfig> config
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Number> status
+fld public net.java.html.lib.Objs$Property<java.lang.String> statusText
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Objs> data
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IHttpHeadersGetter> headers
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IRequestConfig> config
 meth public java.lang.Number status()
 meth public java.lang.String headers(java.lang.String)
 meth public java.lang.String statusText()
@@ -750,12 +805,13 @@ meth public net.java.html.lib.Objs headers()
 meth public net.java.html.lib.angular.IRequestConfig config()
 meth public static net.java.html.lib.angular.IHttpPromiseCallbackArg $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IHttpProvider
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IHttpProvider> $AS
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Objs[]> interceptors
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IHttpProviderDefaults> defaults
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Objs[]> interceptors
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IHttpProviderDefaults> defaults
 meth public java.lang.Boolean useApplyAsync()
 meth public net.java.html.lib.Objs[] interceptors()
 meth public net.java.html.lib.Union$A2<java.lang.Boolean,net.java.html.lib.angular.IHttpProvider> useLegacyPromiseExtensions(java.lang.Boolean)
@@ -763,56 +819,61 @@ meth public net.java.html.lib.angular.IHttpProvider useApplyAsync(java.lang.Bool
 meth public net.java.html.lib.angular.IHttpProviderDefaults defaults()
 meth public static net.java.html.lib.angular.IHttpProvider $as(java.lang.Object)
 supr net.java.html.lib.angular.IServiceProvider
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IHttpProviderDefaults
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IHttpProviderDefaults> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> withCredentials
-fld public net.java.html.lib.Function$A0<java.lang.Object> cache
-fld public net.java.html.lib.Function$A0<java.lang.String> xsrfCookieName
-fld public net.java.html.lib.Function$A0<java.lang.String> xsrfHeaderName
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A2<java.lang.String,net.java.html.lib.Objs>> paramSerializer
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A2<net.java.html.lib.angular.IHttpRequestTransformer,net.java.html.lib.angular.IHttpRequestTransformer[]>> transformRequest
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A2<net.java.html.lib.angular.IHttpResponseTransformer,net.java.html.lib.angular.IHttpResponseTransformer[]>> transformResponse
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IHttpRequestConfigHeaders> headers
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> withCredentials
+fld public net.java.html.lib.Objs$Property<java.lang.Object> cache
+fld public net.java.html.lib.Objs$Property<java.lang.String> xsrfCookieName
+fld public net.java.html.lib.Objs$Property<java.lang.String> xsrfHeaderName
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A2<java.lang.String,net.java.html.lib.Objs>> paramSerializer
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A2<net.java.html.lib.angular.IHttpRequestTransformer,net.java.html.lib.angular.IHttpRequestTransformer[]>> transformRequest
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A2<net.java.html.lib.angular.IHttpResponseTransformer,net.java.html.lib.angular.IHttpResponseTransformer[]>> transformResponse
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IHttpRequestConfigHeaders> headers
 meth public java.lang.Boolean withCredentials()
 meth public java.lang.String xsrfCookieName()
 meth public java.lang.String xsrfHeaderName()
 meth public net.java.html.lib.angular.IHttpRequestConfigHeaders headers()
 meth public static net.java.html.lib.angular.IHttpProviderDefaults $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IHttpRequestConfigHeaders
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IHttpRequestConfigHeaders> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Object> common
-fld public net.java.html.lib.Function$A0<java.lang.Object> get
-fld public net.java.html.lib.Function$A0<java.lang.Object> patch
-fld public net.java.html.lib.Function$A0<java.lang.Object> post
-fld public net.java.html.lib.Function$A0<java.lang.Object> put
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Object> common
+fld public net.java.html.lib.Objs$Property<java.lang.Object> get
+fld public net.java.html.lib.Objs$Property<java.lang.Object> patch
+fld public net.java.html.lib.Objs$Property<java.lang.Object> post
+fld public net.java.html.lib.Objs$Property<java.lang.Object> put
 meth public java.lang.Object $get(java.lang.String)
 meth public static net.java.html.lib.angular.IHttpRequestConfigHeaders $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IHttpRequestTransformer
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IHttpRequestTransformer> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Object $apply(java.lang.Object,net.java.html.lib.angular.IHttpHeadersGetter)
 meth public static net.java.html.lib.angular.IHttpRequestTransformer $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IHttpResponseTransformer
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IHttpResponseTransformer> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Object $apply(java.lang.Object,net.java.html.lib.angular.IHttpHeadersGetter,double)
 meth public static net.java.html.lib.angular.IHttpResponseTransformer $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IHttpService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IHttpService> $AS
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IHttpProviderDefaults> defaults
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IRequestConfig[]> pendingRequests
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IHttpProviderDefaults> defaults
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IRequestConfig[]> pendingRequests
 meth public <%0 extends java.lang.Object> net.java.html.lib.angular.IHttpPromise<{%%0}> $apply(net.java.html.lib.angular.IRequestConfig)
 meth public <%0 extends java.lang.Object> net.java.html.lib.angular.IHttpPromise<{%%0}> delete(java.lang.String)
 meth public <%0 extends java.lang.Object> net.java.html.lib.angular.IHttpPromise<{%%0}> delete(java.lang.String,net.java.html.lib.angular.IRequestShortcutConfig)
@@ -832,11 +893,12 @@ meth public net.java.html.lib.angular.IHttpProviderDefaults defaults()
 meth public net.java.html.lib.angular.IRequestConfig[] pendingRequests()
 meth public static net.java.html.lib.angular.IHttpService $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IInjectorService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IInjectorService> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> strictDi
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> strictDi
 meth public <%0 extends java.lang.Object> {%%0} get(java.lang.String)
 meth public <%0 extends java.lang.Object> {%%0} get(java.lang.String,java.lang.String)
 meth public <%0 extends java.lang.Object> {%%0} instantiate(net.java.html.lib.Function)
@@ -852,20 +914,22 @@ meth public net.java.html.lib.Array<java.lang.String> annotate(net.java.html.lib
 meth public net.java.html.lib.Array<java.lang.String> annotate(net.java.html.lib.Function,java.lang.Boolean)
 meth public static net.java.html.lib.angular.IInjectorService $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IInterpolateProvider
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IInterpolateProvider> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.String endSymbol()
 meth public java.lang.String startSymbol()
 meth public net.java.html.lib.angular.IInterpolateProvider endSymbol(java.lang.String)
 meth public net.java.html.lib.angular.IInterpolateProvider startSymbol(java.lang.String)
 meth public static net.java.html.lib.angular.IInterpolateProvider $as(java.lang.Object)
 supr net.java.html.lib.angular.IServiceProvider
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IInterpolateService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IInterpolateService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.String endSymbol()
 meth public java.lang.String startSymbol()
 meth public net.java.html.lib.angular.IInterpolationFunction $apply(java.lang.String)
@@ -874,39 +938,42 @@ meth public net.java.html.lib.angular.IInterpolationFunction $apply(java.lang.St
 meth public net.java.html.lib.angular.IInterpolationFunction $apply(java.lang.String,java.lang.Boolean,java.lang.String,java.lang.Boolean)
 meth public static net.java.html.lib.angular.IInterpolateService $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IInterpolationFunction
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IInterpolationFunction> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.String $apply(java.lang.Object)
 meth public static net.java.html.lib.angular.IInterpolationFunction $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IIntervalService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IIntervalService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public !varargs net.java.html.lib.angular.IPromise<java.lang.Object> $apply(net.java.html.lib.Function,double,double,java.lang.Boolean,java.lang.Object[])
 meth public java.lang.Boolean cancel(net.java.html.lib.angular.IPromise<java.lang.Object>)
 meth public net.java.html.lib.angular.IPromise<java.lang.Object> $apply(net.java.html.lib.Function,double,double)
 meth public net.java.html.lib.angular.IPromise<java.lang.Object> $apply(net.java.html.lib.Function,double,double,java.lang.Boolean)
 meth public static net.java.html.lib.angular.IIntervalService $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ILocaleDateTimeFormatDescriptor
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ILocaleDateTimeFormatDescriptor> $AS
-fld public net.java.html.lib.Function$A0<java.lang.String> fullDate
-fld public net.java.html.lib.Function$A0<java.lang.String> longDate
-fld public net.java.html.lib.Function$A0<java.lang.String> medium
-fld public net.java.html.lib.Function$A0<java.lang.String> mediumDate
-fld public net.java.html.lib.Function$A0<java.lang.String> mediumTime
-fld public net.java.html.lib.Function$A0<java.lang.String> shortDate
-fld public net.java.html.lib.Function$A0<java.lang.String> shortTime
-fld public net.java.html.lib.Function$A0<java.lang.String[]> AMPMS
-fld public net.java.html.lib.Function$A0<java.lang.String[]> DAY
-fld public net.java.html.lib.Function$A0<java.lang.String[]> MONTH
-fld public net.java.html.lib.Function$A0<java.lang.String[]> SHORTDAY
-fld public net.java.html.lib.Function$A0<java.lang.String[]> SHORTMONTH
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.String> fullDate
+fld public net.java.html.lib.Objs$Property<java.lang.String> longDate
+fld public net.java.html.lib.Objs$Property<java.lang.String> medium
+fld public net.java.html.lib.Objs$Property<java.lang.String> mediumDate
+fld public net.java.html.lib.Objs$Property<java.lang.String> mediumTime
+fld public net.java.html.lib.Objs$Property<java.lang.String> shortDate
+fld public net.java.html.lib.Objs$Property<java.lang.String> shortTime
+fld public net.java.html.lib.Objs$Property<java.lang.String[]> AMPMS
+fld public net.java.html.lib.Objs$Property<java.lang.String[]> DAY
+fld public net.java.html.lib.Objs$Property<java.lang.String[]> MONTH
+fld public net.java.html.lib.Objs$Property<java.lang.String[]> SHORTDAY
+fld public net.java.html.lib.Objs$Property<java.lang.String[]> SHORTMONTH
 meth public java.lang.String fullDate()
 meth public java.lang.String longDate()
 meth public java.lang.String medium()
@@ -921,33 +988,35 @@ meth public java.lang.String[] SHORTDAY()
 meth public java.lang.String[] SHORTMONTH()
 meth public static net.java.html.lib.angular.ILocaleDateTimeFormatDescriptor $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ILocaleNumberFormatDescriptor
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ILocaleNumberFormatDescriptor> $AS
-fld public net.java.html.lib.Function$A0<java.lang.String> CURRENCY_SYM
-fld public net.java.html.lib.Function$A0<java.lang.String> DECIMAL_SEP
-fld public net.java.html.lib.Function$A0<java.lang.String> GROUP_SEP
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.ILocaleNumberPatternDescriptor[]> PATTERNS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.String> CURRENCY_SYM
+fld public net.java.html.lib.Objs$Property<java.lang.String> DECIMAL_SEP
+fld public net.java.html.lib.Objs$Property<java.lang.String> GROUP_SEP
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.ILocaleNumberPatternDescriptor[]> PATTERNS
 meth public java.lang.String CURRENCY_SYM()
 meth public java.lang.String DECIMAL_SEP()
 meth public java.lang.String GROUP_SEP()
 meth public net.java.html.lib.angular.ILocaleNumberPatternDescriptor[] PATTERNS()
 meth public static net.java.html.lib.angular.ILocaleNumberFormatDescriptor $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ILocaleNumberPatternDescriptor
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ILocaleNumberPatternDescriptor> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Number> gSize
-fld public net.java.html.lib.Function$A0<java.lang.Number> lgSize
-fld public net.java.html.lib.Function$A0<java.lang.Number> maxFrac
-fld public net.java.html.lib.Function$A0<java.lang.Number> minFrac
-fld public net.java.html.lib.Function$A0<java.lang.Number> minInt
-fld public net.java.html.lib.Function$A0<java.lang.String> negPre
-fld public net.java.html.lib.Function$A0<java.lang.String> negSuf
-fld public net.java.html.lib.Function$A0<java.lang.String> posPre
-fld public net.java.html.lib.Function$A0<java.lang.String> posSuf
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Number> gSize
+fld public net.java.html.lib.Objs$Property<java.lang.Number> lgSize
+fld public net.java.html.lib.Objs$Property<java.lang.Number> maxFrac
+fld public net.java.html.lib.Objs$Property<java.lang.Number> minFrac
+fld public net.java.html.lib.Objs$Property<java.lang.Number> minInt
+fld public net.java.html.lib.Objs$Property<java.lang.String> negPre
+fld public net.java.html.lib.Objs$Property<java.lang.String> negSuf
+fld public net.java.html.lib.Objs$Property<java.lang.String> posPre
+fld public net.java.html.lib.Objs$Property<java.lang.String> posSuf
 meth public java.lang.Number gSize()
 meth public java.lang.Number lgSize()
 meth public java.lang.Number maxFrac()
@@ -959,24 +1028,26 @@ meth public java.lang.String posPre()
 meth public java.lang.String posSuf()
 meth public static net.java.html.lib.angular.ILocaleNumberPatternDescriptor $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ILocaleService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ILocaleService> $AS
-fld public net.java.html.lib.Function$A0<java.lang.String> id
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super java.lang.Object,? extends java.lang.String>> pluralCat
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.ILocaleDateTimeFormatDescriptor> DATETIME_FORMATS
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.ILocaleNumberFormatDescriptor> NUMBER_FORMATS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.String> id
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super java.lang.Object,? extends java.lang.String>> pluralCat
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.ILocaleDateTimeFormatDescriptor> DATETIME_FORMATS
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.ILocaleNumberFormatDescriptor> NUMBER_FORMATS
 meth public java.lang.String id()
 meth public net.java.html.lib.Function$A1<? super java.lang.Object,? extends java.lang.String> pluralCat()
 meth public net.java.html.lib.angular.ILocaleDateTimeFormatDescriptor DATETIME_FORMATS()
 meth public net.java.html.lib.angular.ILocaleNumberFormatDescriptor NUMBER_FORMATS()
 meth public static net.java.html.lib.angular.ILocaleService $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ILocationProvider
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ILocationProvider> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Boolean html5Mode()
 meth public java.lang.String hashPrefix()
 meth public net.java.html.lib.angular.ILocationProvider hashPrefix(java.lang.String)
@@ -984,10 +1055,11 @@ meth public net.java.html.lib.angular.ILocationProvider html5Mode(java.lang.Bool
 meth public net.java.html.lib.angular.ILocationProvider html5Mode(net.java.html.lib.Objs)
 meth public static net.java.html.lib.angular.ILocationProvider $as(java.lang.Object)
 supr net.java.html.lib.angular.IServiceProvider
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ILocationService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ILocationService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public double port()
 meth public java.lang.Object search()
 meth public java.lang.Object state()
@@ -1009,30 +1081,33 @@ meth public net.java.html.lib.angular.ILocationService state(java.lang.Object)
 meth public net.java.html.lib.angular.ILocationService url(java.lang.String)
 meth public static net.java.html.lib.angular.ILocationService $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ILogCall
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ILogCall> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public !varargs void $apply(java.lang.Object[])
 meth public static net.java.html.lib.angular.ILogCall $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ILogProvider
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ILogProvider> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Boolean debugEnabled()
 meth public net.java.html.lib.angular.ILogProvider debugEnabled(java.lang.Boolean)
 meth public static net.java.html.lib.angular.ILogProvider $as(java.lang.Object)
 supr net.java.html.lib.angular.IServiceProvider
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ILogService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ILogService> $AS
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.ILogCall> debug
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.ILogCall> error
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.ILogCall> info
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.ILogCall> log
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.ILogCall> warn
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.ILogCall> debug
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.ILogCall> error
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.ILogCall> info
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.ILogCall> log
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.ILogCall> warn
 meth public !varargs void debug(java.lang.Object[])
 meth public !varargs void error(java.lang.Object[])
 meth public !varargs void info(java.lang.Object[])
@@ -1040,96 +1115,102 @@ meth public !varargs void log(java.lang.Object[])
 meth public !varargs void warn(java.lang.Object[])
 meth public static net.java.html.lib.angular.ILogService $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IModelFormatter
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IModelFormatter> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Object $apply(java.lang.Object)
 meth public static net.java.html.lib.angular.IModelFormatter $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IModelParser
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IModelParser> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Object $apply(java.lang.Object)
 meth public static net.java.html.lib.angular.IModelParser $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IModelValidators
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IModelValidators> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public net.java.html.lib.Function$A2<? super java.lang.Object,? super java.lang.Object,? extends java.lang.Boolean> $get(java.lang.String)
 meth public static net.java.html.lib.angular.IModelValidators $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IModelViewChangeListener
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IModelViewChangeListener> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public static net.java.html.lib.angular.IModelViewChangeListener $as(java.lang.Object)
 meth public void $apply()
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IModule
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IModule> $AS
-fld public net.java.html.lib.Function$A0<java.lang.String> name
-fld public net.java.html.lib.Function$A0<java.lang.String[]> requires
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.String> name
+fld public net.java.html.lib.Objs$Property<java.lang.String[]> requires
 meth public java.lang.String name()
 meth public java.lang.String[] requires()
 meth public net.java.html.lib.angular.IModule component(java.lang.String,net.java.html.lib.angular.IComponentOptions)
-meth public net.java.html.lib.angular.IModule config(java.lang.Object)
 meth public net.java.html.lib.angular.IModule config(java.lang.Object[])
 meth public net.java.html.lib.angular.IModule config(net.java.html.lib.Function)
-meth public net.java.html.lib.angular.IModule constant(java.lang.Object)
+meth public net.java.html.lib.angular.IModule config(net.java.html.lib.Objs)
 meth public net.java.html.lib.angular.IModule constant(java.lang.String,java.lang.Object)
-meth public net.java.html.lib.angular.IModule controller(java.lang.Object)
+meth public net.java.html.lib.angular.IModule constant(net.java.html.lib.Objs)
 meth public net.java.html.lib.angular.IModule controller(java.lang.String,java.lang.Object[])
 meth public net.java.html.lib.angular.IModule controller(java.lang.String,net.java.html.lib.Function)
+meth public net.java.html.lib.angular.IModule controller(net.java.html.lib.Objs)
 meth public net.java.html.lib.angular.IModule decorator(java.lang.String,java.lang.Object[])
 meth public net.java.html.lib.angular.IModule decorator(java.lang.String,net.java.html.lib.Function)
-meth public net.java.html.lib.angular.IModule directive(java.lang.Object)
 meth public net.java.html.lib.angular.IModule directive(java.lang.String,java.lang.Object[])
 meth public net.java.html.lib.angular.IModule directive(java.lang.String,net.java.html.lib.angular.IDirectiveFactory)
-meth public net.java.html.lib.angular.IModule factory(java.lang.Object)
+meth public net.java.html.lib.angular.IModule directive(net.java.html.lib.Objs)
 meth public net.java.html.lib.angular.IModule factory(java.lang.String,java.lang.Object[])
 meth public net.java.html.lib.angular.IModule factory(java.lang.String,net.java.html.lib.Function)
-meth public net.java.html.lib.angular.IModule filter(java.lang.Object)
+meth public net.java.html.lib.angular.IModule factory(net.java.html.lib.Objs)
 meth public net.java.html.lib.angular.IModule filter(java.lang.String,java.lang.Object[])
 meth public net.java.html.lib.angular.IModule filter(java.lang.String,net.java.html.lib.Function)
-meth public net.java.html.lib.angular.IModule provider(java.lang.Object)
+meth public net.java.html.lib.angular.IModule filter(net.java.html.lib.Objs)
 meth public net.java.html.lib.angular.IModule provider(java.lang.String,java.lang.Object[])
 meth public net.java.html.lib.angular.IModule provider(java.lang.String,net.java.html.lib.angular.IServiceProvider)
 meth public net.java.html.lib.angular.IModule provider(java.lang.String,net.java.html.lib.angular.IServiceProviderClass)
 meth public net.java.html.lib.angular.IModule provider(java.lang.String,net.java.html.lib.angular.IServiceProviderFactory)
+meth public net.java.html.lib.angular.IModule provider(net.java.html.lib.Objs)
 meth public net.java.html.lib.angular.IModule run(java.lang.Object[])
 meth public net.java.html.lib.angular.IModule run(net.java.html.lib.Function)
-meth public net.java.html.lib.angular.IModule service(java.lang.Object)
 meth public net.java.html.lib.angular.IModule service(java.lang.String,java.lang.Object[])
 meth public net.java.html.lib.angular.IModule service(java.lang.String,net.java.html.lib.Function)
-meth public net.java.html.lib.angular.IModule value(java.lang.Object)
+meth public net.java.html.lib.angular.IModule service(net.java.html.lib.Objs)
 meth public net.java.html.lib.angular.IModule value(java.lang.String,java.lang.Object)
+meth public net.java.html.lib.angular.IModule value(net.java.html.lib.Objs)
 meth public static net.java.html.lib.angular.IModule $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.INgModelController
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.INgModelController> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> $dirty
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> $invalid
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> $pristine
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> $touched
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> $untouched
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> $valid
-fld public net.java.html.lib.Function$A0<java.lang.Object> $error
-fld public net.java.html.lib.Function$A0<java.lang.Object> $modelValue
-fld public net.java.html.lib.Function$A0<java.lang.Object> $pending
-fld public net.java.html.lib.Function$A0<java.lang.Object> $viewValue
-fld public net.java.html.lib.Function$A0<java.lang.String> $name
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IAsyncModelValidators> $asyncValidators
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IModelFormatter[]> $formatters
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IModelParser[]> $parsers
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IModelValidators> $validators
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IModelViewChangeListener[]> $viewChangeListeners
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> $dirty
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> $invalid
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> $pristine
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> $touched
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> $untouched
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> $valid
+fld public net.java.html.lib.Objs$Property<java.lang.Object> $error
+fld public net.java.html.lib.Objs$Property<java.lang.Object> $modelValue
+fld public net.java.html.lib.Objs$Property<java.lang.Object> $pending
+fld public net.java.html.lib.Objs$Property<java.lang.Object> $viewValue
+fld public net.java.html.lib.Objs$Property<java.lang.String> $name
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IAsyncModelValidators> $asyncValidators
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IModelFormatter[]> $formatters
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IModelParser[]> $parsers
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IModelValidators> $validators
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IModelViewChangeListener[]> $viewChangeListeners
 meth public java.lang.Boolean $dirty()
 meth public java.lang.Boolean $invalid()
 meth public java.lang.Boolean $isEmpty(java.lang.Object)
@@ -1156,51 +1237,56 @@ meth public void $setViewValue(java.lang.Object)
 meth public void $setViewValue(java.lang.Object,java.lang.String)
 meth public void $validate()
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.INgModelOptions
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.INgModelOptions> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> allowInvalid
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> getterSetter
-fld public net.java.html.lib.Function$A0<java.lang.Object> debounce
-fld public net.java.html.lib.Function$A0<java.lang.String> timezone
-fld public net.java.html.lib.Function$A0<java.lang.String> updateOn
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> allowInvalid
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> getterSetter
+fld public net.java.html.lib.Objs$Property<java.lang.Object> debounce
+fld public net.java.html.lib.Objs$Property<java.lang.String> timezone
+fld public net.java.html.lib.Objs$Property<java.lang.String> updateOn
 meth public java.lang.Boolean allowInvalid()
 meth public java.lang.Boolean getterSetter()
 meth public java.lang.String timezone()
 meth public java.lang.String updateOn()
 meth public static net.java.html.lib.angular.INgModelOptions $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IParseProvider
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IParseProvider> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Boolean logPromiseWarnings()
 meth public java.lang.Boolean unwrapPromises()
 meth public net.java.html.lib.angular.IParseProvider logPromiseWarnings(java.lang.Boolean)
 meth public net.java.html.lib.angular.IParseProvider unwrapPromises(java.lang.Boolean)
 meth public static net.java.html.lib.angular.IParseProvider $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IParseService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IParseService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public net.java.html.lib.angular.ICompiledExpression $apply(java.lang.String)
 meth public static net.java.html.lib.angular.IParseService $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IPromise<%0 extends java.lang.Object>
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IPromise> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public <%0 extends java.lang.Object> net.java.html.lib.angular.IPromise<{%%0}> then(net.java.html.lib.Function$A1<? super {net.java.html.lib.angular.IPromise%0},? extends net.java.html.lib.Union$A2<net.java.html.lib.angular.IPromise<{%%0}>,{%%0}>>)
 meth public <%0 extends java.lang.Object> net.java.html.lib.angular.IPromise<{%%0}> then(net.java.html.lib.Function$A1<? super {net.java.html.lib.angular.IPromise%0},? extends net.java.html.lib.Union$A2<net.java.html.lib.angular.IPromise<{%%0}>,{%%0}>>,net.java.html.lib.Function$A1<? super java.lang.Object,?>)
 meth public <%0 extends java.lang.Object> net.java.html.lib.angular.IPromise<{%%0}> then(net.java.html.lib.Function$A1<? super {net.java.html.lib.angular.IPromise%0},? extends net.java.html.lib.Union$A2<net.java.html.lib.angular.IPromise<{%%0}>,{%%0}>>,net.java.html.lib.Function$A1<? super java.lang.Object,?>,net.java.html.lib.Function$A1<? super java.lang.Object,?>)
 meth public static net.java.html.lib.angular.IPromise $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IProvideService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IProvideService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public net.java.html.lib.angular.IServiceProvider factory(java.lang.String,java.lang.Object[])
 meth public net.java.html.lib.angular.IServiceProvider factory(java.lang.String,net.java.html.lib.Function)
 meth public net.java.html.lib.angular.IServiceProvider provider(java.lang.String,net.java.html.lib.Function)
@@ -1213,18 +1299,20 @@ meth public void constant(java.lang.String,java.lang.Object)
 meth public void decorator(java.lang.String,java.lang.Object[])
 meth public void decorator(java.lang.String,net.java.html.lib.Function)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IQResolveReject<%0 extends java.lang.Object>
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IQResolveReject> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public static net.java.html.lib.angular.IQResolveReject $as(java.lang.Object)
 meth public void $apply()
 meth public void $apply({net.java.html.lib.angular.IQResolveReject%0})
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IQService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IQService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public <%0 extends java.lang.Object, %1 extends java.lang.Object> net.java.html.lib.angular.IPromise<java.lang.Object[]> all(java.lang.Object[])
 meth public <%0 extends java.lang.Object> net.java.html.lib.angular.IDeferred<{%%0}> defer()
 meth public <%0 extends java.lang.Object> net.java.html.lib.angular.IPromise<{%%0}> $apply(net.java.html.lib.Function$A1<? super net.java.html.lib.angular.IQResolveReject<{%%0}>,?>)
@@ -1241,16 +1329,17 @@ meth public net.java.html.lib.angular.IPromise<java.lang.Void> resolve()
 meth public net.java.html.lib.angular.IPromise<java.lang.Void> when()
 meth public static net.java.html.lib.angular.IQService $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IRepeatScope
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IRepeatScope> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> $even
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> $first
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> $last
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> $middle
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> $odd
-fld public net.java.html.lib.Function$A0<java.lang.Number> $index
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> $even
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> $first
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> $last
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> $middle
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> $odd
+fld public net.java.html.lib.Objs$Property<java.lang.Number> $index
 meth public java.lang.Boolean $even()
 meth public java.lang.Boolean $first()
 meth public java.lang.Boolean $last()
@@ -1259,42 +1348,46 @@ meth public java.lang.Boolean $odd()
 meth public java.lang.Number $index()
 meth public static net.java.html.lib.angular.IRepeatScope $as(java.lang.Object)
 supr net.java.html.lib.angular.IScope
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IRequestConfig
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IRequestConfig> $AS
-fld public net.java.html.lib.Function$A0<java.lang.String> method
-fld public net.java.html.lib.Function$A0<java.lang.String> url
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.String> method
+fld public net.java.html.lib.Objs$Property<java.lang.String> url
 meth public java.lang.String method()
 meth public java.lang.String url()
 meth public static net.java.html.lib.angular.IRequestConfig $as(java.lang.Object)
 supr net.java.html.lib.angular.IRequestShortcutConfig
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IRequestShortcutConfig
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IRequestShortcutConfig> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Object> data
-fld public net.java.html.lib.Function$A0<java.lang.Object> params
-fld public net.java.html.lib.Function$A0<java.lang.String> responseType
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A2<java.lang.Number,net.java.html.lib.angular.IPromise<java.lang.Object>>> timeout
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Object> data
+fld public net.java.html.lib.Objs$Property<java.lang.Object> params
+fld public net.java.html.lib.Objs$Property<java.lang.String> responseType
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A2<java.lang.Number,net.java.html.lib.angular.IPromise<java.lang.Object>>> timeout
 meth public java.lang.String responseType()
 meth public static net.java.html.lib.angular.IRequestShortcutConfig $as(java.lang.Object)
 supr net.java.html.lib.angular.IHttpProviderDefaults
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IRootElementService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IRootElementService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public static net.java.html.lib.angular.IRootElementService $as(java.lang.Object)
 supr net.java.html.lib.jquery.JQuery
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IRootScopeService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IRootScopeService> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Number> $id
-fld public net.java.html.lib.Function$A0<java.lang.Object> $$isolateBindings
-fld public net.java.html.lib.Function$A0<java.lang.Object> $$phase
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IRootScopeService> $root
-fld public net.java.html.lib.Function$A0<net.java.html.lib.angular.IScope> $parent
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Number> $id
+fld public net.java.html.lib.Objs$Property<java.lang.Object> $$isolateBindings
+fld public net.java.html.lib.Objs$Property<java.lang.Object> $$phase
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IRootScopeService> $root
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.angular.IScope> $parent
 meth public !varargs net.java.html.lib.angular.IAngularEvent $broadcast(java.lang.String,java.lang.Object[])
 meth public !varargs net.java.html.lib.angular.IAngularEvent $emit(java.lang.String,java.lang.Object[])
 meth public <%0 extends java.lang.Object> net.java.html.lib.Function$A0<? extends java.lang.Void> $watch(java.lang.String,net.java.html.lib.Function$A3<? super {%%0},? super {%%0},? super net.java.html.lib.angular.IScope,?>)
@@ -1312,9 +1405,9 @@ meth public java.lang.Object $applyAsync(java.lang.String)
 meth public java.lang.Object $applyAsync(net.java.html.lib.Function$A1<? super net.java.html.lib.angular.IScope,?>)
 meth public java.lang.Object $eval()
 meth public java.lang.Object $eval(java.lang.String)
-meth public java.lang.Object $eval(java.lang.String,java.lang.Object)
+meth public java.lang.Object $eval(java.lang.String,net.java.html.lib.Objs)
 meth public java.lang.Object $eval(net.java.html.lib.Function$A1<? super net.java.html.lib.angular.IScope,?>)
-meth public java.lang.Object $eval(net.java.html.lib.Function$A1<? super net.java.html.lib.angular.IScope,?>,java.lang.Object)
+meth public java.lang.Object $eval(net.java.html.lib.Function$A1<? super net.java.html.lib.angular.IScope,?>,net.java.html.lib.Objs)
 meth public java.lang.Object $get(java.lang.String)
 meth public net.java.html.lib.Function$A0<? extends java.lang.Void> $on(java.lang.String,net.java.html.lib.Function$A2<? super net.java.html.lib.angular.IAngularEvent,? super net.java.html.lib.Array<java.lang.Object>,?>)
 meth public net.java.html.lib.Function$A0<? extends java.lang.Void> $watch(java.lang.String)
@@ -1337,36 +1430,40 @@ meth public void $evalAsync()
 meth public void $evalAsync(java.lang.String)
 meth public void $evalAsync(net.java.html.lib.Function$A1<? super net.java.html.lib.angular.IScope,?>)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ISCEDelegateProvider
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ISCEDelegateProvider> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public net.java.html.lib.Array<java.lang.Object> resourceUrlBlacklist()
 meth public net.java.html.lib.Array<java.lang.Object> resourceUrlWhitelist()
 meth public static net.java.html.lib.angular.ISCEDelegateProvider $as(java.lang.Object)
 meth public void resourceUrlBlacklist(java.lang.Object[])
 meth public void resourceUrlWhitelist(java.lang.Object[])
 supr net.java.html.lib.angular.IServiceProvider
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ISCEDelegateService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ISCEDelegateService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Object getTrusted(java.lang.String,java.lang.Object)
 meth public java.lang.Object trustAs(java.lang.String,java.lang.Object)
 meth public java.lang.Object valueOf(java.lang.Object)
 meth public static net.java.html.lib.angular.ISCEDelegateService $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ISCEProvider
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ISCEProvider> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public static net.java.html.lib.angular.ISCEProvider $as(java.lang.Object)
 meth public void enabled(java.lang.Boolean)
 supr net.java.html.lib.angular.IServiceProvider
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ISCEService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ISCEService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Boolean isEnabled()
 meth public java.lang.Object getTrusted(java.lang.String,java.lang.Object)
 meth public java.lang.Object getTrustedCss(java.lang.Object)
@@ -1387,61 +1484,69 @@ meth public net.java.html.lib.Function$A2<? super java.lang.Object,? super java.
 meth public net.java.html.lib.Function$A2<? super java.lang.Object,? super java.lang.Object,?> parseAsUrl(java.lang.String)
 meth public static net.java.html.lib.angular.ISCEService $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IScope
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IScope> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public static net.java.html.lib.angular.IScope $as(java.lang.Object)
 supr net.java.html.lib.angular.IRootScopeService
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IServiceProvider
-cons protected init(java.lang.Class<?>,java.lang.Object)
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 cons public !varargs init(java.lang.Object[])
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IServiceProvider> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Object> $get
+fld public net.java.html.lib.Objs$Property<java.lang.Object> $get
 meth public static net.java.html.lib.angular.IServiceProvider $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IServiceProviderClass
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IServiceProviderClass> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public static net.java.html.lib.angular.IServiceProviderClass $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IServiceProviderFactory
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IServiceProviderFactory> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public !varargs net.java.html.lib.angular.IServiceProvider $apply(java.lang.Object[])
 meth public static net.java.html.lib.angular.IServiceProviderFactory $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ITemplateCacheService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ITemplateCacheService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public static net.java.html.lib.angular.ITemplateCacheService $as(java.lang.Object)
 supr net.java.html.lib.angular.ICacheObject
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ITemplateLinkingFunction
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ITemplateLinkingFunction> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public net.java.html.lib.angular.IAugmentedJQuery $apply(net.java.html.lib.angular.IScope)
 meth public net.java.html.lib.angular.IAugmentedJQuery $apply(net.java.html.lib.angular.IScope,net.java.html.lib.angular.ICloneAttachFunction)
 meth public static net.java.html.lib.angular.ITemplateLinkingFunction $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ITemplateRequestService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ITemplateRequestService> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Number> totalPendingRequests
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Number> totalPendingRequests
 meth public java.lang.Number totalPendingRequests()
 meth public net.java.html.lib.angular.IPromise<java.lang.String> $apply(java.lang.String)
 meth public net.java.html.lib.angular.IPromise<java.lang.String> $apply(java.lang.String,java.lang.Boolean)
 meth public static net.java.html.lib.angular.ITemplateRequestService $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ITimeoutService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ITimeoutService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public !varargs <%0 extends java.lang.Object> net.java.html.lib.angular.IPromise<{%%0}> $apply(net.java.html.lib.Function$A1<? super net.java.html.lib.Array<java.lang.Object>,? extends {%%0}>,double,java.lang.Boolean,java.lang.Object[])
 meth public <%0 extends java.lang.Object> net.java.html.lib.angular.IPromise<{%%0}> $apply(net.java.html.lib.Function$A1<? super net.java.html.lib.Array<java.lang.Object>,? extends {%%0}>,double)
 meth public <%0 extends java.lang.Object> net.java.html.lib.angular.IPromise<{%%0}> $apply(net.java.html.lib.Function$A1<? super net.java.html.lib.Array<java.lang.Object>,? extends {%%0}>,double,java.lang.Boolean)
@@ -1452,42 +1557,46 @@ meth public net.java.html.lib.angular.IPromise<java.lang.Void> $apply(double)
 meth public net.java.html.lib.angular.IPromise<java.lang.Void> $apply(double,java.lang.Boolean)
 meth public static net.java.html.lib.angular.ITimeoutService $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.ITranscludeFunction
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.ITranscludeFunction> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public net.java.html.lib.angular.IAugmentedJQuery $apply()
 meth public net.java.html.lib.angular.IAugmentedJQuery $apply(net.java.html.lib.angular.ICloneAttachFunction)
 meth public net.java.html.lib.angular.IAugmentedJQuery $apply(net.java.html.lib.angular.IScope,net.java.html.lib.angular.ICloneAttachFunction)
 meth public static net.java.html.lib.angular.ITranscludeFunction $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IWindowService
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IWindowService> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Object $get(java.lang.String)
 meth public static net.java.html.lib.angular.IWindowService $as(java.lang.Object)
 supr net.java.html.lib.dom.Window
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.IXhrFactory<%0 extends java.lang.Object>
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.IXhrFactory> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public static net.java.html.lib.angular.IXhrFactory $as(java.lang.Object)
 meth public {net.java.html.lib.angular.IXhrFactory%0} $apply(java.lang.String,java.lang.String)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.RouteDefinition
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.RouteDefinition> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> useAsDefault
-fld public net.java.html.lib.Function$A0<java.lang.Object> data
-fld public net.java.html.lib.Function$A0<java.lang.Object[]> redirectTo
-fld public net.java.html.lib.Function$A0<java.lang.String> as
-fld public net.java.html.lib.Function$A0<java.lang.String> aux
-fld public net.java.html.lib.Function$A0<java.lang.String> name
-fld public net.java.html.lib.Function$A0<java.lang.String> path
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function> loader
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A3<net.java.html.lib.angular.Type,net.java.html.lib.angular.ComponentDefinition,java.lang.String>> component
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> useAsDefault
+fld public net.java.html.lib.Objs$Property<java.lang.Object> data
+fld public net.java.html.lib.Objs$Property<java.lang.Object[]> redirectTo
+fld public net.java.html.lib.Objs$Property<java.lang.String> as
+fld public net.java.html.lib.Objs$Property<java.lang.String> aux
+fld public net.java.html.lib.Objs$Property<java.lang.String> name
+fld public net.java.html.lib.Objs$Property<java.lang.String> path
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function> loader
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A3<net.java.html.lib.angular.Type,net.java.html.lib.angular.ComponentDefinition,java.lang.String>> component
 meth public java.lang.Boolean useAsDefault()
 meth public java.lang.String as()
 meth public java.lang.String aux()
@@ -1496,164 +1605,171 @@ meth public java.lang.String path()
 meth public net.java.html.lib.Function loader()
 meth public static net.java.html.lib.angular.RouteDefinition $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.angular.Type
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.angular.Type> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public static net.java.html.lib.angular.Type $as(java.lang.Object)
 supr net.java.html.lib.Function
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.dom.EventTarget
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.dom.EventTarget> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Boolean dispatchEvent(net.java.html.lib.dom.Event)
 meth public static net.java.html.lib.dom.EventTarget $as(java.lang.Object)
-meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListenerOrEventListenerObject)
-meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListenerOrEventListenerObject,java.lang.Boolean)
-meth public void removeEventListener(java.lang.String,net.java.html.lib.dom.EventListenerOrEventListenerObject)
-meth public void removeEventListener(java.lang.String,net.java.html.lib.dom.EventListenerOrEventListenerObject,java.lang.Boolean)
+meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListener)
+meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListener,java.lang.Boolean)
+meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListenerObject)
+meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListenerObject,java.lang.Boolean)
+meth public void removeEventListener(java.lang.String,net.java.html.lib.dom.EventListener)
+meth public void removeEventListener(java.lang.String,net.java.html.lib.dom.EventListener,java.lang.Boolean)
+meth public void removeEventListener(java.lang.String,net.java.html.lib.dom.EventListenerObject)
+meth public void removeEventListener(java.lang.String,net.java.html.lib.dom.EventListenerObject,java.lang.Boolean)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.dom.Window
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.dom.Window> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> closed
-fld public net.java.html.lib.Function$A0<java.lang.Number> animationStartTime
-fld public net.java.html.lib.Function$A0<java.lang.Number> devicePixelRatio
-fld public net.java.html.lib.Function$A0<java.lang.Number> innerHeight
-fld public net.java.html.lib.Function$A0<java.lang.Number> innerWidth
-fld public net.java.html.lib.Function$A0<java.lang.Number> length
-fld public net.java.html.lib.Function$A0<java.lang.Number> msAnimationStartTime
-fld public net.java.html.lib.Function$A0<java.lang.Number> outerHeight
-fld public net.java.html.lib.Function$A0<java.lang.Number> outerWidth
-fld public net.java.html.lib.Function$A0<java.lang.Number> pageXOffset
-fld public net.java.html.lib.Function$A0<java.lang.Number> pageYOffset
-fld public net.java.html.lib.Function$A0<java.lang.Number> screenLeft
-fld public net.java.html.lib.Function$A0<java.lang.Number> screenTop
-fld public net.java.html.lib.Function$A0<java.lang.Number> screenX
-fld public net.java.html.lib.Function$A0<java.lang.Number> screenY
-fld public net.java.html.lib.Function$A0<java.lang.Number> scrollX
-fld public net.java.html.lib.Function$A0<java.lang.Number> scrollY
-fld public net.java.html.lib.Function$A0<java.lang.Object> ontouchcancel
-fld public net.java.html.lib.Function$A0<java.lang.Object> ontouchend
-fld public net.java.html.lib.Function$A0<java.lang.Object> ontouchmove
-fld public net.java.html.lib.Function$A0<java.lang.Object> ontouchstart
-fld public net.java.html.lib.Function$A0<java.lang.String> defaultStatus
-fld public net.java.html.lib.Function$A0<java.lang.String> doNotTrack
-fld public net.java.html.lib.Function$A0<java.lang.String> name
-fld public net.java.html.lib.Function$A0<java.lang.String> status
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.BeforeUnloadEvent,?>> onbeforeunload
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DeviceMotionEvent,?>> ondevicemotion
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DeviceOrientationEvent,?>> ondeviceorientation
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DragEvent,?>> ondrag
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DragEvent,?>> ondragend
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DragEvent,?>> ondragenter
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DragEvent,?>> ondragleave
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DragEvent,?>> ondragover
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DragEvent,?>> ondragstart
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DragEvent,?>> ondrop
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onabort
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onafterprint
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onbeforeprint
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> oncanplay
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> oncanplaythrough
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onchange
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> oncompassneedscalibration
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> ondurationchange
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onemptied
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onended
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> oninput
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onload
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onloadeddata
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onloadedmetadata
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onloadstart
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onoffline
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> ononline
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onorientationchange
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onpause
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onplay
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onplaying
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onratechange
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onreset
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onseeked
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onseeking
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onstalled
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onsubmit
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onsuspend
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> ontimeupdate
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onunload
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onvolumechange
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onwaiting
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.FocusEvent,?>> onblur
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.FocusEvent,?>> onfocus
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.HashChangeEvent,?>> onhashchange
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.KeyboardEvent,?>> onkeydown
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.KeyboardEvent,?>> onkeypress
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.KeyboardEvent,?>> onkeyup
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSGestureEvent,?>> onmsgesturechange
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSGestureEvent,?>> onmsgesturedoubletap
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSGestureEvent,?>> onmsgestureend
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSGestureEvent,?>> onmsgesturehold
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSGestureEvent,?>> onmsgesturestart
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSGestureEvent,?>> onmsgesturetap
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSGestureEvent,?>> onmsinertiastart
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSPointerEvent,?>> onmspointercancel
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSPointerEvent,?>> onmspointerdown
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSPointerEvent,?>> onmspointerenter
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSPointerEvent,?>> onmspointerleave
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSPointerEvent,?>> onmspointermove
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSPointerEvent,?>> onmspointerout
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSPointerEvent,?>> onmspointerover
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSPointerEvent,?>> onmspointerup
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MessageEvent,?>> onmessage
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> onclick
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> ondblclick
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> onmousedown
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> onmouseenter
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> onmouseleave
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> onmousemove
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> onmouseout
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> onmouseover
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> onmouseup
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseWheelEvent,?>> onmousewheel
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.PageTransitionEvent,?>> onpagehide
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.PageTransitionEvent,?>> onpageshow
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.PointerEvent,?>> oncontextmenu
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.PopStateEvent,?>> onpopstate
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.ProgressEvent,?>> onprogress
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.ProgressEvent,?>> onreadystatechange
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.StorageEvent,?>> onstorage
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.UIEvent,?>> onresize
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.UIEvent,?>> onscroll
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.UIEvent,?>> onselect
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A2<java.lang.String,java.lang.Boolean>> offscreenBuffering
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Union$A2<java.lang.String,java.lang.Number>> orientation
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.ApplicationCache> applicationCache
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.BarProp> locationbar
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.BarProp> menubar
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.BarProp> personalbar
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.BarProp> scrollbars
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.BarProp> statusbar
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.BarProp> toolbar
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Crypto> crypto
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Document> document
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Element> frameElement
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.ErrorEventHandler> onerror
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Event> event
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.External> external
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.History> history
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Location> location
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Navigator> clientInformation
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Navigator> navigator
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Performance> performance
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Screen> screen
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.StyleMedia> styleMedia
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Window> frames
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Window> opener
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Window> parent
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Window> self
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Window> top
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Window> window
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> closed
+fld public net.java.html.lib.Objs$Property<java.lang.Number> animationStartTime
+fld public net.java.html.lib.Objs$Property<java.lang.Number> devicePixelRatio
+fld public net.java.html.lib.Objs$Property<java.lang.Number> innerHeight
+fld public net.java.html.lib.Objs$Property<java.lang.Number> innerWidth
+fld public net.java.html.lib.Objs$Property<java.lang.Number> length
+fld public net.java.html.lib.Objs$Property<java.lang.Number> msAnimationStartTime
+fld public net.java.html.lib.Objs$Property<java.lang.Number> outerHeight
+fld public net.java.html.lib.Objs$Property<java.lang.Number> outerWidth
+fld public net.java.html.lib.Objs$Property<java.lang.Number> pageXOffset
+fld public net.java.html.lib.Objs$Property<java.lang.Number> pageYOffset
+fld public net.java.html.lib.Objs$Property<java.lang.Number> screenLeft
+fld public net.java.html.lib.Objs$Property<java.lang.Number> screenTop
+fld public net.java.html.lib.Objs$Property<java.lang.Number> screenX
+fld public net.java.html.lib.Objs$Property<java.lang.Number> screenY
+fld public net.java.html.lib.Objs$Property<java.lang.Number> scrollX
+fld public net.java.html.lib.Objs$Property<java.lang.Number> scrollY
+fld public net.java.html.lib.Objs$Property<java.lang.Object> ontouchcancel
+fld public net.java.html.lib.Objs$Property<java.lang.Object> ontouchend
+fld public net.java.html.lib.Objs$Property<java.lang.Object> ontouchmove
+fld public net.java.html.lib.Objs$Property<java.lang.Object> ontouchstart
+fld public net.java.html.lib.Objs$Property<java.lang.String> defaultStatus
+fld public net.java.html.lib.Objs$Property<java.lang.String> doNotTrack
+fld public net.java.html.lib.Objs$Property<java.lang.String> name
+fld public net.java.html.lib.Objs$Property<java.lang.String> status
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.BeforeUnloadEvent,?>> onbeforeunload
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DeviceMotionEvent,?>> ondevicemotion
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DeviceOrientationEvent,?>> ondeviceorientation
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DragEvent,?>> ondrag
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DragEvent,?>> ondragend
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DragEvent,?>> ondragenter
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DragEvent,?>> ondragleave
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DragEvent,?>> ondragover
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DragEvent,?>> ondragstart
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.DragEvent,?>> ondrop
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onabort
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onafterprint
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onbeforeprint
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> oncanplay
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> oncanplaythrough
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onchange
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> oncompassneedscalibration
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> ondurationchange
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onemptied
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onended
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> oninput
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onload
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onloadeddata
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onloadedmetadata
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onloadstart
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onoffline
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> ononline
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onorientationchange
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onpause
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onplay
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onplaying
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onratechange
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onreset
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onseeked
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onseeking
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onstalled
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onsubmit
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onsuspend
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> ontimeupdate
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onunload
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onvolumechange
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Event,?>> onwaiting
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.FocusEvent,?>> onblur
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.FocusEvent,?>> onfocus
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.HashChangeEvent,?>> onhashchange
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.KeyboardEvent,?>> onkeydown
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.KeyboardEvent,?>> onkeypress
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.KeyboardEvent,?>> onkeyup
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSGestureEvent,?>> onmsgesturechange
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSGestureEvent,?>> onmsgesturedoubletap
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSGestureEvent,?>> onmsgestureend
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSGestureEvent,?>> onmsgesturehold
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSGestureEvent,?>> onmsgesturestart
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSGestureEvent,?>> onmsgesturetap
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSGestureEvent,?>> onmsinertiastart
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSPointerEvent,?>> onmspointercancel
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSPointerEvent,?>> onmspointerdown
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSPointerEvent,?>> onmspointerenter
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSPointerEvent,?>> onmspointerleave
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSPointerEvent,?>> onmspointermove
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSPointerEvent,?>> onmspointerout
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSPointerEvent,?>> onmspointerover
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MSPointerEvent,?>> onmspointerup
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MessageEvent,?>> onmessage
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> onclick
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> ondblclick
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> onmousedown
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> onmouseenter
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> onmouseleave
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> onmousemove
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> onmouseout
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> onmouseover
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,?>> onmouseup
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseWheelEvent,?>> onmousewheel
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.PageTransitionEvent,?>> onpagehide
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.PageTransitionEvent,?>> onpageshow
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.PointerEvent,?>> oncontextmenu
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.PopStateEvent,?>> onpopstate
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.ProgressEvent,?>> onprogress
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.ProgressEvent,?>> onreadystatechange
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.StorageEvent,?>> onstorage
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.UIEvent,?>> onresize
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.UIEvent,?>> onscroll
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.UIEvent,?>> onselect
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A2<java.lang.String,java.lang.Boolean>> offscreenBuffering
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A2<java.lang.String,java.lang.Number>> orientation
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.ApplicationCache> applicationCache
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.BarProp> locationbar
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.BarProp> menubar
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.BarProp> personalbar
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.BarProp> scrollbars
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.BarProp> statusbar
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.BarProp> toolbar
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Crypto> crypto
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Document> document
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Element> frameElement
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.ErrorEventHandler> onerror
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Event> event
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.External> external
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.History> history
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Location> location
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Navigator> clientInformation
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Navigator> navigator
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Performance> performance
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Screen> screen
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.StyleMedia> styleMedia
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Window> frames
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Window> opener
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Window> parent
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Window> self
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Window> top
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Window> window
 meth public double msRequestAnimationFrame(net.java.html.lib.dom.FrameRequestCallback)
 meth public double requestAnimationFrame(net.java.html.lib.dom.FrameRequestCallback)
 meth public java.lang.Boolean closed()
@@ -1807,8 +1923,10 @@ meth public net.java.html.lib.dom.Window self()
 meth public net.java.html.lib.dom.Window top()
 meth public net.java.html.lib.dom.Window window()
 meth public static net.java.html.lib.dom.Window $as(java.lang.Object)
-meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListenerOrEventListenerObject)
-meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListenerOrEventListenerObject,java.lang.Boolean)
+meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListener)
+meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListener,java.lang.Boolean)
+meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListenerObject)
+meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListenerObject,java.lang.Boolean)
 meth public void addEventListener(java.lang.Void,net.java.html.lib.Function$A1<? super net.java.html.lib.dom.WheelEvent,?>)
 meth public void addEventListener(java.lang.Void,net.java.html.lib.Function$A1<? super net.java.html.lib.dom.WheelEvent,?>,java.lang.Boolean)
 meth public void alert()
@@ -1851,16 +1969,17 @@ meth public void scrollTo()
 meth public void scrollTo(double)
 meth public void scrollTo(double,double)
 supr net.java.html.lib.dom.EventTarget
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQuery
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQuery> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Number> length
-fld public net.java.html.lib.Function$A0<java.lang.String> jquery
-fld public net.java.html.lib.Function$A0<java.lang.String> selector
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Element> context
-meth public !varargs java.lang.Object triggerHandler(java.lang.String,java.lang.Object[])
-meth public !varargs java.lang.Object triggerHandler(net.java.html.lib.jquery.JQueryEventObject,java.lang.Object[])
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Number> length
+fld public net.java.html.lib.Objs$Property<java.lang.String> jquery
+fld public net.java.html.lib.Objs$Property<java.lang.String> selector
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Element> context
+meth public !varargs net.java.html.lib.Objs triggerHandler(java.lang.String,java.lang.Object[])
+meth public !varargs net.java.html.lib.Objs triggerHandler(net.java.html.lib.jquery.JQueryEventObject,java.lang.Object[])
 meth public !varargs net.java.html.lib.jquery.JQuery add(net.java.html.lib.dom.Element[])
 meth public !varargs net.java.html.lib.jquery.JQuery after(java.lang.Object[],java.lang.Object[])
 meth public !varargs net.java.html.lib.jquery.JQuery after(java.lang.String,java.lang.Object[])
@@ -1938,25 +2057,25 @@ meth public net.java.html.lib.jquery.JQuery ajaxSend(net.java.html.lib.Function$
 meth public net.java.html.lib.jquery.JQuery ajaxStart(net.java.html.lib.Function$A0<?>)
 meth public net.java.html.lib.jquery.JQuery ajaxStop(net.java.html.lib.Function$A0<?>)
 meth public net.java.html.lib.jquery.JQuery ajaxSuccess(net.java.html.lib.Function$A3<? super net.java.html.lib.jquery.JQueryEventObject,? super net.java.html.lib.dom.XMLHttpRequest,? super net.java.html.lib.jquery.JQueryAjaxSettings,?>)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,double)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,double,java.lang.String)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,double,java.lang.String,net.java.html.lib.Function)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,double,net.java.html.lib.Function)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,java.lang.String)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,java.lang.String,java.lang.String)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,java.lang.String,java.lang.String,net.java.html.lib.Function)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,java.lang.String,net.java.html.lib.Function)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,net.java.html.lib.jquery.JQueryAnimationOptions)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,double)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,double,java.lang.String)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,double,java.lang.String,net.java.html.lib.Function)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,double,net.java.html.lib.Function)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,java.lang.String)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,java.lang.String,java.lang.String)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,java.lang.String,java.lang.String,net.java.html.lib.Function)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,java.lang.String,net.java.html.lib.Function)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,net.java.html.lib.jquery.JQueryAnimationOptions)
 meth public net.java.html.lib.jquery.JQuery append(net.java.html.lib.Function$A2<? super java.lang.Number,? super java.lang.String,? extends net.java.html.lib.Union$A3<java.lang.String,net.java.html.lib.dom.Element,net.java.html.lib.jquery.JQuery>>)
 meth public net.java.html.lib.jquery.JQuery appendTo(java.lang.Object[])
 meth public net.java.html.lib.jquery.JQuery appendTo(java.lang.String)
 meth public net.java.html.lib.jquery.JQuery appendTo(net.java.html.lib.dom.Element)
 meth public net.java.html.lib.jquery.JQuery appendTo(net.java.html.lib.jquery.JQuery)
-meth public net.java.html.lib.jquery.JQuery attr(java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery attr(java.lang.String,double)
 meth public net.java.html.lib.jquery.JQuery attr(java.lang.String,java.lang.String)
 meth public net.java.html.lib.jquery.JQuery attr(java.lang.String,net.java.html.lib.Function$A2<? super java.lang.Number,? super java.lang.String,? extends net.java.html.lib.Union$A2<java.lang.String,java.lang.Number>>)
+meth public net.java.html.lib.jquery.JQuery attr(net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery before(net.java.html.lib.Function$A2<? super java.lang.Number,? super java.lang.String,? extends net.java.html.lib.Union$A3<java.lang.String,net.java.html.lib.dom.Element,net.java.html.lib.jquery.JQuery>>)
 meth public net.java.html.lib.jquery.JQuery bind(java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery bind(java.lang.String,java.lang.Boolean)
@@ -1987,10 +2106,10 @@ meth public net.java.html.lib.jquery.JQuery closest(java.lang.String,net.java.ht
 meth public net.java.html.lib.jquery.JQuery closest(net.java.html.lib.dom.Element)
 meth public net.java.html.lib.jquery.JQuery closest(net.java.html.lib.jquery.JQuery)
 meth public net.java.html.lib.jquery.JQuery contents()
-meth public net.java.html.lib.jquery.JQuery css(java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery css(java.lang.String,double)
 meth public net.java.html.lib.jquery.JQuery css(java.lang.String,java.lang.String)
 meth public net.java.html.lib.jquery.JQuery css(java.lang.String,net.java.html.lib.Function$A2<? super java.lang.Number,? super java.lang.String,? extends net.java.html.lib.Union$A2<java.lang.String,java.lang.Number>>)
+meth public net.java.html.lib.jquery.JQuery css(net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery data(java.lang.String,java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery data(net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery dblclick()
@@ -2064,11 +2183,11 @@ meth public net.java.html.lib.jquery.JQuery focus(java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery focus(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery focus(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery focusin()
-meth public net.java.html.lib.jquery.JQuery focusin(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery focusin(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery focusin(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery focusout()
-meth public net.java.html.lib.jquery.JQuery focusout(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery focusout(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery focusout(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery has(java.lang.String)
 meth public net.java.html.lib.jquery.JQuery has(net.java.html.lib.dom.Element)
 meth public net.java.html.lib.jquery.JQuery height(double)
@@ -2119,33 +2238,33 @@ meth public net.java.html.lib.jquery.JQuery load()
 meth public net.java.html.lib.jquery.JQuery load(java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery load(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery load(java.lang.String)
-meth public net.java.html.lib.jquery.JQuery load(java.lang.String,java.lang.Object)
-meth public net.java.html.lib.jquery.JQuery load(java.lang.String,java.lang.Object,net.java.html.lib.Function$A3<? super java.lang.String,? super java.lang.String,? super net.java.html.lib.dom.XMLHttpRequest,?>)
 meth public net.java.html.lib.jquery.JQuery load(java.lang.String,java.lang.String)
 meth public net.java.html.lib.jquery.JQuery load(java.lang.String,java.lang.String,net.java.html.lib.Function$A3<? super java.lang.String,? super java.lang.String,? super net.java.html.lib.dom.XMLHttpRequest,?>)
+meth public net.java.html.lib.jquery.JQuery load(java.lang.String,net.java.html.lib.Objs)
+meth public net.java.html.lib.jquery.JQuery load(java.lang.String,net.java.html.lib.Objs,net.java.html.lib.Function$A3<? super java.lang.String,? super java.lang.String,? super net.java.html.lib.dom.XMLHttpRequest,?>)
 meth public net.java.html.lib.jquery.JQuery load(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery map(net.java.html.lib.Function$A2<? super java.lang.Number,? super net.java.html.lib.dom.Element,?>)
 meth public net.java.html.lib.jquery.JQuery mousedown()
-meth public net.java.html.lib.jquery.JQuery mousedown(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mousedown(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery mousedown(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseenter()
-meth public net.java.html.lib.jquery.JQuery mouseenter(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseenter(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery mouseenter(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseleave()
-meth public net.java.html.lib.jquery.JQuery mouseleave(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseleave(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery mouseleave(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mousemove()
-meth public net.java.html.lib.jquery.JQuery mousemove(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mousemove(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery mousemove(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseout()
-meth public net.java.html.lib.jquery.JQuery mouseout(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseout(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery mouseout(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseover()
-meth public net.java.html.lib.jquery.JQuery mouseover(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseover(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery mouseover(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseup()
-meth public net.java.html.lib.jquery.JQuery mouseup(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseup(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery mouseup(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery next()
 meth public net.java.html.lib.jquery.JQuery next(java.lang.String)
 meth public net.java.html.lib.jquery.JQuery nextAll()
@@ -2181,10 +2300,10 @@ meth public net.java.html.lib.jquery.JQuery on(net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery on(net.java.html.lib.Objs,java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery on(net.java.html.lib.Objs,java.lang.String)
 meth public net.java.html.lib.jquery.JQuery on(net.java.html.lib.Objs,java.lang.String,java.lang.Object)
-meth public net.java.html.lib.jquery.JQuery one(java.lang.String,java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery one(java.lang.String,java.lang.String,java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery one(java.lang.String,java.lang.String,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery one(java.lang.String,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery one(java.lang.String,net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery one(net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery one(net.java.html.lib.Objs,java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery one(net.java.html.lib.Objs,java.lang.String)
@@ -2220,11 +2339,11 @@ meth public net.java.html.lib.jquery.JQuery prevUntil(net.java.html.lib.dom.Elem
 meth public net.java.html.lib.jquery.JQuery prevUntil(net.java.html.lib.dom.Element,java.lang.String)
 meth public net.java.html.lib.jquery.JQuery prevUntil(net.java.html.lib.jquery.JQuery)
 meth public net.java.html.lib.jquery.JQuery prevUntil(net.java.html.lib.jquery.JQuery,java.lang.String)
-meth public net.java.html.lib.jquery.JQuery prop(java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery prop(java.lang.String,double)
 meth public net.java.html.lib.jquery.JQuery prop(java.lang.String,java.lang.Boolean)
 meth public net.java.html.lib.jquery.JQuery prop(java.lang.String,java.lang.String)
 meth public net.java.html.lib.jquery.JQuery prop(java.lang.String,net.java.html.lib.Function$A2<? super java.lang.Number,? super java.lang.Object,?>)
+meth public net.java.html.lib.jquery.JQuery prop(net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery pushStack(java.lang.Object[])
 meth public net.java.html.lib.jquery.JQuery pushStack(java.lang.Object[],java.lang.String,java.lang.Object[])
 meth public net.java.html.lib.jquery.JQuery queue(java.lang.String,net.java.html.lib.Function)
@@ -2253,16 +2372,16 @@ meth public net.java.html.lib.jquery.JQuery replaceWith(net.java.html.lib.dom.El
 meth public net.java.html.lib.jquery.JQuery replaceWith(net.java.html.lib.dom.Text)
 meth public net.java.html.lib.jquery.JQuery replaceWith(net.java.html.lib.jquery.JQuery)
 meth public net.java.html.lib.jquery.JQuery resize()
-meth public net.java.html.lib.jquery.JQuery resize(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery resize(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery resize(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery scroll()
-meth public net.java.html.lib.jquery.JQuery scroll(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery scroll(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery scroll(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery scrollLeft(double)
 meth public net.java.html.lib.jquery.JQuery scrollTop(double)
 meth public net.java.html.lib.jquery.JQuery select()
-meth public net.java.html.lib.jquery.JQuery select(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery select(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery select(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery show()
 meth public net.java.html.lib.jquery.JQuery show(double)
 meth public net.java.html.lib.jquery.JQuery show(double,java.lang.String)
@@ -2339,11 +2458,11 @@ meth public net.java.html.lib.jquery.JQuery toggleClass(java.lang.String,java.la
 meth public net.java.html.lib.jquery.JQuery toggleClass(net.java.html.lib.Function$A3<? super java.lang.Number,? super java.lang.String,? super java.lang.Boolean,? extends java.lang.String>)
 meth public net.java.html.lib.jquery.JQuery toggleClass(net.java.html.lib.Function$A3<? super java.lang.Number,? super java.lang.String,? super java.lang.Boolean,? extends java.lang.String>,java.lang.Boolean)
 meth public net.java.html.lib.jquery.JQuery trigger(java.lang.String)
-meth public net.java.html.lib.jquery.JQuery trigger(java.lang.String,java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery trigger(java.lang.String,java.lang.Object[])
+meth public net.java.html.lib.jquery.JQuery trigger(java.lang.String,net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery trigger(net.java.html.lib.jquery.JQueryEventObject)
-meth public net.java.html.lib.jquery.JQuery trigger(net.java.html.lib.jquery.JQueryEventObject,java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery trigger(net.java.html.lib.jquery.JQueryEventObject,java.lang.Object[])
+meth public net.java.html.lib.jquery.JQuery trigger(net.java.html.lib.jquery.JQueryEventObject,net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery unbind()
 meth public net.java.html.lib.jquery.JQuery unbind(java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery unbind(java.lang.String)
@@ -2351,9 +2470,9 @@ meth public net.java.html.lib.jquery.JQuery unbind(java.lang.String,java.lang.Bo
 meth public net.java.html.lib.jquery.JQuery unbind(java.lang.String,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery undelegate()
 meth public net.java.html.lib.jquery.JQuery undelegate(java.lang.String)
-meth public net.java.html.lib.jquery.JQuery undelegate(java.lang.String,java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery undelegate(java.lang.String,java.lang.String)
 meth public net.java.html.lib.jquery.JQuery undelegate(java.lang.String,java.lang.String,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery undelegate(java.lang.String,net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery unload()
 meth public net.java.html.lib.jquery.JQuery unload(java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery unload(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
@@ -2382,28 +2501,29 @@ meth public net.java.html.lib.jquery.JQueryCoordinates offset()
 meth public net.java.html.lib.jquery.JQueryCoordinates position()
 meth public net.java.html.lib.jquery.JQueryPromise<java.lang.Object> promise()
 meth public net.java.html.lib.jquery.JQueryPromise<java.lang.Object> promise(java.lang.String)
-meth public net.java.html.lib.jquery.JQueryPromise<java.lang.Object> promise(java.lang.String,java.lang.Object)
+meth public net.java.html.lib.jquery.JQueryPromise<java.lang.Object> promise(java.lang.String,net.java.html.lib.Objs)
 meth public static net.java.html.lib.jquery.JQuery $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryStatic
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryStatic> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> isReady
-fld public net.java.html.lib.Function$A0<java.lang.Object> cssNumber
-fld public net.java.html.lib.Function$A0<java.lang.Object> expr
-fld public net.java.html.lib.Function$A0<java.lang.Object> fn
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Objs> cssHooks
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Objs> fx
-fld public net.java.html.lib.Function$A0<net.java.html.lib.jquery.JQueryAjaxSettings> ajaxSettings
-fld public net.java.html.lib.Function$A0<net.java.html.lib.jquery.JQueryEasingFunctions> easing
-fld public net.java.html.lib.Function$A0<net.java.html.lib.jquery.JQueryEventConstructor> Event
-fld public net.java.html.lib.Function$A0<net.java.html.lib.jquery.JQueryParam> param
-fld public net.java.html.lib.Function$A0<net.java.html.lib.jquery.JQuerySupport> support
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> isReady
+fld public net.java.html.lib.Objs$Property<java.lang.Object> cssNumber
+fld public net.java.html.lib.Objs$Property<java.lang.Object> expr
+fld public net.java.html.lib.Objs$Property<java.lang.Object> fn
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Objs> cssHooks
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Objs> fx
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.jquery.JQueryAjaxSettings> ajaxSettings
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.jquery.JQueryEasingFunctions> easing
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.jquery.JQueryEventConstructor> Event
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.jquery.JQueryParam> param
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.jquery.JQuerySupport> support
 meth public !varargs java.lang.Object extend(java.lang.Boolean,java.lang.Object,java.lang.Object,java.lang.Object[])
 meth public !varargs java.lang.Object extend(java.lang.Object,java.lang.Object,java.lang.Object[])
-meth public !varargs java.lang.Object proxy(java.lang.Object,java.lang.String,java.lang.Object[])
-meth public !varargs java.lang.Object proxy(net.java.html.lib.Function$A1<? super net.java.html.lib.Array<java.lang.Object>,?>,java.lang.Object,java.lang.Object[])
+meth public !varargs java.lang.Object proxy(net.java.html.lib.Function$A1<? super net.java.html.lib.Array<java.lang.Object>,?>,net.java.html.lib.Objs,java.lang.Object[])
+meth public !varargs java.lang.Object proxy(net.java.html.lib.Objs,java.lang.String,java.lang.Object[])
 meth public <%0 extends java.lang.Object, %1 extends java.lang.Object> net.java.html.lib.Array<{%%1}> map({%%0}[],net.java.html.lib.Function$A2<? super {%%0},? super java.lang.Number,? extends {%%1}>)
 meth public <%0 extends java.lang.Object> double inArray({%%0},{%%0}[])
 meth public <%0 extends java.lang.Object> double inArray({%%0},{%%0}[],double)
@@ -2451,7 +2571,7 @@ meth public net.java.html.lib.Array<net.java.html.lib.dom.Element> unique(net.ja
 meth public net.java.html.lib.dom.XMLDocument parseXML(java.lang.String)
 meth public net.java.html.lib.jquery.JQuery $apply()
 meth public net.java.html.lib.jquery.JQuery $apply(java.lang.String)
-meth public net.java.html.lib.jquery.JQuery $apply(java.lang.String,java.lang.Object)
+meth public net.java.html.lib.jquery.JQuery $apply(java.lang.String,net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery $apply(java.lang.String,net.java.html.lib.dom.Document)
 meth public net.java.html.lib.jquery.JQuery $apply(java.lang.String,net.java.html.lib.dom.Element)
 meth public net.java.html.lib.jquery.JQuery $apply(java.lang.String,net.java.html.lib.jquery.JQuery)
@@ -2478,31 +2598,31 @@ meth public net.java.html.lib.jquery.JQueryXHR ajax(java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR ajax(java.lang.String,net.java.html.lib.jquery.JQueryAjaxSettings)
 meth public net.java.html.lib.jquery.JQueryXHR ajax(net.java.html.lib.jquery.JQueryAjaxSettings)
 meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String)
-meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,java.lang.Object)
-meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,java.lang.Object,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
-meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,java.lang.Object,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>,java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>,java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>,java.lang.String)
+meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,net.java.html.lib.Objs)
+meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,net.java.html.lib.Objs,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
+meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,net.java.html.lib.Objs,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>,java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR getJSON(java.lang.String)
-meth public net.java.html.lib.jquery.JQueryXHR getJSON(java.lang.String,java.lang.Object)
-meth public net.java.html.lib.jquery.JQueryXHR getJSON(java.lang.String,java.lang.Object,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public net.java.html.lib.jquery.JQueryXHR getJSON(java.lang.String,java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR getJSON(java.lang.String,java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public net.java.html.lib.jquery.JQueryXHR getJSON(java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
+meth public net.java.html.lib.jquery.JQueryXHR getJSON(java.lang.String,net.java.html.lib.Objs)
+meth public net.java.html.lib.jquery.JQueryXHR getJSON(java.lang.String,net.java.html.lib.Objs,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public net.java.html.lib.jquery.JQueryXHR getScript(java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR getScript(java.lang.String,net.java.html.lib.Function$A3<? super java.lang.String,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String)
-meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,java.lang.Object)
-meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,java.lang.Object,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
-meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,java.lang.Object,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>,java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>,java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>,java.lang.String)
+meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,net.java.html.lib.Objs)
+meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,net.java.html.lib.Objs,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
+meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,net.java.html.lib.Objs,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>,java.lang.String)
 meth public static net.java.html.lib.jquery.JQueryStatic $as(java.lang.Object)
 meth public void ajaxPrefilter(java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super net.java.html.lib.jquery.JQueryAjaxSettings,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public void ajaxPrefilter(net.java.html.lib.Function$A3<? super java.lang.Object,? super net.java.html.lib.jquery.JQueryAjaxSettings,? super net.java.html.lib.jquery.JQueryXHR,?>)
@@ -2511,4 +2631,6 @@ meth public void dequeue(net.java.html.lib.dom.Element)
 meth public void dequeue(net.java.html.lib.dom.Element,java.lang.String)
 meth public void holdReady(java.lang.Boolean)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 

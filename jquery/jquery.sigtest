@@ -16,11 +16,13 @@ meth public int hashCode()
 meth public java.lang.String toString()
 
 CLSS public net.java.html.lib.Objs
-cons protected init(java.lang.Class<?>,java.lang.Object)
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 cons public init()
 cons public init(java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.Objs> $AS
 fld public static java.lang.Object prototype
+innr protected abstract static Constructor
+innr public final static Property
+meth public <%0 extends net.java.html.lib.Objs> {%%0} $cast(java.lang.Class<{%%0}>)
 meth public java.lang.Boolean hasOwnProperty(java.lang.String)
 meth public java.lang.Boolean isPrototypeOf(java.lang.Object)
 meth public java.lang.Boolean propertyIsEnumerable(java.lang.String)
@@ -28,6 +30,7 @@ meth public java.lang.Object $get(java.lang.String)
 meth public java.lang.Object valueOf()
 meth public java.lang.String toLocaleString()
 meth public java.lang.String toString()
+meth public static <%0 extends java.lang.Object> {%%0} $as(java.lang.Class<{%%0}>,java.lang.Object)
 meth public static <%0 extends java.lang.Object> {%%0} freeze({%%0})
 meth public static <%0 extends java.lang.Object> {%%0} preventExtensions({%%0})
 meth public static <%0 extends java.lang.Object> {%%0} seal({%%0})
@@ -35,7 +38,6 @@ meth public static java.lang.Boolean isExtensible(java.lang.Object)
 meth public static java.lang.Boolean isFrozen(java.lang.Object)
 meth public static java.lang.Boolean isSealed(java.lang.Object)
 meth public static java.lang.Object $js(java.lang.Object)
-meth public static java.lang.Object $lazy(java.lang.Object,java.lang.String)
 meth public static java.lang.Object create(java.lang.Object)
 meth public static java.lang.Object create(java.lang.Object,net.java.html.lib.PropertyDescriptorMap)
 meth public static java.lang.Object defineProperties(java.lang.Object,net.java.html.lib.PropertyDescriptorMap)
@@ -50,26 +52,25 @@ meth public static net.java.html.lib.PropertyDescriptor getOwnPropertyDescriptor
 meth public void $delete(java.lang.String)
 meth public void $set(java.lang.String,java.lang.Object)
 supr java.lang.Object
-hfds $$fn$$deleteRaw_3,$$fn$$getRaw_1,$$fn$$setRaw_2,js
+hfds $$fn$$deleteRaw_3,$$fn$$getRaw_1,$$fn$$setRaw_2,$AS,js
 
 CLSS public net.java.html.lib.dom.Event
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.dom.Event> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> bubbles
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> cancelBubble
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> cancelable
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> defaultPrevented
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> isTrusted
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> returnValue
-fld public net.java.html.lib.Function$A0<java.lang.Number> AT_TARGET
-fld public net.java.html.lib.Function$A0<java.lang.Number> BUBBLING_PHASE
-fld public net.java.html.lib.Function$A0<java.lang.Number> CAPTURING_PHASE
-fld public net.java.html.lib.Function$A0<java.lang.Number> eventPhase
-fld public net.java.html.lib.Function$A0<java.lang.Number> timeStamp
-fld public net.java.html.lib.Function$A0<java.lang.String> type
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Element> srcElement
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.EventTarget> currentTarget
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.EventTarget> target
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> bubbles
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> cancelBubble
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> cancelable
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> defaultPrevented
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> isTrusted
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> returnValue
+fld public net.java.html.lib.Objs$Property<java.lang.Number> AT_TARGET
+fld public net.java.html.lib.Objs$Property<java.lang.Number> BUBBLING_PHASE
+fld public net.java.html.lib.Objs$Property<java.lang.Number> CAPTURING_PHASE
+fld public net.java.html.lib.Objs$Property<java.lang.Number> eventPhase
+fld public net.java.html.lib.Objs$Property<java.lang.Number> timeStamp
+fld public net.java.html.lib.Objs$Property<java.lang.String> type
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Element> srcElement
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.EventTarget> currentTarget
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.EventTarget> target
 meth public java.lang.Boolean bubbles()
 meth public java.lang.Boolean cancelBubble()
 meth public java.lang.Boolean cancelable()
@@ -91,39 +92,45 @@ meth public void preventDefault()
 meth public void stopImmediatePropagation()
 meth public void stopPropagation()
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.dom.EventTarget
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.dom.EventTarget> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.Boolean dispatchEvent(net.java.html.lib.dom.Event)
 meth public static net.java.html.lib.dom.EventTarget $as(java.lang.Object)
-meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListenerOrEventListenerObject)
-meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListenerOrEventListenerObject,java.lang.Boolean)
-meth public void removeEventListener(java.lang.String,net.java.html.lib.dom.EventListenerOrEventListenerObject)
-meth public void removeEventListener(java.lang.String,net.java.html.lib.dom.EventListenerOrEventListenerObject,java.lang.Boolean)
+meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListener)
+meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListener,java.lang.Boolean)
+meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListenerObject)
+meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListenerObject,java.lang.Boolean)
+meth public void removeEventListener(java.lang.String,net.java.html.lib.dom.EventListener)
+meth public void removeEventListener(java.lang.String,net.java.html.lib.dom.EventListener,java.lang.Boolean)
+meth public void removeEventListener(java.lang.String,net.java.html.lib.dom.EventListenerObject)
+meth public void removeEventListener(java.lang.String,net.java.html.lib.dom.EventListenerObject,java.lang.Boolean)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.dom.XMLHttpRequest
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.dom.XMLHttpRequest> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> withCredentials
-fld public net.java.html.lib.Function$A0<java.lang.Number> DONE
-fld public net.java.html.lib.Function$A0<java.lang.Number> HEADERS_RECEIVED
-fld public net.java.html.lib.Function$A0<java.lang.Number> LOADING
-fld public net.java.html.lib.Function$A0<java.lang.Number> OPENED
-fld public net.java.html.lib.Function$A0<java.lang.Number> UNSENT
-fld public net.java.html.lib.Function$A0<java.lang.Number> readyState
-fld public net.java.html.lib.Function$A0<java.lang.Number> status
-fld public net.java.html.lib.Function$A0<java.lang.Number> timeout
-fld public net.java.html.lib.Function$A0<java.lang.Object> response
-fld public net.java.html.lib.Function$A0<java.lang.Object> responseBody
-fld public net.java.html.lib.Function$A0<java.lang.Object> responseXML
-fld public net.java.html.lib.Function$A0<java.lang.String> msCaching
-fld public net.java.html.lib.Function$A0<java.lang.String> responseText
-fld public net.java.html.lib.Function$A0<java.lang.String> responseType
-fld public net.java.html.lib.Function$A0<java.lang.String> statusText
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.ProgressEvent,?>> onreadystatechange
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.XMLHttpRequestUpload> upload
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> withCredentials
+fld public net.java.html.lib.Objs$Property<java.lang.Number> DONE
+fld public net.java.html.lib.Objs$Property<java.lang.Number> HEADERS_RECEIVED
+fld public net.java.html.lib.Objs$Property<java.lang.Number> LOADING
+fld public net.java.html.lib.Objs$Property<java.lang.Number> OPENED
+fld public net.java.html.lib.Objs$Property<java.lang.Number> UNSENT
+fld public net.java.html.lib.Objs$Property<java.lang.Number> readyState
+fld public net.java.html.lib.Objs$Property<java.lang.Number> status
+fld public net.java.html.lib.Objs$Property<java.lang.Number> timeout
+fld public net.java.html.lib.Objs$Property<java.lang.Object> response
+fld public net.java.html.lib.Objs$Property<java.lang.Object> responseBody
+fld public net.java.html.lib.Objs$Property<java.lang.Object> responseXML
+fld public net.java.html.lib.Objs$Property<java.lang.String> msCaching
+fld public net.java.html.lib.Objs$Property<java.lang.String> responseText
+fld public net.java.html.lib.Objs$Property<java.lang.String> responseType
+fld public net.java.html.lib.Objs$Property<java.lang.String> statusText
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.dom.ProgressEvent,?>> onreadystatechange
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.XMLHttpRequestUpload> upload
 meth public java.lang.Boolean msCachingEnabled()
 meth public java.lang.Boolean withCredentials()
 meth public java.lang.Number DONE()
@@ -144,8 +151,10 @@ meth public net.java.html.lib.Function$A1<? super net.java.html.lib.dom.Progress
 meth public net.java.html.lib.dom.XMLHttpRequestUpload upload()
 meth public static net.java.html.lib.dom.XMLHttpRequest $as(java.lang.Object)
 meth public void abort()
-meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListenerOrEventListenerObject)
-meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListenerOrEventListenerObject,java.lang.Boolean)
+meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListener)
+meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListener,java.lang.Boolean)
+meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListenerObject)
+meth public void addEventListener(java.lang.String,net.java.html.lib.dom.EventListenerObject,java.lang.Boolean)
 meth public void addEventListener(java.lang.Void,net.java.html.lib.Function$A1<? super net.java.html.lib.dom.ProgressEvent,?>)
 meth public void addEventListener(java.lang.Void,net.java.html.lib.Function$A1<? super net.java.html.lib.dom.ProgressEvent,?>,java.lang.Boolean)
 meth public void open(java.lang.String,java.lang.String)
@@ -159,6 +168,8 @@ meth public void send(java.lang.String)
 meth public void send(net.java.html.lib.dom.Document)
 meth public void setRequestHeader(java.lang.String,java.lang.String)
 supr net.java.html.lib.dom.EventTarget
+hfds $AS
+hcls $Constructor
 
 CLSS public final net.java.html.lib.jquery.$JsCallbacks$
 meth public java.lang.Object net_java_html_lib_Function$$call$Ljava_lang_Object_2_3Ljava_lang_Object_2(java.lang.Object,java.lang.Object) throws java.lang.Throwable
@@ -166,19 +177,18 @@ supr java.lang.Object
 hfds VM,last,p
 
 CLSS public net.java.html.lib.jquery.BaseJQueryEventObject
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.BaseJQueryEventObject> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> metaKey
-fld public net.java.html.lib.Function$A0<java.lang.Number> pageX
-fld public net.java.html.lib.Function$A0<java.lang.Number> pageY
-fld public net.java.html.lib.Function$A0<java.lang.Number> which
-fld public net.java.html.lib.Function$A0<java.lang.Object> data
-fld public net.java.html.lib.Function$A0<java.lang.Object> result
-fld public net.java.html.lib.Function$A0<java.lang.String> namespace
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Element> delegateTarget
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Element> relatedTarget
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Element> target
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Event> originalEvent
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> metaKey
+fld public net.java.html.lib.Objs$Property<java.lang.Number> pageX
+fld public net.java.html.lib.Objs$Property<java.lang.Number> pageY
+fld public net.java.html.lib.Objs$Property<java.lang.Number> which
+fld public net.java.html.lib.Objs$Property<java.lang.Object> data
+fld public net.java.html.lib.Objs$Property<java.lang.Object> result
+fld public net.java.html.lib.Objs$Property<java.lang.String> namespace
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Element> delegateTarget
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Element> relatedTarget
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Element> target
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Event> originalEvent
 meth public java.lang.Boolean isDefaultPrevented()
 meth public java.lang.Boolean isImmediatePropagationStopped()
 meth public java.lang.Boolean isPropagationStopped()
@@ -196,13 +206,15 @@ meth public void preventDefault()
 meth public void stopImmediatePropagation()
 meth public void stopPropagation()
 supr net.java.html.lib.dom.Event
+hfds $AS
+hcls $Constructor
 
 CLSS public final net.java.html.lib.jquery.Exports
 fld public static net.java.html.lib.jquery.JQueryStatic $
 fld public static net.java.html.lib.jquery.JQueryStatic jQuery
 meth public static net.java.html.lib.jquery.JQuery $()
 meth public static net.java.html.lib.jquery.JQuery $(java.lang.String)
-meth public static net.java.html.lib.jquery.JQuery $(java.lang.String,java.lang.Object)
+meth public static net.java.html.lib.jquery.JQuery $(java.lang.String,net.java.html.lib.Objs)
 meth public static net.java.html.lib.jquery.JQuery $(java.lang.String,net.java.html.lib.dom.Document)
 meth public static net.java.html.lib.jquery.JQuery $(java.lang.String,net.java.html.lib.dom.Element)
 meth public static net.java.html.lib.jquery.JQuery $(java.lang.String,net.java.html.lib.jquery.JQuery)
@@ -213,7 +225,7 @@ meth public static net.java.html.lib.jquery.JQuery $(net.java.html.lib.dom.Eleme
 meth public static net.java.html.lib.jquery.JQuery $(net.java.html.lib.jquery.JQuery)
 meth public static net.java.html.lib.jquery.JQuery jQuery()
 meth public static net.java.html.lib.jquery.JQuery jQuery(java.lang.String)
-meth public static net.java.html.lib.jquery.JQuery jQuery(java.lang.String,java.lang.Object)
+meth public static net.java.html.lib.jquery.JQuery jQuery(java.lang.String,net.java.html.lib.Objs)
 meth public static net.java.html.lib.jquery.JQuery jQuery(java.lang.String,net.java.html.lib.dom.Document)
 meth public static net.java.html.lib.jquery.JQuery jQuery(java.lang.String,net.java.html.lib.dom.Element)
 meth public static net.java.html.lib.jquery.JQuery jQuery(java.lang.String,net.java.html.lib.jquery.JQuery)
@@ -225,14 +237,13 @@ meth public static net.java.html.lib.jquery.JQuery jQuery(net.java.html.lib.jque
 supr net.java.html.lib.Objs
 
 CLSS public net.java.html.lib.jquery.JQuery
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQuery> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Number> length
-fld public net.java.html.lib.Function$A0<java.lang.String> jquery
-fld public net.java.html.lib.Function$A0<java.lang.String> selector
-fld public net.java.html.lib.Function$A0<net.java.html.lib.dom.Element> context
-meth public !varargs java.lang.Object triggerHandler(java.lang.String,java.lang.Object[])
-meth public !varargs java.lang.Object triggerHandler(net.java.html.lib.jquery.JQueryEventObject,java.lang.Object[])
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Number> length
+fld public net.java.html.lib.Objs$Property<java.lang.String> jquery
+fld public net.java.html.lib.Objs$Property<java.lang.String> selector
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Element> context
+meth public !varargs net.java.html.lib.Objs triggerHandler(java.lang.String,java.lang.Object[])
+meth public !varargs net.java.html.lib.Objs triggerHandler(net.java.html.lib.jquery.JQueryEventObject,java.lang.Object[])
 meth public !varargs net.java.html.lib.jquery.JQuery add(net.java.html.lib.dom.Element[])
 meth public !varargs net.java.html.lib.jquery.JQuery after(java.lang.Object[],java.lang.Object[])
 meth public !varargs net.java.html.lib.jquery.JQuery after(java.lang.String,java.lang.Object[])
@@ -310,25 +321,25 @@ meth public net.java.html.lib.jquery.JQuery ajaxSend(net.java.html.lib.Function$
 meth public net.java.html.lib.jquery.JQuery ajaxStart(net.java.html.lib.Function$A0<?>)
 meth public net.java.html.lib.jquery.JQuery ajaxStop(net.java.html.lib.Function$A0<?>)
 meth public net.java.html.lib.jquery.JQuery ajaxSuccess(net.java.html.lib.Function$A3<? super net.java.html.lib.jquery.JQueryEventObject,? super net.java.html.lib.dom.XMLHttpRequest,? super net.java.html.lib.jquery.JQueryAjaxSettings,?>)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,double)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,double,java.lang.String)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,double,java.lang.String,net.java.html.lib.Function)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,double,net.java.html.lib.Function)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,java.lang.String)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,java.lang.String,java.lang.String)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,java.lang.String,java.lang.String,net.java.html.lib.Function)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,java.lang.String,net.java.html.lib.Function)
-meth public net.java.html.lib.jquery.JQuery animate(java.lang.Object,net.java.html.lib.jquery.JQueryAnimationOptions)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,double)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,double,java.lang.String)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,double,java.lang.String,net.java.html.lib.Function)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,double,net.java.html.lib.Function)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,java.lang.String)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,java.lang.String,java.lang.String)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,java.lang.String,java.lang.String,net.java.html.lib.Function)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,java.lang.String,net.java.html.lib.Function)
+meth public net.java.html.lib.jquery.JQuery animate(net.java.html.lib.Objs,net.java.html.lib.jquery.JQueryAnimationOptions)
 meth public net.java.html.lib.jquery.JQuery append(net.java.html.lib.Function$A2<? super java.lang.Number,? super java.lang.String,? extends net.java.html.lib.Union$A3<java.lang.String,net.java.html.lib.dom.Element,net.java.html.lib.jquery.JQuery>>)
 meth public net.java.html.lib.jquery.JQuery appendTo(java.lang.Object[])
 meth public net.java.html.lib.jquery.JQuery appendTo(java.lang.String)
 meth public net.java.html.lib.jquery.JQuery appendTo(net.java.html.lib.dom.Element)
 meth public net.java.html.lib.jquery.JQuery appendTo(net.java.html.lib.jquery.JQuery)
-meth public net.java.html.lib.jquery.JQuery attr(java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery attr(java.lang.String,double)
 meth public net.java.html.lib.jquery.JQuery attr(java.lang.String,java.lang.String)
 meth public net.java.html.lib.jquery.JQuery attr(java.lang.String,net.java.html.lib.Function$A2<? super java.lang.Number,? super java.lang.String,? extends net.java.html.lib.Union$A2<java.lang.String,java.lang.Number>>)
+meth public net.java.html.lib.jquery.JQuery attr(net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery before(net.java.html.lib.Function$A2<? super java.lang.Number,? super java.lang.String,? extends net.java.html.lib.Union$A3<java.lang.String,net.java.html.lib.dom.Element,net.java.html.lib.jquery.JQuery>>)
 meth public net.java.html.lib.jquery.JQuery bind(java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery bind(java.lang.String,java.lang.Boolean)
@@ -359,10 +370,10 @@ meth public net.java.html.lib.jquery.JQuery closest(java.lang.String,net.java.ht
 meth public net.java.html.lib.jquery.JQuery closest(net.java.html.lib.dom.Element)
 meth public net.java.html.lib.jquery.JQuery closest(net.java.html.lib.jquery.JQuery)
 meth public net.java.html.lib.jquery.JQuery contents()
-meth public net.java.html.lib.jquery.JQuery css(java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery css(java.lang.String,double)
 meth public net.java.html.lib.jquery.JQuery css(java.lang.String,java.lang.String)
 meth public net.java.html.lib.jquery.JQuery css(java.lang.String,net.java.html.lib.Function$A2<? super java.lang.Number,? super java.lang.String,? extends net.java.html.lib.Union$A2<java.lang.String,java.lang.Number>>)
+meth public net.java.html.lib.jquery.JQuery css(net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery data(java.lang.String,java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery data(net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery dblclick()
@@ -436,11 +447,11 @@ meth public net.java.html.lib.jquery.JQuery focus(java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery focus(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery focus(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery focusin()
-meth public net.java.html.lib.jquery.JQuery focusin(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery focusin(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery focusin(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery focusout()
-meth public net.java.html.lib.jquery.JQuery focusout(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery focusout(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery focusout(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery has(java.lang.String)
 meth public net.java.html.lib.jquery.JQuery has(net.java.html.lib.dom.Element)
 meth public net.java.html.lib.jquery.JQuery height(double)
@@ -491,33 +502,33 @@ meth public net.java.html.lib.jquery.JQuery load()
 meth public net.java.html.lib.jquery.JQuery load(java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery load(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery load(java.lang.String)
-meth public net.java.html.lib.jquery.JQuery load(java.lang.String,java.lang.Object)
-meth public net.java.html.lib.jquery.JQuery load(java.lang.String,java.lang.Object,net.java.html.lib.Function$A3<? super java.lang.String,? super java.lang.String,? super net.java.html.lib.dom.XMLHttpRequest,?>)
 meth public net.java.html.lib.jquery.JQuery load(java.lang.String,java.lang.String)
 meth public net.java.html.lib.jquery.JQuery load(java.lang.String,java.lang.String,net.java.html.lib.Function$A3<? super java.lang.String,? super java.lang.String,? super net.java.html.lib.dom.XMLHttpRequest,?>)
+meth public net.java.html.lib.jquery.JQuery load(java.lang.String,net.java.html.lib.Objs)
+meth public net.java.html.lib.jquery.JQuery load(java.lang.String,net.java.html.lib.Objs,net.java.html.lib.Function$A3<? super java.lang.String,? super java.lang.String,? super net.java.html.lib.dom.XMLHttpRequest,?>)
 meth public net.java.html.lib.jquery.JQuery load(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery map(net.java.html.lib.Function$A2<? super java.lang.Number,? super net.java.html.lib.dom.Element,?>)
 meth public net.java.html.lib.jquery.JQuery mousedown()
-meth public net.java.html.lib.jquery.JQuery mousedown(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mousedown(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery mousedown(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseenter()
-meth public net.java.html.lib.jquery.JQuery mouseenter(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseenter(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery mouseenter(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseleave()
-meth public net.java.html.lib.jquery.JQuery mouseleave(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseleave(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery mouseleave(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mousemove()
-meth public net.java.html.lib.jquery.JQuery mousemove(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mousemove(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery mousemove(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseout()
-meth public net.java.html.lib.jquery.JQuery mouseout(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseout(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery mouseout(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseover()
-meth public net.java.html.lib.jquery.JQuery mouseover(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseover(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery mouseover(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseup()
-meth public net.java.html.lib.jquery.JQuery mouseup(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery mouseup(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery mouseup(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryMouseEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery next()
 meth public net.java.html.lib.jquery.JQuery next(java.lang.String)
 meth public net.java.html.lib.jquery.JQuery nextAll()
@@ -553,10 +564,10 @@ meth public net.java.html.lib.jquery.JQuery on(net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery on(net.java.html.lib.Objs,java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery on(net.java.html.lib.Objs,java.lang.String)
 meth public net.java.html.lib.jquery.JQuery on(net.java.html.lib.Objs,java.lang.String,java.lang.Object)
-meth public net.java.html.lib.jquery.JQuery one(java.lang.String,java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery one(java.lang.String,java.lang.String,java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery one(java.lang.String,java.lang.String,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery one(java.lang.String,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery one(java.lang.String,net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery one(net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery one(net.java.html.lib.Objs,java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery one(net.java.html.lib.Objs,java.lang.String)
@@ -592,11 +603,11 @@ meth public net.java.html.lib.jquery.JQuery prevUntil(net.java.html.lib.dom.Elem
 meth public net.java.html.lib.jquery.JQuery prevUntil(net.java.html.lib.dom.Element,java.lang.String)
 meth public net.java.html.lib.jquery.JQuery prevUntil(net.java.html.lib.jquery.JQuery)
 meth public net.java.html.lib.jquery.JQuery prevUntil(net.java.html.lib.jquery.JQuery,java.lang.String)
-meth public net.java.html.lib.jquery.JQuery prop(java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery prop(java.lang.String,double)
 meth public net.java.html.lib.jquery.JQuery prop(java.lang.String,java.lang.Boolean)
 meth public net.java.html.lib.jquery.JQuery prop(java.lang.String,java.lang.String)
 meth public net.java.html.lib.jquery.JQuery prop(java.lang.String,net.java.html.lib.Function$A2<? super java.lang.Number,? super java.lang.Object,?>)
+meth public net.java.html.lib.jquery.JQuery prop(net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery pushStack(java.lang.Object[])
 meth public net.java.html.lib.jquery.JQuery pushStack(java.lang.Object[],java.lang.String,java.lang.Object[])
 meth public net.java.html.lib.jquery.JQuery queue(java.lang.String,net.java.html.lib.Function)
@@ -625,16 +636,16 @@ meth public net.java.html.lib.jquery.JQuery replaceWith(net.java.html.lib.dom.El
 meth public net.java.html.lib.jquery.JQuery replaceWith(net.java.html.lib.dom.Text)
 meth public net.java.html.lib.jquery.JQuery replaceWith(net.java.html.lib.jquery.JQuery)
 meth public net.java.html.lib.jquery.JQuery resize()
-meth public net.java.html.lib.jquery.JQuery resize(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery resize(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery resize(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery scroll()
-meth public net.java.html.lib.jquery.JQuery scroll(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery scroll(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery scroll(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery scrollLeft(double)
 meth public net.java.html.lib.jquery.JQuery scrollTop(double)
 meth public net.java.html.lib.jquery.JQuery select()
-meth public net.java.html.lib.jquery.JQuery select(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery select(net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery select(net.java.html.lib.Objs,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery show()
 meth public net.java.html.lib.jquery.JQuery show(double)
 meth public net.java.html.lib.jquery.JQuery show(double,java.lang.String)
@@ -711,11 +722,11 @@ meth public net.java.html.lib.jquery.JQuery toggleClass(java.lang.String,java.la
 meth public net.java.html.lib.jquery.JQuery toggleClass(net.java.html.lib.Function$A3<? super java.lang.Number,? super java.lang.String,? super java.lang.Boolean,? extends java.lang.String>)
 meth public net.java.html.lib.jquery.JQuery toggleClass(net.java.html.lib.Function$A3<? super java.lang.Number,? super java.lang.String,? super java.lang.Boolean,? extends java.lang.String>,java.lang.Boolean)
 meth public net.java.html.lib.jquery.JQuery trigger(java.lang.String)
-meth public net.java.html.lib.jquery.JQuery trigger(java.lang.String,java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery trigger(java.lang.String,java.lang.Object[])
+meth public net.java.html.lib.jquery.JQuery trigger(java.lang.String,net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery trigger(net.java.html.lib.jquery.JQueryEventObject)
-meth public net.java.html.lib.jquery.JQuery trigger(net.java.html.lib.jquery.JQueryEventObject,java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery trigger(net.java.html.lib.jquery.JQueryEventObject,java.lang.Object[])
+meth public net.java.html.lib.jquery.JQuery trigger(net.java.html.lib.jquery.JQueryEventObject,net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery unbind()
 meth public net.java.html.lib.jquery.JQuery unbind(java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery unbind(java.lang.String)
@@ -723,9 +734,9 @@ meth public net.java.html.lib.jquery.JQuery unbind(java.lang.String,java.lang.Bo
 meth public net.java.html.lib.jquery.JQuery unbind(java.lang.String,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
 meth public net.java.html.lib.jquery.JQuery undelegate()
 meth public net.java.html.lib.jquery.JQuery undelegate(java.lang.String)
-meth public net.java.html.lib.jquery.JQuery undelegate(java.lang.String,java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery undelegate(java.lang.String,java.lang.String)
 meth public net.java.html.lib.jquery.JQuery undelegate(java.lang.String,java.lang.String,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
+meth public net.java.html.lib.jquery.JQuery undelegate(java.lang.String,net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery unload()
 meth public net.java.html.lib.jquery.JQuery unload(java.lang.Object)
 meth public net.java.html.lib.jquery.JQuery unload(java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryEventObject,?>)
@@ -754,42 +765,43 @@ meth public net.java.html.lib.jquery.JQueryCoordinates offset()
 meth public net.java.html.lib.jquery.JQueryCoordinates position()
 meth public net.java.html.lib.jquery.JQueryPromise<java.lang.Object> promise()
 meth public net.java.html.lib.jquery.JQueryPromise<java.lang.Object> promise(java.lang.String)
-meth public net.java.html.lib.jquery.JQueryPromise<java.lang.Object> promise(java.lang.String,java.lang.Object)
+meth public net.java.html.lib.jquery.JQueryPromise<java.lang.Object> promise(java.lang.String,net.java.html.lib.Objs)
 meth public static net.java.html.lib.jquery.JQuery $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryAjaxSettings
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryAjaxSettings> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> async
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> cache
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> crossDomain
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> global
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> ifModified
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> isLocal
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> processData
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> traditional
-fld public net.java.html.lib.Function$A0<java.lang.Number> timeout
-fld public net.java.html.lib.Function$A0<java.lang.Object> accepts
-fld public net.java.html.lib.Function$A0<java.lang.Object> contentType
-fld public net.java.html.lib.Function$A0<java.lang.Object> context
-fld public net.java.html.lib.Function$A0<java.lang.Object> data
-fld public net.java.html.lib.Function$A0<java.lang.Object> jsonp
-fld public net.java.html.lib.Function$A0<java.lang.Object> jsonpCallback
-fld public net.java.html.lib.Function$A0<java.lang.Object> xhr
-fld public net.java.html.lib.Function$A0<java.lang.String> dataType
-fld public net.java.html.lib.Function$A0<java.lang.String> method
-fld public net.java.html.lib.Function$A0<java.lang.String> mimeType
-fld public net.java.html.lib.Function$A0<java.lang.String> password
-fld public net.java.html.lib.Function$A0<java.lang.String> scriptCharset
-fld public net.java.html.lib.Function$A0<java.lang.String> type
-fld public net.java.html.lib.Function$A0<java.lang.String> url
-fld public net.java.html.lib.Function$A0<java.lang.String> username
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Objs> contents
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Objs> converters
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Objs> headers
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Objs> statusCode
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Objs> xhrFields
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> async
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> cache
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> crossDomain
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> global
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> ifModified
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> isLocal
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> processData
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> traditional
+fld public net.java.html.lib.Objs$Property<java.lang.Number> timeout
+fld public net.java.html.lib.Objs$Property<java.lang.Object> accepts
+fld public net.java.html.lib.Objs$Property<java.lang.Object> contentType
+fld public net.java.html.lib.Objs$Property<java.lang.Object> context
+fld public net.java.html.lib.Objs$Property<java.lang.Object> data
+fld public net.java.html.lib.Objs$Property<java.lang.Object> jsonp
+fld public net.java.html.lib.Objs$Property<java.lang.Object> jsonpCallback
+fld public net.java.html.lib.Objs$Property<java.lang.Object> xhr
+fld public net.java.html.lib.Objs$Property<java.lang.String> dataType
+fld public net.java.html.lib.Objs$Property<java.lang.String> method
+fld public net.java.html.lib.Objs$Property<java.lang.String> mimeType
+fld public net.java.html.lib.Objs$Property<java.lang.String> password
+fld public net.java.html.lib.Objs$Property<java.lang.String> scriptCharset
+fld public net.java.html.lib.Objs$Property<java.lang.String> type
+fld public net.java.html.lib.Objs$Property<java.lang.String> url
+fld public net.java.html.lib.Objs$Property<java.lang.String> username
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Objs> contents
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Objs> converters
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Objs> headers
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Objs> statusCode
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Objs> xhrFields
 meth public java.lang.Boolean async()
 meth public java.lang.Boolean cache()
 meth public java.lang.Boolean crossDomain()
@@ -814,22 +826,22 @@ meth public java.lang.String url()
 meth public java.lang.String username()
 meth public static net.java.html.lib.jquery.JQueryAjaxSettings $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryAnimationOptions
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryAnimationOptions> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Object> duration
-fld public net.java.html.lib.Function$A0<java.lang.Object> queue
-fld public net.java.html.lib.Function$A0<java.lang.Object> specialEasing
-fld public net.java.html.lib.Function$A0<java.lang.String> easing
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryPromise<java.lang.Object>,?>> start
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A2<? super java.lang.Number,? super java.lang.Object,?>> step
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A2<? super net.java.html.lib.jquery.JQueryPromise<java.lang.Object>,? super java.lang.Boolean,?>> always
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A2<? super net.java.html.lib.jquery.JQueryPromise<java.lang.Object>,? super java.lang.Boolean,?>> done
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A2<? super net.java.html.lib.jquery.JQueryPromise<java.lang.Object>,? super java.lang.Boolean,?>> fail
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function$A3<? super net.java.html.lib.jquery.JQueryPromise<java.lang.Object>,? super java.lang.Number,? super java.lang.Number,?>> progress
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Function> complete
-meth public java.lang.Object specialEasing()
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Object> duration
+fld public net.java.html.lib.Objs$Property<java.lang.Object> queue
+fld public net.java.html.lib.Objs$Property<java.lang.String> easing
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryPromise<java.lang.Object>,?>> start
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A2<? super java.lang.Number,? super java.lang.Object,?>> step
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A2<? super net.java.html.lib.jquery.JQueryPromise<java.lang.Object>,? super java.lang.Boolean,?>> always
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A2<? super net.java.html.lib.jquery.JQueryPromise<java.lang.Object>,? super java.lang.Boolean,?>> done
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A2<? super net.java.html.lib.jquery.JQueryPromise<java.lang.Object>,? super java.lang.Boolean,?>> fail
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A3<? super net.java.html.lib.jquery.JQueryPromise<java.lang.Object>,? super java.lang.Number,? super java.lang.Number,?>> progress
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function> complete
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Objs> specialEasing
 meth public java.lang.String easing()
 meth public net.java.html.lib.Function complete()
 meth public net.java.html.lib.Function$A1<? super net.java.html.lib.jquery.JQueryPromise<java.lang.Object>,?> start()
@@ -838,12 +850,14 @@ meth public net.java.html.lib.Function$A2<? super net.java.html.lib.jquery.JQuer
 meth public net.java.html.lib.Function$A2<? super net.java.html.lib.jquery.JQueryPromise<java.lang.Object>,? super java.lang.Boolean,?> done()
 meth public net.java.html.lib.Function$A2<? super net.java.html.lib.jquery.JQueryPromise<java.lang.Object>,? super java.lang.Boolean,?> fail()
 meth public net.java.html.lib.Function$A3<? super net.java.html.lib.jquery.JQueryPromise<java.lang.Object>,? super java.lang.Number,? super java.lang.Number,?> progress()
+meth public net.java.html.lib.Objs specialEasing()
 meth public static net.java.html.lib.jquery.JQueryAnimationOptions $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryCallback
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryCallback> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public !varargs net.java.html.lib.jquery.JQueryCallback fire(java.lang.Object[])
 meth public java.lang.Boolean disabled()
 meth public java.lang.Boolean fired()
@@ -861,20 +875,22 @@ meth public net.java.html.lib.jquery.JQueryCallback remove(net.java.html.lib.Fun
 meth public net.java.html.lib.jquery.JQueryCallback remove(net.java.html.lib.Function[])
 meth public static net.java.html.lib.jquery.JQueryCallback $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryCoordinates
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryCoordinates> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Number> left
-fld public net.java.html.lib.Function$A0<java.lang.Number> top
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Number> left
+fld public net.java.html.lib.Objs$Property<java.lang.Number> top
 meth public java.lang.Number left()
 meth public java.lang.Number top()
 meth public static net.java.html.lib.jquery.JQueryCoordinates $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryDeferred<%0 extends java.lang.Object>
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryDeferred> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public !varargs net.java.html.lib.jquery.JQueryDeferred<{net.java.html.lib.jquery.JQueryDeferred%0}> notify(java.lang.Object,java.lang.Object[])
 meth public !varargs net.java.html.lib.jquery.JQueryDeferred<{net.java.html.lib.jquery.JQueryDeferred%0}> reject(java.lang.Object,java.lang.Object[])
 meth public !varargs net.java.html.lib.jquery.JQueryDeferred<{net.java.html.lib.jquery.JQueryDeferred%0}> resolve({net.java.html.lib.jquery.JQueryDeferred%0},java.lang.Object[])
@@ -912,85 +928,93 @@ meth public net.java.html.lib.jquery.JQueryPromise<{net.java.html.lib.jquery.JQu
 meth public net.java.html.lib.jquery.JQueryPromise<{net.java.html.lib.jquery.JQueryDeferred%0}> promise(java.lang.Object)
 meth public static net.java.html.lib.jquery.JQueryDeferred $as(java.lang.Object)
 supr net.java.html.lib.jquery.JQueryGenericPromise<{net.java.html.lib.jquery.JQueryDeferred%0}>
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryEasingFunction
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryEasingFunction> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public double $apply(double)
 meth public static net.java.html.lib.jquery.JQueryEasingFunction $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryEasingFunctions
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryEasingFunctions> $AS
-fld public net.java.html.lib.Function$A0<net.java.html.lib.jquery.JQueryEasingFunction> linear
-fld public net.java.html.lib.Function$A0<net.java.html.lib.jquery.JQueryEasingFunction> swing
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.jquery.JQueryEasingFunction> linear
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.jquery.JQueryEasingFunction> swing
 meth public double linear(double)
 meth public double swing(double)
 meth public net.java.html.lib.jquery.JQueryEasingFunction $get(java.lang.String)
 meth public static net.java.html.lib.jquery.JQueryEasingFunctions $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryEventConstructor
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryEventConstructor> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public net.java.html.lib.jquery.JQueryEventObject $apply(java.lang.String)
 meth public net.java.html.lib.jquery.JQueryEventObject $apply(java.lang.String,java.lang.Object)
 meth public static net.java.html.lib.jquery.JQueryEventConstructor $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryEventObject
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryEventObject> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public static net.java.html.lib.jquery.JQueryEventObject $as(java.lang.Object)
 supr net.java.html.lib.jquery.BaseJQueryEventObject
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryGenericPromise<%0 extends java.lang.Object>
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryGenericPromise> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public net.java.html.lib.jquery.JQueryPromise<java.lang.Void> then(net.java.html.lib.Function$A2<? super {net.java.html.lib.jquery.JQueryGenericPromise%0},? super net.java.html.lib.Array<java.lang.Object>,? extends java.lang.Void>)
 meth public net.java.html.lib.jquery.JQueryPromise<java.lang.Void> then(net.java.html.lib.Function$A2<? super {net.java.html.lib.jquery.JQueryGenericPromise%0},? super net.java.html.lib.Array<java.lang.Object>,? extends java.lang.Void>,net.java.html.lib.Function$A1<? super net.java.html.lib.Array<java.lang.Object>,?>)
 meth public net.java.html.lib.jquery.JQueryPromise<java.lang.Void> then(net.java.html.lib.Function$A2<? super {net.java.html.lib.jquery.JQueryGenericPromise%0},? super net.java.html.lib.Array<java.lang.Object>,? extends java.lang.Void>,net.java.html.lib.Function$A1<? super net.java.html.lib.Array<java.lang.Object>,?>,net.java.html.lib.Function$A1<? super net.java.html.lib.Array<java.lang.Object>,?>)
 meth public static net.java.html.lib.jquery.JQueryGenericPromise $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryInputEventObject
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryInputEventObject> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> altKey
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> ctrlKey
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> metaKey
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> shiftKey
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> altKey
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> ctrlKey
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> metaKey
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> shiftKey
 meth public java.lang.Boolean altKey()
 meth public java.lang.Boolean ctrlKey()
 meth public java.lang.Boolean metaKey()
 meth public java.lang.Boolean shiftKey()
 meth public static net.java.html.lib.jquery.JQueryInputEventObject $as(java.lang.Object)
 supr net.java.html.lib.jquery.BaseJQueryEventObject
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryKeyEventObject
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryKeyEventObject> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Number> charCode
-fld public net.java.html.lib.Function$A0<java.lang.Number> keyCode
-fld public net.java.html.lib.Function$A0<java.lang.Object> key
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Number> charCode
+fld public net.java.html.lib.Objs$Property<java.lang.Number> keyCode
+fld public net.java.html.lib.Objs$Property<java.lang.Object> key
 meth public java.lang.Number charCode()
 meth public java.lang.Number keyCode()
 meth public static net.java.html.lib.jquery.JQueryKeyEventObject $as(java.lang.Object)
 supr net.java.html.lib.jquery.JQueryInputEventObject
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryMouseEventObject
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryMouseEventObject> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Number> button
-fld public net.java.html.lib.Function$A0<java.lang.Number> clientX
-fld public net.java.html.lib.Function$A0<java.lang.Number> clientY
-fld public net.java.html.lib.Function$A0<java.lang.Number> offsetX
-fld public net.java.html.lib.Function$A0<java.lang.Number> offsetY
-fld public net.java.html.lib.Function$A0<java.lang.Number> pageX
-fld public net.java.html.lib.Function$A0<java.lang.Number> pageY
-fld public net.java.html.lib.Function$A0<java.lang.Number> screenX
-fld public net.java.html.lib.Function$A0<java.lang.Number> screenY
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Number> button
+fld public net.java.html.lib.Objs$Property<java.lang.Number> clientX
+fld public net.java.html.lib.Objs$Property<java.lang.Number> clientY
+fld public net.java.html.lib.Objs$Property<java.lang.Number> offsetX
+fld public net.java.html.lib.Objs$Property<java.lang.Number> offsetY
+fld public net.java.html.lib.Objs$Property<java.lang.Number> pageX
+fld public net.java.html.lib.Objs$Property<java.lang.Number> pageY
+fld public net.java.html.lib.Objs$Property<java.lang.Number> screenX
+fld public net.java.html.lib.Objs$Property<java.lang.Number> screenY
 meth public java.lang.Number button()
 meth public java.lang.Number clientX()
 meth public java.lang.Number clientY()
@@ -1002,18 +1026,20 @@ meth public java.lang.Number screenX()
 meth public java.lang.Number screenY()
 meth public static net.java.html.lib.jquery.JQueryMouseEventObject $as(java.lang.Object)
 supr net.java.html.lib.jquery.JQueryInputEventObject
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryParam
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryParam> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.String $apply(java.lang.Object)
 meth public java.lang.String $apply(java.lang.Object,java.lang.Boolean)
 meth public static net.java.html.lib.jquery.JQueryParam $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryPromise<%0 extends java.lang.Object>
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryPromise> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public java.lang.String state()
 meth public net.java.html.lib.jquery.JQueryPromise<java.lang.Object> pipe()
 meth public net.java.html.lib.jquery.JQueryPromise<java.lang.Object> pipe(net.java.html.lib.Function$A1<? super java.lang.Object,?>)
@@ -1037,51 +1063,55 @@ meth public net.java.html.lib.jquery.JQueryPromise<{net.java.html.lib.jquery.JQu
 meth public net.java.html.lib.jquery.JQueryPromise<{net.java.html.lib.jquery.JQueryPromise%0}> progress(net.java.html.lib.jquery.JQueryPromiseCallback<java.lang.Object>[],net.java.html.lib.Array<net.java.html.lib.Union$A2<net.java.html.lib.jquery.JQueryPromiseCallback<java.lang.Object>,net.java.html.lib.jquery.JQueryPromiseCallback<java.lang.Object>[]>>)
 meth public static net.java.html.lib.jquery.JQueryPromise $as(java.lang.Object)
 supr net.java.html.lib.jquery.JQueryGenericPromise<{net.java.html.lib.jquery.JQueryPromise%0}>
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryPromiseCallback<%0 extends java.lang.Object>
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryPromiseCallback> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public !varargs void $apply({net.java.html.lib.jquery.JQueryPromiseCallback%0},java.lang.Object[])
 meth public static net.java.html.lib.jquery.JQueryPromiseCallback $as(java.lang.Object)
 meth public void $apply({net.java.html.lib.jquery.JQueryPromiseCallback%0})
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryPromiseOperator<%0 extends java.lang.Object, %1 extends java.lang.Object>
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryPromiseOperator> $AS
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
 meth public net.java.html.lib.jquery.JQueryPromise<{net.java.html.lib.jquery.JQueryPromiseOperator%1}> $apply(net.java.html.lib.jquery.JQueryPromiseCallback<{net.java.html.lib.jquery.JQueryPromiseOperator%0}>,net.java.html.lib.Array<net.java.html.lib.Union$A2<net.java.html.lib.jquery.JQueryPromiseCallback<java.lang.Object>,net.java.html.lib.jquery.JQueryPromiseCallback<java.lang.Object>[]>>)
 meth public net.java.html.lib.jquery.JQueryPromise<{net.java.html.lib.jquery.JQueryPromiseOperator%1}> $apply(net.java.html.lib.jquery.JQueryPromiseCallback<{net.java.html.lib.jquery.JQueryPromiseOperator%0}>[],net.java.html.lib.Array<net.java.html.lib.Union$A2<net.java.html.lib.jquery.JQueryPromiseCallback<java.lang.Object>,net.java.html.lib.jquery.JQueryPromiseCallback<java.lang.Object>[]>>)
 meth public static net.java.html.lib.jquery.JQueryPromiseOperator $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQuerySerializeArrayElement
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQuerySerializeArrayElement> $AS
-fld public net.java.html.lib.Function$A0<java.lang.String> name
-fld public net.java.html.lib.Function$A0<java.lang.String> value
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.String> name
+fld public net.java.html.lib.Objs$Property<java.lang.String> value
 meth public java.lang.String name()
 meth public java.lang.String value()
 meth public static net.java.html.lib.jquery.JQuerySerializeArrayElement $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryStatic
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryStatic> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> isReady
-fld public net.java.html.lib.Function$A0<java.lang.Object> cssNumber
-fld public net.java.html.lib.Function$A0<java.lang.Object> expr
-fld public net.java.html.lib.Function$A0<java.lang.Object> fn
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Objs> cssHooks
-fld public net.java.html.lib.Function$A0<net.java.html.lib.Objs> fx
-fld public net.java.html.lib.Function$A0<net.java.html.lib.jquery.JQueryAjaxSettings> ajaxSettings
-fld public net.java.html.lib.Function$A0<net.java.html.lib.jquery.JQueryEasingFunctions> easing
-fld public net.java.html.lib.Function$A0<net.java.html.lib.jquery.JQueryEventConstructor> Event
-fld public net.java.html.lib.Function$A0<net.java.html.lib.jquery.JQueryParam> param
-fld public net.java.html.lib.Function$A0<net.java.html.lib.jquery.JQuerySupport> support
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> isReady
+fld public net.java.html.lib.Objs$Property<java.lang.Object> cssNumber
+fld public net.java.html.lib.Objs$Property<java.lang.Object> expr
+fld public net.java.html.lib.Objs$Property<java.lang.Object> fn
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Objs> cssHooks
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Objs> fx
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.jquery.JQueryAjaxSettings> ajaxSettings
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.jquery.JQueryEasingFunctions> easing
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.jquery.JQueryEventConstructor> Event
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.jquery.JQueryParam> param
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.jquery.JQuerySupport> support
 meth public !varargs java.lang.Object extend(java.lang.Boolean,java.lang.Object,java.lang.Object,java.lang.Object[])
 meth public !varargs java.lang.Object extend(java.lang.Object,java.lang.Object,java.lang.Object[])
-meth public !varargs java.lang.Object proxy(java.lang.Object,java.lang.String,java.lang.Object[])
-meth public !varargs java.lang.Object proxy(net.java.html.lib.Function$A1<? super net.java.html.lib.Array<java.lang.Object>,?>,java.lang.Object,java.lang.Object[])
+meth public !varargs java.lang.Object proxy(net.java.html.lib.Function$A1<? super net.java.html.lib.Array<java.lang.Object>,?>,net.java.html.lib.Objs,java.lang.Object[])
+meth public !varargs java.lang.Object proxy(net.java.html.lib.Objs,java.lang.String,java.lang.Object[])
 meth public <%0 extends java.lang.Object, %1 extends java.lang.Object> net.java.html.lib.Array<{%%1}> map({%%0}[],net.java.html.lib.Function$A2<? super {%%0},? super java.lang.Number,? extends {%%1}>)
 meth public <%0 extends java.lang.Object> double inArray({%%0},{%%0}[])
 meth public <%0 extends java.lang.Object> double inArray({%%0},{%%0}[],double)
@@ -1129,7 +1159,7 @@ meth public net.java.html.lib.Array<net.java.html.lib.dom.Element> unique(net.ja
 meth public net.java.html.lib.dom.XMLDocument parseXML(java.lang.String)
 meth public net.java.html.lib.jquery.JQuery $apply()
 meth public net.java.html.lib.jquery.JQuery $apply(java.lang.String)
-meth public net.java.html.lib.jquery.JQuery $apply(java.lang.String,java.lang.Object)
+meth public net.java.html.lib.jquery.JQuery $apply(java.lang.String,net.java.html.lib.Objs)
 meth public net.java.html.lib.jquery.JQuery $apply(java.lang.String,net.java.html.lib.dom.Document)
 meth public net.java.html.lib.jquery.JQuery $apply(java.lang.String,net.java.html.lib.dom.Element)
 meth public net.java.html.lib.jquery.JQuery $apply(java.lang.String,net.java.html.lib.jquery.JQuery)
@@ -1156,31 +1186,31 @@ meth public net.java.html.lib.jquery.JQueryXHR ajax(java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR ajax(java.lang.String,net.java.html.lib.jquery.JQueryAjaxSettings)
 meth public net.java.html.lib.jquery.JQueryXHR ajax(net.java.html.lib.jquery.JQueryAjaxSettings)
 meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String)
-meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,java.lang.Object)
-meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,java.lang.Object,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
-meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,java.lang.Object,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>,java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>,java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>,java.lang.String)
+meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,net.java.html.lib.Objs)
+meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,net.java.html.lib.Objs,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
+meth public net.java.html.lib.jquery.JQueryXHR get(java.lang.String,net.java.html.lib.Objs,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>,java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR getJSON(java.lang.String)
-meth public net.java.html.lib.jquery.JQueryXHR getJSON(java.lang.String,java.lang.Object)
-meth public net.java.html.lib.jquery.JQueryXHR getJSON(java.lang.String,java.lang.Object,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public net.java.html.lib.jquery.JQueryXHR getJSON(java.lang.String,java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR getJSON(java.lang.String,java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public net.java.html.lib.jquery.JQueryXHR getJSON(java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
+meth public net.java.html.lib.jquery.JQueryXHR getJSON(java.lang.String,net.java.html.lib.Objs)
+meth public net.java.html.lib.jquery.JQueryXHR getJSON(java.lang.String,net.java.html.lib.Objs,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public net.java.html.lib.jquery.JQueryXHR getScript(java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR getScript(java.lang.String,net.java.html.lib.Function$A3<? super java.lang.String,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String)
-meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,java.lang.Object)
-meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,java.lang.Object,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
-meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,java.lang.Object,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>,java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>,java.lang.String)
 meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>,java.lang.String)
+meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,net.java.html.lib.Objs)
+meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,net.java.html.lib.Objs,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>)
+meth public net.java.html.lib.jquery.JQueryXHR post(java.lang.String,net.java.html.lib.Objs,net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,?>,java.lang.String)
 meth public static net.java.html.lib.jquery.JQueryStatic $as(java.lang.Object)
 meth public void ajaxPrefilter(java.lang.String,net.java.html.lib.Function$A3<? super java.lang.Object,? super net.java.html.lib.jquery.JQueryAjaxSettings,? super net.java.html.lib.jquery.JQueryXHR,?>)
 meth public void ajaxPrefilter(net.java.html.lib.Function$A3<? super java.lang.Object,? super net.java.html.lib.jquery.JQueryAjaxSettings,? super net.java.html.lib.jquery.JQueryXHR,?>)
@@ -1189,28 +1219,29 @@ meth public void dequeue(net.java.html.lib.dom.Element)
 meth public void dequeue(net.java.html.lib.dom.Element,java.lang.String)
 meth public void holdReady(java.lang.Boolean)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQuerySupport
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQuerySupport> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> ajax
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> boxModel
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> changeBubbles
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> checkClone
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> checkOn
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> cors
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> cssFloat
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> hrefNormalized
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> htmlSerialize
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> leadingWhitespace
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> noCloneChecked
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> noCloneEvent
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> opacity
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> optDisabled
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> optSelected
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> style
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> submitBubbles
-fld public net.java.html.lib.Function$A0<java.lang.Boolean> tbody
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> ajax
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> boxModel
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> changeBubbles
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> checkClone
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> checkOn
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> cors
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> cssFloat
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> hrefNormalized
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> htmlSerialize
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> leadingWhitespace
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> noCloneChecked
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> noCloneEvent
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> opacity
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> optDisabled
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> optSelected
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> style
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> submitBubbles
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> tbody
 meth public java.lang.Boolean ajax()
 meth public java.lang.Boolean boxModel()
 meth public java.lang.Boolean changeBubbles()
@@ -1232,11 +1263,12 @@ meth public java.lang.Boolean submitBubbles()
 meth public java.lang.Boolean tbody()
 meth public static net.java.html.lib.jquery.JQuerySupport $as(java.lang.Object)
 supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
 
 CLSS public net.java.html.lib.jquery.JQueryXHR
-cons protected init(java.lang.Class<?>,java.lang.Object)
-fld public final static net.java.html.lib.Function$A1<java.lang.Object,net.java.html.lib.jquery.JQueryXHR> $AS
-fld public net.java.html.lib.Function$A0<java.lang.Object> responseJSON
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Object> responseJSON
 meth public <%0 extends java.lang.Object> net.java.html.lib.jquery.JQueryPromise<{%%0}> then(net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,? extends {%%0}>)
 meth public <%0 extends java.lang.Object> net.java.html.lib.jquery.JQueryPromise<{%%0}> then(net.java.html.lib.Function$A3<? super java.lang.Object,? super java.lang.String,? super net.java.html.lib.jquery.JQueryXHR,? extends {%%0}>,net.java.html.lib.Function$A3<? super net.java.html.lib.jquery.JQueryXHR,? super java.lang.String,? super java.lang.Object,? extends java.lang.Void>)
 meth public static net.java.html.lib.jquery.JQueryXHR $as(java.lang.Object)
@@ -1245,4 +1277,6 @@ meth public void abort(java.lang.String)
 meth public void error(net.java.html.lib.jquery.JQueryXHR,java.lang.String,java.lang.String)
 meth public void overrideMimeType(java.lang.String)
 supr net.java.html.lib.dom.XMLHttpRequest
+hfds $AS
+hcls $Constructor
 
