@@ -99,5 +99,12 @@
             <scope>test</scope>
             <type>pom</type>
         </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>net.java.html.lib.jquery</artifactId>
+            <version>${project.version}</version>
+            <classifier>bck2brwsr</classifier>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 </project>
