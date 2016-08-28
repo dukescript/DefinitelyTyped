@@ -1,0 +1,637 @@
+#Signature file v4.1
+#Version 1.0-SNAPSHOT
+
+CLSS public java.lang.Object
+cons public init()
+meth protected java.lang.Object clone() throws java.lang.CloneNotSupportedException
+meth protected void finalize() throws java.lang.Throwable
+meth public boolean equals(java.lang.Object)
+meth public final java.lang.Class<?> getClass()
+meth public final void notify()
+meth public final void notifyAll()
+meth public final void wait() throws java.lang.InterruptedException
+meth public final void wait(long) throws java.lang.InterruptedException
+meth public final void wait(long,int) throws java.lang.InterruptedException
+meth public int hashCode()
+meth public java.lang.String toString()
+
+CLSS public net.java.html.lib.Objs
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+cons public init()
+cons public init(java.lang.Object)
+fld public static java.lang.Object prototype
+innr protected abstract static Constructor
+innr public final static Property
+meth public <%0 extends net.java.html.lib.Objs> {%%0} $cast(java.lang.Class<{%%0}>)
+meth public java.lang.Boolean hasOwnProperty(java.lang.String)
+meth public java.lang.Boolean isPrototypeOf(java.lang.Object)
+meth public java.lang.Boolean propertyIsEnumerable(java.lang.String)
+meth public java.lang.Object $get(java.lang.String)
+meth public java.lang.Object valueOf()
+meth public java.lang.String toLocaleString()
+meth public java.lang.String toString()
+meth public static <%0 extends java.lang.Object> {%%0} $as(java.lang.Class<{%%0}>,java.lang.Object)
+meth public static <%0 extends java.lang.Object> {%%0} freeze({%%0})
+meth public static <%0 extends java.lang.Object> {%%0} preventExtensions({%%0})
+meth public static <%0 extends java.lang.Object> {%%0} seal({%%0})
+meth public static java.lang.Boolean isExtensible(java.lang.Object)
+meth public static java.lang.Boolean isFrozen(java.lang.Object)
+meth public static java.lang.Boolean isSealed(java.lang.Object)
+meth public static java.lang.Object $js(java.lang.Object)
+meth public static java.lang.Object create(java.lang.Object)
+meth public static java.lang.Object create(java.lang.Object,net.java.html.lib.PropertyDescriptorMap)
+meth public static java.lang.Object defineProperties(java.lang.Object,net.java.html.lib.PropertyDescriptorMap)
+meth public static java.lang.Object defineProperty(java.lang.Object,java.lang.String,net.java.html.lib.PropertyDescriptor)
+meth public static java.lang.Object getPrototypeOf(java.lang.Object)
+meth public static java.lang.Object newObject()
+meth public static java.lang.Object newObject(java.lang.Object)
+meth public static java.lang.String[] getOwnPropertyNames(java.lang.Object)
+meth public static net.java.html.lib.Array<java.lang.String> keys(java.lang.Object)
+meth public static net.java.html.lib.Objs $as(java.lang.Object)
+meth public static net.java.html.lib.PropertyDescriptor getOwnPropertyDescriptor(java.lang.Object,java.lang.String)
+meth public void $delete(java.lang.String)
+meth public void $set(java.lang.String,java.lang.Object)
+supr java.lang.Object
+hfds $$fn$$deleteRaw_3,$$fn$$getRaw_1,$$fn$$setRaw_2,$AS,js
+
+CLSS public final net.java.html.lib.snapsvg.$JsCallbacks$
+meth public java.lang.Object net_java_html_lib_Function$$call$Ljava_lang_Object_2_3Ljava_lang_Object_2(java.lang.Object,java.lang.Object) throws java.lang.Throwable
+supr java.lang.Object
+hfds VM,last,p
+
+CLSS public final net.java.html.lib.snapsvg.Exports
+meth public static net.java.html.lib.snapsvg.Snap.Paper Snap(double,double)
+meth public static net.java.html.lib.snapsvg.Snap.Paper Snap(double,java.lang.String)
+meth public static net.java.html.lib.snapsvg.Snap.Paper Snap(java.lang.String)
+meth public static net.java.html.lib.snapsvg.Snap.Paper Snap(java.lang.String,double)
+meth public static net.java.html.lib.snapsvg.Snap.Paper Snap(java.lang.String,java.lang.String)
+meth public static net.java.html.lib.snapsvg.Snap.Paper Snap(net.java.html.lib.dom.SVGElement)
+meth public static net.java.html.lib.snapsvg.mina.AnimationDescriptor mina(double,double,double,double,net.java.html.lib.Function,net.java.html.lib.Function)
+meth public static net.java.html.lib.snapsvg.mina.AnimationDescriptor mina(double,double,double,double,net.java.html.lib.Function,net.java.html.lib.Function,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Number>)
+supr net.java.html.lib.Objs
+
+CLSS public final net.java.html.lib.snapsvg.Snap.$JsCallbacks$
+meth public java.lang.Object net_java_html_lib_Function$$call$Ljava_lang_Object_2_3Ljava_lang_Object_2(java.lang.Object,java.lang.Object) throws java.lang.Throwable
+supr java.lang.Object
+hfds VM,last,p
+
+CLSS public net.java.html.lib.snapsvg.Snap.Animation
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Number> duration
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A0<? extends java.lang.Void>> callback
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Number>> easing
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Objs> attr
+meth public java.lang.Number duration()
+meth public net.java.html.lib.Function$A0<? extends java.lang.Void> callback()
+meth public net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Number> easing()
+meth public static net.java.html.lib.snapsvg.Snap.Animation $as(java.lang.Object)
+supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
+
+CLSS public net.java.html.lib.snapsvg.Snap.BBox
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Number> cx
+fld public net.java.html.lib.Objs$Property<java.lang.Number> cy
+fld public net.java.html.lib.Objs$Property<java.lang.Number> h
+fld public net.java.html.lib.Objs$Property<java.lang.Number> height
+fld public net.java.html.lib.Objs$Property<java.lang.Number> path
+fld public net.java.html.lib.Objs$Property<java.lang.Number> r0
+fld public net.java.html.lib.Objs$Property<java.lang.Number> r1
+fld public net.java.html.lib.Objs$Property<java.lang.Number> r2
+fld public net.java.html.lib.Objs$Property<java.lang.Number> w
+fld public net.java.html.lib.Objs$Property<java.lang.Number> width
+fld public net.java.html.lib.Objs$Property<java.lang.Number> x
+fld public net.java.html.lib.Objs$Property<java.lang.Number> x2
+fld public net.java.html.lib.Objs$Property<java.lang.Number> y
+fld public net.java.html.lib.Objs$Property<java.lang.Number> y2
+fld public net.java.html.lib.Objs$Property<java.lang.String> vb
+meth public java.lang.Number cx()
+meth public java.lang.Number cy()
+meth public java.lang.Number h()
+meth public java.lang.Number height()
+meth public java.lang.Number path()
+meth public java.lang.Number r0()
+meth public java.lang.Number r1()
+meth public java.lang.Number r2()
+meth public java.lang.Number w()
+meth public java.lang.Number width()
+meth public java.lang.Number x()
+meth public java.lang.Number x2()
+meth public java.lang.Number y()
+meth public java.lang.Number y2()
+meth public java.lang.String vb()
+meth public static net.java.html.lib.snapsvg.Snap.BBox $as(java.lang.Object)
+supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
+
+CLSS public net.java.html.lib.snapsvg.Snap.Element
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.String> type
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.HTMLElement> node
+meth public double asPX(java.lang.String)
+meth public double asPX(java.lang.String,java.lang.String)
+meth public double getTotalLength()
+meth public java.lang.Boolean hasClass(java.lang.String)
+meth public java.lang.Object data(java.lang.String)
+meth public java.lang.Object data(java.lang.String,java.lang.Object)
+meth public java.lang.Object toJSON()
+meth public java.lang.String attr(java.lang.String)
+meth public java.lang.String getAlign(net.java.html.lib.snapsvg.Snap.Element,java.lang.String)
+meth public java.lang.String getSubpath(double,double)
+meth public java.lang.String innerSVG()
+meth public java.lang.String outerSVG()
+meth public java.lang.String type()
+meth public net.java.html.lib.Array<net.java.html.lib.Objs> inAnim()
+meth public net.java.html.lib.Array<net.java.html.lib.snapsvg.Snap.Element> children()
+meth public net.java.html.lib.Objs getPointAtLength(double)
+meth public net.java.html.lib.Objs toPattern(double,double,double,double)
+meth public net.java.html.lib.Objs toPattern(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+meth public net.java.html.lib.Objs use()
+meth public net.java.html.lib.dom.HTMLElement node()
+meth public net.java.html.lib.snapsvg.Snap.BBox getBBox()
+meth public net.java.html.lib.snapsvg.Snap.Element add(net.java.html.lib.snapsvg.Snap.Element)
+meth public net.java.html.lib.snapsvg.Snap.Element addClass(java.lang.String)
+meth public net.java.html.lib.snapsvg.Snap.Element after(net.java.html.lib.snapsvg.Snap.Element)
+meth public net.java.html.lib.snapsvg.Snap.Element align(net.java.html.lib.snapsvg.Snap.Element,java.lang.String)
+meth public net.java.html.lib.snapsvg.Snap.Element animate(java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element animate(net.java.html.lib.Objs,double)
+meth public net.java.html.lib.snapsvg.Snap.Element animate(net.java.html.lib.Objs,double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Number>)
+meth public net.java.html.lib.snapsvg.Snap.Element animate(net.java.html.lib.Objs,double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Number>,net.java.html.lib.Function$A0<? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element append(net.java.html.lib.snapsvg.Snap.Element)
+meth public net.java.html.lib.snapsvg.Snap.Element appendTo(net.java.html.lib.snapsvg.Snap.Element)
+meth public net.java.html.lib.snapsvg.Snap.Element attr(net.java.html.lib.Objs)
+meth public net.java.html.lib.snapsvg.Snap.Element before(net.java.html.lib.snapsvg.Snap.Element)
+meth public net.java.html.lib.snapsvg.Snap.Element click(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element click(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element clone()
+meth public net.java.html.lib.snapsvg.Snap.Element dblclick(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element dblclick(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element drag()
+meth public net.java.html.lib.snapsvg.Snap.Element drag(net.java.html.lib.Function$A5<? super java.lang.Number,? super java.lang.Number,? super java.lang.Number,? super java.lang.Number,? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,net.java.html.lib.Function$A3<? super java.lang.Number,? super java.lang.Number,? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element drag(net.java.html.lib.Function$A5<? super java.lang.Number,? super java.lang.Number,? super java.lang.Number,? super java.lang.Number,? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,net.java.html.lib.Function$A3<? super java.lang.Number,? super java.lang.Number,? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element drag(net.java.html.lib.Function$A5<? super java.lang.Number,? super java.lang.Number,? super java.lang.Number,? super java.lang.Number,? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,net.java.html.lib.Function$A3<? super java.lang.Number,? super java.lang.Number,? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,java.lang.Object,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element drag(net.java.html.lib.Function$A5<? super java.lang.Number,? super java.lang.Number,? super java.lang.Number,? super java.lang.Number,? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,net.java.html.lib.Function$A3<? super java.lang.Number,? super java.lang.Number,? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,java.lang.Object,java.lang.Object,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element hover(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element hover(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element hover(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,java.lang.Object,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element insertAfter(net.java.html.lib.snapsvg.Snap.Element)
+meth public net.java.html.lib.snapsvg.Snap.Element insertBefore(net.java.html.lib.snapsvg.Snap.Element)
+meth public net.java.html.lib.snapsvg.Snap.Element marker(double,double,double,double,double,double)
+meth public net.java.html.lib.snapsvg.Snap.Element mousedown(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element mousedown(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element mousemove(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element mousemove(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element mouseout(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element mouseout(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element mouseover(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element mouseover(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element mouseup(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element mouseup(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element parent()
+meth public net.java.html.lib.snapsvg.Snap.Element pattern(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element prepend(net.java.html.lib.snapsvg.Snap.Element)
+meth public net.java.html.lib.snapsvg.Snap.Element prependTo(net.java.html.lib.snapsvg.Snap.Element)
+meth public net.java.html.lib.snapsvg.Snap.Element remove()
+meth public net.java.html.lib.snapsvg.Snap.Element removeClass(java.lang.String)
+meth public net.java.html.lib.snapsvg.Snap.Element removeData()
+meth public net.java.html.lib.snapsvg.Snap.Element removeData(java.lang.String)
+meth public net.java.html.lib.snapsvg.Snap.Element select(java.lang.String)
+meth public net.java.html.lib.snapsvg.Snap.Element stop()
+meth public net.java.html.lib.snapsvg.Snap.Element toDefs()
+meth public net.java.html.lib.snapsvg.Snap.Element toggleClass(java.lang.String,java.lang.Boolean)
+meth public net.java.html.lib.snapsvg.Snap.Element touchcancel(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element touchcancel(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element touchend(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element touchend(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element touchmove(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element touchmove(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element touchstart(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element touchstart(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element transform(java.lang.String)
+meth public net.java.html.lib.snapsvg.Snap.Element unclick()
+meth public net.java.html.lib.snapsvg.Snap.Element unclick(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element undblclick(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element undrag()
+meth public net.java.html.lib.snapsvg.Snap.Element undrag(net.java.html.lib.Function$A3<? super java.lang.Number,? super java.lang.Number,? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,net.java.html.lib.Function$A3<? super java.lang.Number,? super java.lang.Number,? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element unhover(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>,net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element unmousedown(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element unmousemove(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element unmouseout(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element unmouseover(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element unmouseup(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element untouchcancel(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element untouchend(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element untouchmove(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element untouchstart(net.java.html.lib.Function$A1<? super net.java.html.lib.dom.MouseEvent,? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Set selectAll()
+meth public net.java.html.lib.snapsvg.Snap.Set selectAll(java.lang.String)
+meth public net.java.html.lib.snapsvg.Snap.TransformationDescriptor transform()
+meth public static net.java.html.lib.snapsvg.Snap.Element $as(java.lang.Object)
+supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
+
+CLSS public net.java.html.lib.snapsvg.Snap.ExplicitTransform
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> isSimple
+fld public net.java.html.lib.Objs$Property<java.lang.Number> dx
+fld public net.java.html.lib.Objs$Property<java.lang.Number> dy
+fld public net.java.html.lib.Objs$Property<java.lang.Number> rotate
+fld public net.java.html.lib.Objs$Property<java.lang.Number> scalex
+fld public net.java.html.lib.Objs$Property<java.lang.Number> scaley
+fld public net.java.html.lib.Objs$Property<java.lang.Number> shear
+meth public java.lang.Boolean isSimple()
+meth public java.lang.Number dx()
+meth public java.lang.Number dy()
+meth public java.lang.Number rotate()
+meth public java.lang.Number scalex()
+meth public java.lang.Number scaley()
+meth public java.lang.Number shear()
+meth public static net.java.html.lib.snapsvg.Snap.ExplicitTransform $as(java.lang.Object)
+supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
+
+CLSS public final net.java.html.lib.snapsvg.Snap.Exports
+fld public static net.java.html.lib.snapsvg.Snap.Filter filter
+fld public static net.java.html.lib.snapsvg.Snap.Path path
+meth public static double acos(double)
+meth public static double angle(double,double,double,double)
+meth public static double angle(double,double,double,double,double)
+meth public static double angle(double,double,double,double,double,double)
+meth public static double asin(double)
+meth public static double atan(double)
+meth public static double atan2(double)
+meth public static double cos(double)
+meth public static double deg(double)
+meth public static double len(double,double,double,double)
+meth public static double len2(double,double,double,double)
+meth public static double rad(double)
+meth public static double sin(double)
+meth public static double snapTo(net.java.html.lib.Array<java.lang.Number>,double)
+meth public static double snapTo(net.java.html.lib.Array<java.lang.Number>,double,double)
+meth public static double tan(double)
+meth public static java.lang.Boolean closest(double,double,double,double)
+meth public static java.lang.Boolean is(java.lang.Object,java.lang.String)
+meth public static java.lang.Object selectAll(java.lang.String)
+meth public static java.lang.String format(java.lang.String,net.java.html.lib.Objs)
+meth public static net.java.html.lib.Array<java.lang.Object> parsePathString(java.lang.String)
+meth public static net.java.html.lib.Array<java.lang.Object> parsePathString(net.java.html.lib.Array<java.lang.String>)
+meth public static net.java.html.lib.Array<java.lang.Object> parseTransformString(java.lang.String)
+meth public static net.java.html.lib.Array<java.lang.Object> parseTransformString(net.java.html.lib.Array<java.lang.String>)
+meth public static net.java.html.lib.dom.XMLHttpRequest ajax(java.lang.String,java.lang.String,net.java.html.lib.Function)
+meth public static net.java.html.lib.dom.XMLHttpRequest ajax(java.lang.String,java.lang.String,net.java.html.lib.Function,net.java.html.lib.Objs)
+meth public static net.java.html.lib.dom.XMLHttpRequest ajax(java.lang.String,net.java.html.lib.Function)
+meth public static net.java.html.lib.dom.XMLHttpRequest ajax(java.lang.String,net.java.html.lib.Function,net.java.html.lib.Objs)
+meth public static net.java.html.lib.dom.XMLHttpRequest ajax(java.lang.String,net.java.html.lib.Objs,net.java.html.lib.Function)
+meth public static net.java.html.lib.dom.XMLHttpRequest ajax(java.lang.String,net.java.html.lib.Objs,net.java.html.lib.Function,net.java.html.lib.Objs)
+meth public static net.java.html.lib.snapsvg.Snap.Animation animation(net.java.html.lib.Objs,double)
+meth public static net.java.html.lib.snapsvg.Snap.Animation animation(net.java.html.lib.Objs,double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Number>)
+meth public static net.java.html.lib.snapsvg.Snap.Animation animation(net.java.html.lib.Objs,double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Number>,net.java.html.lib.Function$A0<? extends java.lang.Void>)
+meth public static net.java.html.lib.snapsvg.Snap.Element getElementByPoint(double,double)
+meth public static net.java.html.lib.snapsvg.Snap.Element select(java.lang.String)
+meth public static net.java.html.lib.snapsvg.Snap.Fragment fragment(java.lang.Object)
+meth public static net.java.html.lib.snapsvg.Snap.Fragment parse(java.lang.String)
+meth public static net.java.html.lib.snapsvg.Snap.HSB hsb(double,double,double)
+meth public static net.java.html.lib.snapsvg.Snap.HSB rgb2hsb(double,double,double)
+meth public static net.java.html.lib.snapsvg.Snap.HSL hsl(double,double,double)
+meth public static net.java.html.lib.snapsvg.Snap.HSL rgb2hsl(double,double,double)
+meth public static net.java.html.lib.snapsvg.Snap.Matrix matrix()
+meth public static net.java.html.lib.snapsvg.Snap.Matrix matrix(double,double,double,double,double,double)
+meth public static net.java.html.lib.snapsvg.Snap.Matrix matrix(net.java.html.lib.dom.SVGMatrix)
+meth public static net.java.html.lib.snapsvg.Snap.RGB getRGB(java.lang.String)
+meth public static net.java.html.lib.snapsvg.Snap.RGB hsb2rgb(double,double,double)
+meth public static net.java.html.lib.snapsvg.Snap.RGB hsl2rgb(double,double,double)
+meth public static net.java.html.lib.snapsvg.Snap.RGB rgb(double,double,double)
+meth public static net.java.html.lib.snapsvg.Snap.RGBHSB color(java.lang.String)
+meth public static net.java.html.lib.snapsvg.mina.MinaAnimation animate(double,double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Void>,double)
+meth public static net.java.html.lib.snapsvg.mina.MinaAnimation animate(double,double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Void>,double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Number>)
+meth public static net.java.html.lib.snapsvg.mina.MinaAnimation animate(double,double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Void>,double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Number>,net.java.html.lib.Function$A0<? extends java.lang.Void>)
+meth public static net.java.html.lib.snapsvg.mina.MinaAnimation animate(double,double[],net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Void>,double)
+meth public static net.java.html.lib.snapsvg.mina.MinaAnimation animate(double,double[],net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Void>,double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Number>)
+meth public static net.java.html.lib.snapsvg.mina.MinaAnimation animate(double,double[],net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Void>,double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Number>,net.java.html.lib.Function$A0<? extends java.lang.Void>)
+meth public static net.java.html.lib.snapsvg.mina.MinaAnimation animate(double[],double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Void>,double)
+meth public static net.java.html.lib.snapsvg.mina.MinaAnimation animate(double[],double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Void>,double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Number>)
+meth public static net.java.html.lib.snapsvg.mina.MinaAnimation animate(double[],double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Void>,double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Number>,net.java.html.lib.Function$A0<? extends java.lang.Void>)
+meth public static net.java.html.lib.snapsvg.mina.MinaAnimation animate(double[],double[],net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Void>,double)
+meth public static net.java.html.lib.snapsvg.mina.MinaAnimation animate(double[],double[],net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Void>,double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Number>)
+meth public static net.java.html.lib.snapsvg.mina.MinaAnimation animate(double[],double[],net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Void>,double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Number>,net.java.html.lib.Function$A0<? extends java.lang.Void>)
+meth public static void Matrix()
+meth public static void load(java.lang.String,net.java.html.lib.Function)
+meth public static void load(java.lang.String,net.java.html.lib.Function,net.java.html.lib.Objs)
+meth public static void plugin(net.java.html.lib.Function)
+supr net.java.html.lib.Objs
+
+CLSS public net.java.html.lib.snapsvg.Snap.Filter
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+meth public java.lang.String blur(double)
+meth public java.lang.String blur(double,double)
+meth public java.lang.String brightness(double)
+meth public java.lang.String contrast(double)
+meth public java.lang.String grayscale(double)
+meth public java.lang.String hueRotate(double)
+meth public java.lang.String invert(double)
+meth public java.lang.String saturate(double)
+meth public java.lang.String sepia(double)
+meth public java.lang.String shadow(double,double,double)
+meth public java.lang.String shadow(double,double,double,java.lang.String,double)
+meth public java.lang.String shadow(double,double,java.lang.String,double)
+meth public static net.java.html.lib.snapsvg.Snap.Filter $as(java.lang.Object)
+supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
+
+CLSS public net.java.html.lib.snapsvg.Snap.Fragment
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+meth public net.java.html.lib.snapsvg.Snap.Element select(java.lang.String)
+meth public net.java.html.lib.snapsvg.Snap.Set selectAll()
+meth public net.java.html.lib.snapsvg.Snap.Set selectAll(java.lang.String)
+meth public static net.java.html.lib.snapsvg.Snap.Fragment $as(java.lang.Object)
+supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
+
+CLSS public net.java.html.lib.snapsvg.Snap.HSB
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Number> b
+fld public net.java.html.lib.Objs$Property<java.lang.Number> h
+fld public net.java.html.lib.Objs$Property<java.lang.Number> s
+meth public java.lang.Number b()
+meth public java.lang.Number h()
+meth public java.lang.Number s()
+meth public static net.java.html.lib.snapsvg.Snap.HSB $as(java.lang.Object)
+supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
+
+CLSS public net.java.html.lib.snapsvg.Snap.HSL
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Number> h
+fld public net.java.html.lib.Objs$Property<java.lang.Number> l
+fld public net.java.html.lib.Objs$Property<java.lang.Number> s
+meth public java.lang.Number h()
+meth public java.lang.Number l()
+meth public java.lang.Number s()
+meth public static net.java.html.lib.snapsvg.Snap.HSL $as(java.lang.Object)
+supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
+
+CLSS public net.java.html.lib.snapsvg.Snap.IntersectionDot
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Number> segment1
+fld public net.java.html.lib.Objs$Property<java.lang.Number> segment2
+fld public net.java.html.lib.Objs$Property<java.lang.Number> t1
+fld public net.java.html.lib.Objs$Property<java.lang.Number> t2
+fld public net.java.html.lib.Objs$Property<java.lang.Number> x
+fld public net.java.html.lib.Objs$Property<java.lang.Number> y
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Array<java.lang.Number>> bez1
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Array<java.lang.Number>> bez2
+meth public java.lang.Number segment1()
+meth public java.lang.Number segment2()
+meth public java.lang.Number t1()
+meth public java.lang.Number t2()
+meth public java.lang.Number x()
+meth public java.lang.Number y()
+meth public net.java.html.lib.Array<java.lang.Number> bez1()
+meth public net.java.html.lib.Array<java.lang.Number> bez2()
+meth public static net.java.html.lib.snapsvg.Snap.IntersectionDot $as(java.lang.Object)
+supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
+
+CLSS public net.java.html.lib.snapsvg.Snap.Matrix
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+meth public double determinant()
+meth public double x(double,double)
+meth public double y(double,double)
+meth public java.lang.String toTransformString()
+meth public net.java.html.lib.snapsvg.Snap.ExplicitTransform split()
+meth public net.java.html.lib.snapsvg.Snap.Matrix add(double,double,double,double,double,double)
+meth public net.java.html.lib.snapsvg.Snap.Matrix add(net.java.html.lib.snapsvg.Snap.Matrix)
+meth public net.java.html.lib.snapsvg.Snap.Matrix clone()
+meth public net.java.html.lib.snapsvg.Snap.Matrix invert()
+meth public net.java.html.lib.snapsvg.Snap.Matrix rotate(double)
+meth public net.java.html.lib.snapsvg.Snap.Matrix rotate(double,double)
+meth public net.java.html.lib.snapsvg.Snap.Matrix rotate(double,double,double)
+meth public net.java.html.lib.snapsvg.Snap.Matrix scale(double)
+meth public net.java.html.lib.snapsvg.Snap.Matrix scale(double,double)
+meth public net.java.html.lib.snapsvg.Snap.Matrix scale(double,double,double)
+meth public net.java.html.lib.snapsvg.Snap.Matrix scale(double,double,double,double)
+meth public net.java.html.lib.snapsvg.Snap.Matrix translate(double,double)
+meth public static net.java.html.lib.snapsvg.Snap.Matrix $as(java.lang.Object)
+supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
+
+CLSS public net.java.html.lib.snapsvg.Snap.Paper
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+meth public !varargs java.lang.Object group(java.lang.Object[])
+meth public java.lang.Object g()
+meth public java.lang.Object g(java.lang.Object)
+meth public java.lang.Object gradient(java.lang.String)
+meth public java.lang.String toDataUrl()
+meth public net.java.html.lib.Objs mask(java.lang.Object)
+meth public net.java.html.lib.Objs ptrn(double,double,double,double,double,double,double,double)
+meth public net.java.html.lib.Objs svg(double,double,double,double,double,double,double,double)
+meth public net.java.html.lib.Objs use()
+meth public net.java.html.lib.Objs use(java.lang.String)
+meth public net.java.html.lib.Objs use(net.java.html.lib.snapsvg.Snap.Element)
+meth public net.java.html.lib.snapsvg.Snap.Element circle(double,double,double)
+meth public net.java.html.lib.snapsvg.Snap.Element el(java.lang.String,net.java.html.lib.Objs)
+meth public net.java.html.lib.snapsvg.Snap.Element ellipse(double,double,double,double)
+meth public net.java.html.lib.snapsvg.Snap.Element filter(java.lang.String)
+meth public net.java.html.lib.snapsvg.Snap.Element image(java.lang.String,double,double,double,double)
+meth public net.java.html.lib.snapsvg.Snap.Element line(double,double,double,double)
+meth public net.java.html.lib.snapsvg.Snap.Element path()
+meth public net.java.html.lib.snapsvg.Snap.Element path(java.lang.String)
+meth public net.java.html.lib.snapsvg.Snap.Element polygon(java.lang.Object[])
+meth public net.java.html.lib.snapsvg.Snap.Element polyline(java.lang.Object[])
+meth public net.java.html.lib.snapsvg.Snap.Element rect(double,double,double,double)
+meth public net.java.html.lib.snapsvg.Snap.Element rect(double,double,double,double,double)
+meth public net.java.html.lib.snapsvg.Snap.Element rect(double,double,double,double,double,double)
+meth public net.java.html.lib.snapsvg.Snap.Element text(double,double,double)
+meth public net.java.html.lib.snapsvg.Snap.Element text(double,double,java.lang.String)
+meth public net.java.html.lib.snapsvg.Snap.Element text(double,double,net.java.html.lib.Array<net.java.html.lib.Union$A2<java.lang.String,java.lang.Number>>)
+meth public static net.java.html.lib.snapsvg.Snap.Paper $as(java.lang.Object)
+meth public void clear()
+supr net.java.html.lib.snapsvg.Snap.Element
+hfds $AS
+hcls $Constructor
+
+CLSS public net.java.html.lib.snapsvg.Snap.Path
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+meth public !varargs net.java.html.lib.snapsvg.Snap.BBox bezierBBox(double[])
+meth public double getTotalLength(java.lang.String)
+meth public java.lang.Boolean isBBoxIntersect(net.java.html.lib.snapsvg.Snap.BBox,net.java.html.lib.snapsvg.Snap.BBox)
+meth public java.lang.Boolean isPointInside(java.lang.String,double,double)
+meth public java.lang.Boolean isPointInsideBBox(net.java.html.lib.snapsvg.Snap.BBox,double,double)
+meth public java.lang.String getSubpath(java.lang.String,double,double)
+meth public java.lang.String map(java.lang.String,net.java.html.lib.Objs)
+meth public java.lang.String map(java.lang.String,net.java.html.lib.snapsvg.Snap.Matrix)
+meth public net.java.html.lib.Array<java.lang.Object> toAbsolute(java.lang.String)
+meth public net.java.html.lib.Array<java.lang.Object> toCubic(java.lang.String)
+meth public net.java.html.lib.Array<java.lang.Object> toCubic(net.java.html.lib.Array<java.lang.String>)
+meth public net.java.html.lib.Array<java.lang.Object> toRelative(java.lang.String)
+meth public net.java.html.lib.Array<net.java.html.lib.snapsvg.Snap.IntersectionDot> intersection(java.lang.String,java.lang.String)
+meth public net.java.html.lib.Objs findDotsAtSegment(double,double,double,double,double,double,double,double,double)
+meth public net.java.html.lib.Objs getPointAtLength(java.lang.String,double)
+meth public net.java.html.lib.snapsvg.Snap.BBox bezierBBox(net.java.html.lib.Array<java.lang.Number>)
+meth public net.java.html.lib.snapsvg.Snap.BBox getBBox(java.lang.String)
+meth public static net.java.html.lib.snapsvg.Snap.Path $as(java.lang.Object)
+supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
+
+CLSS public net.java.html.lib.snapsvg.Snap.RGB
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Number> b
+fld public net.java.html.lib.Objs$Property<java.lang.Number> g
+fld public net.java.html.lib.Objs$Property<java.lang.Number> r
+fld public net.java.html.lib.Objs$Property<java.lang.String> hex
+meth public java.lang.Number b()
+meth public java.lang.Number g()
+meth public java.lang.Number r()
+meth public java.lang.String hex()
+meth public static net.java.html.lib.snapsvg.Snap.RGB $as(java.lang.Object)
+supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
+
+CLSS public net.java.html.lib.snapsvg.Snap.RGBHSB
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Boolean> error
+fld public net.java.html.lib.Objs$Property<java.lang.Number> b
+fld public net.java.html.lib.Objs$Property<java.lang.Number> g
+fld public net.java.html.lib.Objs$Property<java.lang.Number> h
+fld public net.java.html.lib.Objs$Property<java.lang.Number> l
+fld public net.java.html.lib.Objs$Property<java.lang.Number> r
+fld public net.java.html.lib.Objs$Property<java.lang.Number> s
+fld public net.java.html.lib.Objs$Property<java.lang.Number> v
+fld public net.java.html.lib.Objs$Property<java.lang.String> hex
+meth public java.lang.Boolean error()
+meth public java.lang.Number b()
+meth public java.lang.Number g()
+meth public java.lang.Number h()
+meth public java.lang.Number l()
+meth public java.lang.Number r()
+meth public java.lang.Number s()
+meth public java.lang.Number v()
+meth public java.lang.String hex()
+meth public static net.java.html.lib.snapsvg.Snap.RGBHSB $as(java.lang.Object)
+supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
+
+CLSS public net.java.html.lib.snapsvg.Snap.Set
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+meth public java.lang.Boolean exclude(net.java.html.lib.snapsvg.Snap.Element)
+meth public java.lang.String attr(java.lang.String)
+meth public net.java.html.lib.Array<net.java.html.lib.snapsvg.Snap.Element> splice(double,double)
+meth public net.java.html.lib.Array<net.java.html.lib.snapsvg.Snap.Element> splice(double,double,net.java.html.lib.Objs[])
+meth public net.java.html.lib.snapsvg.Snap.Element animate(net.java.html.lib.Array<net.java.html.lib.Objs>)
+meth public net.java.html.lib.snapsvg.Snap.Element animate(net.java.html.lib.Objs,double)
+meth public net.java.html.lib.snapsvg.Snap.Element animate(net.java.html.lib.Objs,double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Number>)
+meth public net.java.html.lib.snapsvg.Snap.Element animate(net.java.html.lib.Objs,double,net.java.html.lib.Function$A1<? super java.lang.Number,? extends java.lang.Number>,net.java.html.lib.Function$A0<? extends java.lang.Void>)
+meth public net.java.html.lib.snapsvg.Snap.Element attr(net.java.html.lib.Objs)
+meth public net.java.html.lib.snapsvg.Snap.Element pop()
+meth public net.java.html.lib.snapsvg.Snap.Element push(net.java.html.lib.snapsvg.Snap.Element)
+meth public net.java.html.lib.snapsvg.Snap.Element push(net.java.html.lib.snapsvg.Snap.Element[])
+meth public net.java.html.lib.snapsvg.Snap.Set bind(java.lang.String,net.java.html.lib.Function)
+meth public net.java.html.lib.snapsvg.Snap.Set bind(java.lang.String,net.java.html.lib.snapsvg.Snap.Element)
+meth public net.java.html.lib.snapsvg.Snap.Set bind(java.lang.String,net.java.html.lib.snapsvg.Snap.Element,java.lang.String)
+meth public net.java.html.lib.snapsvg.Snap.Set clear()
+meth public net.java.html.lib.snapsvg.Snap.Set forEach(net.java.html.lib.Function)
+meth public net.java.html.lib.snapsvg.Snap.Set forEach(net.java.html.lib.Function,net.java.html.lib.Objs)
+meth public static net.java.html.lib.snapsvg.Snap.Set $as(java.lang.Object)
+supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
+
+CLSS public net.java.html.lib.snapsvg.Snap.TransformationDescriptor
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.String> global
+fld public net.java.html.lib.Objs$Property<java.lang.String> local
+fld public net.java.html.lib.Objs$Property<java.lang.String> string
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.snapsvg.Snap.Matrix> diffMatrix
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.snapsvg.Snap.Matrix> globalMatrix
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.snapsvg.Snap.Matrix> localMatrix
+meth public java.lang.String global()
+meth public java.lang.String local()
+meth public java.lang.String string()
+meth public net.java.html.lib.snapsvg.Snap.Matrix diffMatrix()
+meth public net.java.html.lib.snapsvg.Snap.Matrix globalMatrix()
+meth public net.java.html.lib.snapsvg.Snap.Matrix localMatrix()
+meth public static net.java.html.lib.snapsvg.Snap.TransformationDescriptor $as(java.lang.Object)
+supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
+
+CLSS public net.java.html.lib.snapsvg.mina.AnimationDescriptor
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.Number> b
+fld public net.java.html.lib.Objs$Property<java.lang.Number> dur
+fld public net.java.html.lib.Objs$Property<java.lang.Number> end
+fld public net.java.html.lib.Objs$Property<java.lang.Number> s
+fld public net.java.html.lib.Objs$Property<java.lang.Number> spd
+fld public net.java.html.lib.Objs$Property<java.lang.Number> start
+fld public net.java.html.lib.Objs$Property<java.lang.String> id
+meth public double duration()
+meth public double easing(double)
+meth public double get()
+meth public double set(double)
+meth public double speed()
+meth public double status()
+meth public java.lang.Number b()
+meth public java.lang.Number dur()
+meth public java.lang.Number end()
+meth public java.lang.Number s()
+meth public java.lang.Number spd()
+meth public java.lang.Number start()
+meth public java.lang.String id()
+meth public static net.java.html.lib.snapsvg.mina.AnimationDescriptor $as(java.lang.Object)
+meth public void duration(double)
+meth public void pause()
+meth public void resume()
+meth public void speed(double)
+meth public void status(double)
+meth public void stop()
+meth public void update()
+supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
+
+CLSS public final net.java.html.lib.snapsvg.mina.Exports
+meth public static double backin(double)
+meth public static double backout(double)
+meth public static double bounce(double)
+meth public static double easein(double)
+meth public static double easeinout(double)
+meth public static double easeout(double)
+meth public static double elastic(double)
+meth public static double linear(double)
+meth public static double time()
+meth public static net.java.html.lib.snapsvg.mina.AnimationDescriptor getById(java.lang.String)
+supr net.java.html.lib.Objs
+
+CLSS public net.java.html.lib.snapsvg.mina.MinaAnimation
+cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
+fld public net.java.html.lib.Objs$Property<java.lang.String> id
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function> duration
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function> easing
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function> speed
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function> status
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function> stop
+meth public java.lang.String id()
+meth public net.java.html.lib.Function duration()
+meth public net.java.html.lib.Function easing()
+meth public net.java.html.lib.Function speed()
+meth public net.java.html.lib.Function status()
+meth public net.java.html.lib.Function stop()
+meth public static net.java.html.lib.snapsvg.mina.MinaAnimation $as(java.lang.Object)
+supr net.java.html.lib.Objs
+hfds $AS
+hcls $Constructor
+

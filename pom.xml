@@ -94,12 +94,14 @@
         <typings.version>1.0-SNAPSHOT</typings.version>
         <browser.runner.version>0.7</browser.runner.version>
         <netbeans.compile.on.save>none</netbeans.compile.on.save>
+        <packages>net.java.html.lib.${typings}</packages>
     </properties>
     <modules>
         <module>angularjs</module>
         <module>jquery</module>
         <module>knockout</module>
         <module>node</module>
+        <module>snapsvg</module>
     </modules>
 
     <build>
@@ -179,7 +181,6 @@
                             </goals>
                             <configuration>
                                 <sigfile>${typings}.sigtest</sigfile>
-                                <failOnError>false</failOnError>
                             </configuration>
                         </execution>
                         <execution>
@@ -190,12 +191,12 @@
                             <phase>prepare-package</phase>
                             <configuration>
                                 <sigfile>${typings}.sigtest</sigfile>
-                                <failOnError>false</failOnError>
                             </configuration>
                         </execution>
                     </executions>
                     <configuration>
-                        <packages>net.java.html.lib.${typings}</packages>
+                        <failOnError>true</failOnError>
+                        <packages>${packages}</packages>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -205,7 +206,8 @@
                     <extensions>true</extensions>
                     <configuration>
                         <instructions>
-                            <Export-Package>net.java.html.lib.${typings}</Export-Package>
+                            <Export-Package>${packages}</Export-Package>
+                            <Private-Package>META-INF.typings</Private-Package>
                         </instructions>
                     </configuration>
                 </plugin>
@@ -287,12 +289,14 @@
             <groupId>com.dukescript.api</groupId>
             <artifactId>junit-browser-runner</artifactId>
             <version>${browser.runner.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.dukescript.api</groupId>
             <artifactId>junit-browser-runner</artifactId>
             <version>${browser.runner.version}</version>
             <classifier>bck2brwsr</classifier>
+            <scope>test</scope>
         </dependency>
 
 
@@ -301,6 +305,7 @@
             <groupId>org.netbeans.html</groupId>
             <artifactId>net.java.html.boot.fx</artifactId>
             <version>${net.java.html.version}</version>
+            <scope>test</scope>
         </dependency>
 
 
@@ -324,6 +329,7 @@
             <groupId>org.apidesign.bck2brwsr</groupId>
             <artifactId>launcher.http</artifactId>
             <version>${bck2brwsr.version}</version>
+            <scope>test</scope>
         </dependency>
 
         <!-- javadoc dependencies -->

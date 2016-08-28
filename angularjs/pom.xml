@@ -40,6 +40,8 @@
         <typings>angular</typings>
         <!-- the javascript library to download that contains the actual code -->
         <typings.url>https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js</typings.url>
+        <!-- exports more than one package -->
+        <packages>net.java.html.lib.angular,net.java.html.lib.angular.ng,net.java.html.lib.angular.ng.auto</packages>
     </properties>
     <packaging>bundle</packaging>
     <build>
@@ -62,10 +64,6 @@
                         <script>${typings.url}</script>
                     </scripts>
                     <package>net.java.html.lib.${typings}</package>
-                    <imports>
-                        <import>net.java.html.lib.dom</import>
-                        <import>net.java.html.lib.jquery</import>
-                    </imports>
                 </configuration>
             </plugin>
             <plugin>

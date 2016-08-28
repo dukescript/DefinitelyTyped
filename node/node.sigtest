@@ -941,14 +941,14 @@ fld public static net.java.html.lib.Objs SlowBuffer
 fld public static net.java.html.lib.Objs Socket
 fld public static net.java.html.lib.Objs StringDecoder
 fld public static net.java.html.lib.Objs doesNotThrow
-fld public static net.java.html.lib.dom.Worker worker
-fld public static net.java.html.lib.dom.Worker[] workers
 fld public static net.java.html.lib.node.Agent globalAgent
 fld public static net.java.html.lib.node.ClusterSettings settings
 fld public static net.java.html.lib.node.Global global
 fld public static net.java.html.lib.node.NodeModule module
 fld public static net.java.html.lib.node.NodeRequire require
 fld public static net.java.html.lib.node.Process process
+fld public static net.java.html.lib.node.Worker worker
+fld public static net.java.html.lib.node.Worker[] workers
 meth public !varargs static java.lang.Boolean emit(java.lang.String,java.lang.Object[])
 meth public !varargs static java.lang.Object setImmediate(net.java.html.lib.Function$A1<? super net.java.html.lib.Array<java.lang.Object>,? extends java.lang.Void>,java.lang.Object[])
 meth public !varargs static java.lang.String format(java.lang.Object,java.lang.Object[])
@@ -1077,8 +1077,6 @@ meth public static net.java.html.lib.Array<net.java.html.lib.Function> listeners
 meth public static net.java.html.lib.Array<net.java.html.lib.node.CpuInfo> cpus()
 meth public static net.java.html.lib.Function$A2<? super java.lang.String,? super net.java.html.lib.Array<java.lang.Object>,? extends java.lang.Void> debuglog(java.lang.String)
 meth public static net.java.html.lib.Objs networkInterfaces()
-meth public static net.java.html.lib.dom.Worker fork()
-meth public static net.java.html.lib.dom.Worker fork(java.lang.Object)
 meth public static net.java.html.lib.node.Buffer execFileSync(java.lang.String)
 meth public static net.java.html.lib.node.Buffer execFileSync(java.lang.String,java.lang.String[])
 meth public static net.java.html.lib.node.Buffer execFileSync(java.lang.String,java.lang.String[],net.java.html.lib.node.ExecFileSyncOptions)
@@ -1233,6 +1231,8 @@ meth public static net.java.html.lib.node.Unzip createUnzip(net.java.html.lib.no
 meth public static net.java.html.lib.node.Url parse(java.lang.String,java.lang.Boolean)
 meth public static net.java.html.lib.node.Url parse(java.lang.String,java.lang.Boolean,java.lang.Boolean)
 meth public static net.java.html.lib.node.Verify createVerify(java.lang.String)
+meth public static net.java.html.lib.node.Worker fork()
+meth public static net.java.html.lib.node.Worker fork(java.lang.Object)
 meth public static net.java.html.lib.node.WriteStream createWriteStream(java.lang.String)
 meth public static net.java.html.lib.node.WriteStream createWriteStream(java.lang.String,net.java.html.lib.Objs)
 meth public static void access(java.lang.String,double,net.java.html.lib.Function$A1<? super net.java.html.lib.node.ErrnoException,? extends java.lang.Void>)
@@ -1355,8 +1355,8 @@ meth public static void notStrictEqual(java.lang.Object,java.lang.Object,java.la
 meth public static void ok(java.lang.Object)
 meth public static void ok(java.lang.Object,java.lang.String)
 meth public static void on(java.lang.Void,net.java.html.lib.Function$A1<? super java.lang.Object,? extends java.lang.Void>)
-meth public static void on(java.lang.Void,net.java.html.lib.Function$A2<? super net.java.html.lib.dom.Worker,? super java.lang.Object,? extends java.lang.Void>)
-meth public static void on(java.lang.Void,net.java.html.lib.Function$A3<? super net.java.html.lib.dom.Worker,? super java.lang.Number,? super java.lang.String,? extends java.lang.Void>)
+meth public static void on(java.lang.Void,net.java.html.lib.Function$A2<? super net.java.html.lib.node.Worker,? super java.lang.Object,? extends java.lang.Void>)
+meth public static void on(java.lang.Void,net.java.html.lib.Function$A3<? super net.java.html.lib.node.Worker,? super java.lang.Number,? super java.lang.String,? extends java.lang.Void>)
 meth public static void once(java.lang.String,net.java.html.lib.Function)
 meth public static void open(java.lang.String,java.lang.String)
 meth public static void open(java.lang.String,java.lang.String,double)

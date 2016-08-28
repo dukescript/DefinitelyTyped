@@ -33,13 +33,15 @@
         <artifactId>typings</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>net.java.html.lib.jquery</artifactId>
-    <name>Java Typings for JQuery</name>
+    <artifactId>net.java.html.lib.snapsvg</artifactId>
+    <name>Java Typings for Snap SVG</name>
     <properties>
         <!-- the typings file is expected in ${typings}.d.ts -->
-        <typings>jquery</typings>
+        <typings>snapsvg</typings>
         <!-- the javascript library to download that contains the actual code -->
-        <typings.url>http://code.jquery.com/jquery-2.2.2.min.js</typings.url>
+        <typings.url>https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js</typings.url>
+        <!-- multiple packages -->
+        <packages>net.java.html.lib.snapsvg:net.java.html.lib.snapsvg.mina:net.java.html.lib.snapsvg.Snap</packages>
     </properties>
     <packaging>bundle</packaging>
     <build>

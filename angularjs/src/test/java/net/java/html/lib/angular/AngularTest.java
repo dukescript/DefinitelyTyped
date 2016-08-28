@@ -6,6 +6,8 @@ import org.junit.Test;
 import net.java.html.junit.BrowserRunner;
 import net.java.html.junit.HTMLContent;
 import static net.java.html.lib.angular.Exports.angular;
+import net.java.html.lib.angular.ng.IModule;
+import net.java.html.lib.angular.ng.IScope;
 import static net.java.html.lib.jquery.Exports.$;
 import net.java.html.lib.jquery.JQuery;
 import static org.junit.Assert.assertNotNull;

@@ -1186,7 +1186,7 @@ declare module "net" {
         connect(path: string, connectionListener?: Function): void;
         bufferSize: number;
         setEncoding(encoding?: string): void;
-        write(data: any, encoding?: string, callback?: Function): void;
+        write(data: any, encoding?: string, callback?: Function): boolean;
         destroy(): void;
         pause(): void;
         resume(): void;
@@ -1238,8 +1238,8 @@ declare module "net" {
         close(callback?: Function): Server;
         address(): { port: number; family: string; address: string; };
         getConnections(cb: (error: Error, count: number) => void): void;
-        ref(): Server;
-        unref(): Server;
+//        ref(): Server;
+//        unref(): Server;
         maxConnections: number;
         connections: number;
     }
@@ -2028,6 +2028,7 @@ declare module "util" {
     export function debuglog(key:string): (msg:string,...param: any[])=>void;
 }
 
+/*
 declare module "assert" {
     function internal (value: any, message?: string): void;
     namespace internal {
@@ -2072,6 +2073,7 @@ declare module "assert" {
 
     export = internal;
 }
+*/
 
 declare module "tty" {
     import * as net from "net";

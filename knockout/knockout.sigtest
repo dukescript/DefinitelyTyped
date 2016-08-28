@@ -59,64 +59,6 @@ meth public java.lang.Object net_java_html_lib_Function$$call$Ljava_lang_Object_
 supr java.lang.Object
 hfds VM,last,p
 
-CLSS public net.java.html.lib.knockout.AMDModule
-cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
-fld public net.java.html.lib.Objs$Property<java.lang.String> require
-meth public java.lang.String require()
-meth public static net.java.html.lib.knockout.AMDModule $as(java.lang.Object)
-supr net.java.html.lib.Objs
-hfds $AS
-hcls $Constructor
-
-CLSS public net.java.html.lib.knockout.ComponentConfig
-cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
-fld public net.java.html.lib.Objs$Property<java.lang.Object> createViewModel
-fld public net.java.html.lib.Objs$Property<java.lang.Object> template
-fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A4<net.java.html.lib.knockout.ViewModelFunction,net.java.html.lib.knockout.ViewModelSharedInstance,net.java.html.lib.knockout.ViewModelFactoryFunction,net.java.html.lib.knockout.AMDModule>> viewModel
-meth public static net.java.html.lib.knockout.ComponentConfig $as(java.lang.Object)
-supr net.java.html.lib.Objs
-hfds $AS
-hcls $Constructor
-
-CLSS public net.java.html.lib.knockout.ComponentInfo
-cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
-fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Node> element
-fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Node[]> templateNodes
-meth public net.java.html.lib.dom.Node element()
-meth public net.java.html.lib.dom.Node[] templateNodes()
-meth public static net.java.html.lib.knockout.ComponentInfo $as(java.lang.Object)
-supr net.java.html.lib.Objs
-hfds $AS
-hcls $Constructor
-
-CLSS public net.java.html.lib.knockout.Config
-cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
-fld public net.java.html.lib.Objs$Property<java.lang.Boolean> synchronous
-fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A4<net.java.html.lib.knockout.ViewModelFunction,net.java.html.lib.knockout.ViewModelSharedInstance,net.java.html.lib.knockout.ViewModelFactoryFunction,net.java.html.lib.knockout.AMDModule>> viewModel
-fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A5<java.lang.String,net.java.html.lib.dom.Node[],net.java.html.lib.dom.DocumentFragment,net.java.html.lib.knockout.TemplateElement,net.java.html.lib.knockout.AMDModule>> template
-meth public java.lang.Boolean synchronous()
-meth public static net.java.html.lib.knockout.Config $as(java.lang.Object)
-supr net.java.html.lib.Objs
-hfds $AS
-hcls $Constructor
-
-CLSS public net.java.html.lib.knockout.Definition
-cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
-fld public net.java.html.lib.Objs$Property<net.java.html.lib.dom.Node[]> template
-meth public java.lang.Object createViewModel(java.lang.Object,net.java.html.lib.Objs)
-meth public net.java.html.lib.dom.Node[] template()
-meth public static net.java.html.lib.knockout.Definition $as(java.lang.Object)
-supr net.java.html.lib.Objs
-hfds $AS
-hcls $Constructor
-
-CLSS public net.java.html.lib.knockout.EmptyConfig
-cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
-meth public static net.java.html.lib.knockout.EmptyConfig $as(java.lang.Object)
-supr net.java.html.lib.Objs
-hfds $AS
-hcls $Constructor
-
 CLSS public final net.java.html.lib.knockout.Exports
 fld public static net.java.html.lib.knockout.KnockoutStatic ko
 supr net.java.html.lib.Objs
@@ -251,17 +193,17 @@ hcls $Constructor
 
 CLSS public net.java.html.lib.knockout.KnockoutComponents
 cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
-fld public net.java.html.lib.Objs$Property<net.java.html.lib.knockout.Loader> defaultLoader
-fld public net.java.html.lib.Objs$Property<net.java.html.lib.knockout.Loader[]> loaders
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.knockout.KnockoutComponentTypes.Loader> defaultLoader
+fld public net.java.html.lib.Objs$Property<net.java.html.lib.knockout.KnockoutComponentTypes.Loader[]> loaders
 meth public java.lang.Boolean isRegistered(java.lang.String)
 meth public java.lang.String getComponentNameForNode(net.java.html.lib.dom.Node)
-meth public net.java.html.lib.knockout.Loader defaultLoader()
-meth public net.java.html.lib.knockout.Loader[] loaders()
+meth public net.java.html.lib.knockout.KnockoutComponentTypes.Loader defaultLoader()
+meth public net.java.html.lib.knockout.KnockoutComponentTypes.Loader[] loaders()
 meth public static net.java.html.lib.knockout.KnockoutComponents $as(java.lang.Object)
 meth public void clearCachedDefinition(java.lang.String)
-meth public void get(java.lang.String,net.java.html.lib.Function$A1<? super net.java.html.lib.knockout.Definition,? extends java.lang.Void>)
-meth public void register(java.lang.String,net.java.html.lib.knockout.Config)
-meth public void register(java.lang.String,net.java.html.lib.knockout.EmptyConfig)
+meth public void get(java.lang.String,net.java.html.lib.Function$A1<? super net.java.html.lib.knockout.KnockoutComponentTypes.Definition,? extends java.lang.Void>)
+meth public void register(java.lang.String,net.java.html.lib.knockout.KnockoutComponentTypes.Config)
+meth public void register(java.lang.String,net.java.html.lib.knockout.KnockoutComponentTypes.EmptyConfig)
 meth public void unregister(java.lang.String)
 supr net.java.html.lib.Objs
 hfds $AS
@@ -687,53 +629,6 @@ meth public void emptyNode(net.java.html.lib.knockout.KnockoutVirtualElement)
 meth public void insertAfter(net.java.html.lib.knockout.KnockoutVirtualElement,net.java.html.lib.dom.Node,net.java.html.lib.dom.Node)
 meth public void prepend(net.java.html.lib.knockout.KnockoutVirtualElement,net.java.html.lib.dom.Node)
 meth public void setDomNodeChildren(net.java.html.lib.knockout.KnockoutVirtualElement,net.java.html.lib.Objs)
-supr net.java.html.lib.Objs
-hfds $AS
-hcls $Constructor
-
-CLSS public net.java.html.lib.knockout.Loader
-cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
-fld public net.java.html.lib.Objs$Property<java.lang.Boolean> suppressLoaderExceptions
-meth public java.lang.Boolean suppressLoaderExceptions()
-meth public static net.java.html.lib.knockout.Loader $as(java.lang.Object)
-meth public void getConfig(java.lang.String,net.java.html.lib.Function$A1<? super net.java.html.lib.knockout.ComponentConfig,? extends java.lang.Void>)
-meth public void loadComponent(java.lang.String,net.java.html.lib.knockout.ComponentConfig,net.java.html.lib.Function$A1<? super net.java.html.lib.knockout.Definition,? extends java.lang.Void>)
-meth public void loadTemplate(java.lang.String,java.lang.Object,net.java.html.lib.Function$A1<? super net.java.html.lib.Array<net.java.html.lib.dom.Node>,? extends java.lang.Void>)
-meth public void loadViewModel(java.lang.String,java.lang.Object,net.java.html.lib.Function$A1<? super java.lang.Object,? extends java.lang.Void>)
-supr net.java.html.lib.Objs
-hfds $AS
-hcls $Constructor
-
-CLSS public net.java.html.lib.knockout.TemplateElement
-cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
-fld public net.java.html.lib.Objs$Property<net.java.html.lib.Union$A2<java.lang.String,net.java.html.lib.dom.Node>> element
-meth public static net.java.html.lib.knockout.TemplateElement $as(java.lang.Object)
-supr net.java.html.lib.Objs
-hfds $AS
-hcls $Constructor
-
-CLSS public net.java.html.lib.knockout.ViewModelFactoryFunction
-cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
-fld public net.java.html.lib.Objs$Property<net.java.html.lib.Function$A2<? super java.lang.Object,? super net.java.html.lib.knockout.ComponentInfo,?>> createViewModel
-meth public net.java.html.lib.Function$A2<? super java.lang.Object,? super net.java.html.lib.knockout.ComponentInfo,?> createViewModel()
-meth public static net.java.html.lib.knockout.ViewModelFactoryFunction $as(java.lang.Object)
-supr net.java.html.lib.Objs
-hfds $AS
-hcls $Constructor
-
-CLSS public net.java.html.lib.knockout.ViewModelFunction
-cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
-meth public java.lang.Object $apply()
-meth public java.lang.Object $apply(java.lang.Object)
-meth public static net.java.html.lib.knockout.ViewModelFunction $as(java.lang.Object)
-supr net.java.html.lib.Objs
-hfds $AS
-hcls $Constructor
-
-CLSS public net.java.html.lib.knockout.ViewModelSharedInstance
-cons protected init(net.java.html.lib.Objs$Constructor<?>,java.lang.Object)
-fld public net.java.html.lib.Objs$Property<java.lang.Object> instance
-meth public static net.java.html.lib.knockout.ViewModelSharedInstance $as(java.lang.Object)
 supr net.java.html.lib.Objs
 hfds $AS
 hcls $Constructor
