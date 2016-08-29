@@ -41,7 +41,7 @@
         <!-- the javascript library to download that contains the actual code -->
         <typings.url>https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js</typings.url>
         <!-- multiple packages -->
-        <packages>net.java.html.lib.snapsvg:net.java.html.lib.snapsvg.mina:net.java.html.lib.snapsvg.Snap</packages>
+        <packages>net.java.html.lib.snapsvg,net.java.html.lib.snapsvg.mina,net.java.html.lib.snapsvg.Snap</packages>
     </properties>
     <packaging>bundle</packaging>
     <build>
