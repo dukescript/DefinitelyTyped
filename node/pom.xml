@@ -38,6 +38,8 @@
     <properties>
         <!-- the typings file is expected in ${typings}.d.ts -->
         <typings>node</typings>
+        <!-- a lot of packages -->
+        <packages>net.java.html.lib.node,net.java.html.lib.node.fs,net.java.html.lib.node.tls,net.java.html.lib.node.path,net.java.html.lib.node.path.posix,net.java.html.lib.node.path.win32,net.java.html.lib.node.domain,net.java.html.lib.node.crypto,net.java.html.lib.node.NodeJS,net.java.html.lib.node.querystring,net.java.html.lib.node.repl,net.java.html.lib.node.string_decoder,net.java.html.lib.node.util,net.java.html.lib.node.punycode,net.java.html.lib.node.cluster,net.java.html.lib.node.child_process,net.java.html.lib.node.http,net.java.html.lib.node.tty,net.java.html.lib.node.os,net.java.html.lib.node.buffer,net.java.html.lib.node.url,net.java.html.lib.node.zlib,net.java.html.lib.node.readline,net.java.html.lib.node.https,net.java.html.lib.node.dns,net.java.html.lib.node.events,net.java.html.lib.node.net,net.java.html.lib.node.dgram,net.java.html.lib.node.constants,net.java.html.lib.node.vm,net.java.html.lib.node.stream</packages>
     </properties>
     <packaging>bundle</packaging>
     <build>
@@ -62,9 +64,6 @@
                     </scripts>
                     -->
                     <package>net.java.html.lib.${typings}</package>
-                    <imports>
-                        <import>net.java.html.lib.dom</import>
-                    </imports>
                 </configuration>
             </plugin>
             <plugin>
