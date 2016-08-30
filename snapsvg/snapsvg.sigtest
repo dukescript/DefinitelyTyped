@@ -30,6 +30,8 @@ meth public java.lang.Object $get(java.lang.String)
 meth public java.lang.Object valueOf()
 meth public java.lang.String toLocaleString()
 meth public java.lang.String toString()
+meth public net.java.html.lib.Objs $delete(java.lang.String)
+meth public net.java.html.lib.Objs $set(java.lang.String,java.lang.Object)
 meth public static <%0 extends java.lang.Object> {%%0} $as(java.lang.Class<{%%0}>,java.lang.Object)
 meth public static <%0 extends java.lang.Object> {%%0} freeze({%%0})
 meth public static <%0 extends java.lang.Object> {%%0} preventExtensions({%%0})
@@ -49,8 +51,6 @@ meth public static java.lang.String[] getOwnPropertyNames(java.lang.Object)
 meth public static net.java.html.lib.Array<java.lang.String> keys(java.lang.Object)
 meth public static net.java.html.lib.Objs $as(java.lang.Object)
 meth public static net.java.html.lib.PropertyDescriptor getOwnPropertyDescriptor(java.lang.Object,java.lang.String)
-meth public void $delete(java.lang.String)
-meth public void $set(java.lang.String,java.lang.Object)
 supr java.lang.Object
 hfds $$fn$$deleteRaw_3,$$fn$$getRaw_1,$$fn$$setRaw_2,$AS,js
 
