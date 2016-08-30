@@ -179,9 +179,6 @@
                             <goals>
                                 <goal>check</goal>
                             </goals>
-                            <configuration>
-                                <sigfile>${typings}.sigtest</sigfile>
-                            </configuration>
                         </execution>
                         <execution>
                             <id>sigtest-generate</id>
@@ -189,14 +186,12 @@
                                 <goal>generate</goal>
                             </goals>
                             <phase>prepare-package</phase>
-                            <configuration>
-                                <sigfile>${typings}.sigtest</sigfile>
-                            </configuration>
                         </execution>
                     </executions>
                     <configuration>
                         <failOnError>true</failOnError>
                         <packages>${packages}</packages>
+                        <sigfile>${typings}.sigtest</sigfile>
                     </configuration>
                 </plugin>
                 <plugin>
