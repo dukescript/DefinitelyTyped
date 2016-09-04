@@ -610,9 +610,9 @@ hfds $AS
 hcls $Constructor
 
 CLSS public final net.java.html.lib.node.buffer.Exports
-fld public static double INSPECT_MAX_BYTES
-fld public static java.lang.Object BuffType
-fld public static java.lang.Object SlowBuffType
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> INSPECT_MAX_BYTES
+fld public static net.java.html.lib.Objs$Property<java.lang.Object> BuffType
+fld public static net.java.html.lib.Objs$Property<java.lang.Object> SlowBuffType
 supr net.java.html.lib.Objs
 
 CLSS public final net.java.html.lib.node.child_process.$JsCallbacks$
@@ -989,11 +989,11 @@ hfds $AS
 hcls $Constructor
 
 CLSS public final net.java.html.lib.node.cluster.Exports
-fld public static java.lang.Boolean isMaster
-fld public static java.lang.Boolean isWorker
-fld public static net.java.html.lib.node.cluster.ClusterSettings settings
-fld public static net.java.html.lib.node.cluster.Worker worker
-fld public static net.java.html.lib.node.cluster.Worker[] workers
+fld public static net.java.html.lib.Objs$Property<java.lang.Boolean> isMaster
+fld public static net.java.html.lib.Objs$Property<java.lang.Boolean> isWorker
+fld public static net.java.html.lib.Objs$Property<net.java.html.lib.node.cluster.ClusterSettings> settings
+fld public static net.java.html.lib.Objs$Property<net.java.html.lib.node.cluster.Worker> worker
+fld public static net.java.html.lib.Objs$Property<net.java.html.lib.node.cluster.Worker[]> workers
 meth public !varargs static java.lang.Boolean emit(java.lang.String,java.lang.Object[])
 meth public static java.lang.Object on(java.lang.String,net.java.html.lib.Function)
 meth public static net.java.html.lib.Array<net.java.html.lib.Function> listeners(java.lang.String)
@@ -1035,227 +1035,227 @@ hfds $AS
 hcls $Constructor
 
 CLSS public final net.java.html.lib.node.constants.Exports
-fld public static double DH_CHECK_P_NOT_PRIME
-fld public static double DH_CHECK_P_NOT_SAFE_PRIME
-fld public static double DH_NOT_SUITABLE_GENERATOR
-fld public static double DH_UNABLE_TO_CHECK_GENERATOR
-fld public static double E2BIG
-fld public static double EACCES
-fld public static double EADDRINUSE
-fld public static double EADDRNOTAVAIL
-fld public static double EAFNOSUPPORT
-fld public static double EAGAIN
-fld public static double EALREADY
-fld public static double EBADF
-fld public static double EBADMSG
-fld public static double EBUSY
-fld public static double ECANCELED
-fld public static double ECHILD
-fld public static double ECONNABORTED
-fld public static double ECONNREFUSED
-fld public static double ECONNRESET
-fld public static double EDEADLK
-fld public static double EDESTADDRREQ
-fld public static double EDOM
-fld public static double EEXIST
-fld public static double EFAULT
-fld public static double EFBIG
-fld public static double EHOSTUNREACH
-fld public static double EIDRM
-fld public static double EILSEQ
-fld public static double EINPROGRESS
-fld public static double EINTR
-fld public static double EINVAL
-fld public static double EIO
-fld public static double EISCONN
-fld public static double EISDIR
-fld public static double ELOOP
-fld public static double EMFILE
-fld public static double EMLINK
-fld public static double EMSGSIZE
-fld public static double ENAMETOOLONG
-fld public static double ENETDOWN
-fld public static double ENETRESET
-fld public static double ENETUNREACH
-fld public static double ENFILE
-fld public static double ENGINE_METHOD_ALL
-fld public static double ENGINE_METHOD_CIPHERS
-fld public static double ENGINE_METHOD_DH
-fld public static double ENGINE_METHOD_DIGESTS
-fld public static double ENGINE_METHOD_DSA
-fld public static double ENGINE_METHOD_ECDH
-fld public static double ENGINE_METHOD_ECDSA
-fld public static double ENGINE_METHOD_NONE
-fld public static double ENGINE_METHOD_PKEY_ASN1_METHS
-fld public static double ENGINE_METHOD_PKEY_METHS
-fld public static double ENGINE_METHOD_RAND
-fld public static double ENGINE_METHOD_STORE
-fld public static double ENOBUFS
-fld public static double ENODATA
-fld public static double ENODEV
-fld public static double ENOENT
-fld public static double ENOEXEC
-fld public static double ENOLCK
-fld public static double ENOLINK
-fld public static double ENOMEM
-fld public static double ENOMSG
-fld public static double ENOPROTOOPT
-fld public static double ENOSPC
-fld public static double ENOSR
-fld public static double ENOSTR
-fld public static double ENOSYS
-fld public static double ENOTCONN
-fld public static double ENOTDIR
-fld public static double ENOTEMPTY
-fld public static double ENOTSOCK
-fld public static double ENOTSUP
-fld public static double ENOTTY
-fld public static double ENXIO
-fld public static double EOPNOTSUPP
-fld public static double EOVERFLOW
-fld public static double EPERM
-fld public static double EPIPE
-fld public static double EPROTO
-fld public static double EPROTONOSUPPORT
-fld public static double EPROTOTYPE
-fld public static double ERANGE
-fld public static double EROFS
-fld public static double ESPIPE
-fld public static double ESRCH
-fld public static double ETIME
-fld public static double ETIMEDOUT
-fld public static double ETXTBSY
-fld public static double EWOULDBLOCK
-fld public static double EXDEV
-fld public static double F_OK
-fld public static double NPN_ENABLED
-fld public static double O_APPEND
-fld public static double O_CREAT
-fld public static double O_EXCL
-fld public static double O_RDONLY
-fld public static double O_RDWR
-fld public static double O_TRUNC
-fld public static double O_WRONLY
-fld public static double POINT_CONVERSION_COMPRESSED
-fld public static double POINT_CONVERSION_HYBRID
-fld public static double POINT_CONVERSION_UNCOMPRESSED
-fld public static double RSA_NO_PADDING
-fld public static double RSA_PKCS1_OAEP_PADDING
-fld public static double RSA_PKCS1_PADDING
-fld public static double RSA_PKCS1_PSS_PADDING
-fld public static double RSA_SSLV23_PADDING
-fld public static double RSA_X931_PADDING
-fld public static double R_OK
-fld public static double SIGABRT
-fld public static double SIGBREAK
-fld public static double SIGFPE
-fld public static double SIGHUP
-fld public static double SIGILL
-fld public static double SIGINT
-fld public static double SIGKILL
-fld public static double SIGSEGV
-fld public static double SIGTERM
-fld public static double SIGWINCH
-fld public static double SSL_OP_ALL
-fld public static double SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION
-fld public static double SSL_OP_CIPHER_SERVER_PREFERENCE
-fld public static double SSL_OP_CISCO_ANYCONNECT
-fld public static double SSL_OP_COOKIE_EXCHANGE
-fld public static double SSL_OP_CRYPTOPRO_TLSEXT_BUG
-fld public static double SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS
-fld public static double SSL_OP_EPHEMERAL_RSA
-fld public static double SSL_OP_LEGACY_SERVER_CONNECT
-fld public static double SSL_OP_MICROSOFT_BIG_SSLV3_BUFFER
-fld public static double SSL_OP_MICROSOFT_SESS_ID_BUG
-fld public static double SSL_OP_MSIE_SSLV2_RSA_PADDING
-fld public static double SSL_OP_NETSCAPE_CA_DN_BUG
-fld public static double SSL_OP_NETSCAPE_CHALLENGE_BUG
-fld public static double SSL_OP_NETSCAPE_DEMO_CIPHER_CHANGE_BUG
-fld public static double SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG
-fld public static double SSL_OP_NO_COMPRESSION
-fld public static double SSL_OP_NO_QUERY_MTU
-fld public static double SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION
-fld public static double SSL_OP_NO_SSLv2
-fld public static double SSL_OP_NO_SSLv3
-fld public static double SSL_OP_NO_TICKET
-fld public static double SSL_OP_NO_TLSv1
-fld public static double SSL_OP_NO_TLSv1_1
-fld public static double SSL_OP_NO_TLSv1_2
-fld public static double SSL_OP_PKCS1_CHECK_1
-fld public static double SSL_OP_PKCS1_CHECK_2
-fld public static double SSL_OP_SINGLE_DH_USE
-fld public static double SSL_OP_SINGLE_ECDH_USE
-fld public static double SSL_OP_SSLEAY_080_CLIENT_DH_BUG
-fld public static double SSL_OP_SSLREF2_REUSE_CERT_TYPE_BUG
-fld public static double SSL_OP_TLS_BLOCK_PADDING_BUG
-fld public static double SSL_OP_TLS_D5_BUG
-fld public static double SSL_OP_TLS_ROLLBACK_BUG
-fld public static double S_IFCHR
-fld public static double S_IFDIR
-fld public static double S_IFLNK
-fld public static double S_IFMT
-fld public static double S_IFREG
-fld public static double UV_UDP_REUSEADDR
-fld public static double WSAEACCES
-fld public static double WSAEADDRINUSE
-fld public static double WSAEADDRNOTAVAIL
-fld public static double WSAEAFNOSUPPORT
-fld public static double WSAEALREADY
-fld public static double WSAEBADF
-fld public static double WSAECANCELLED
-fld public static double WSAECONNABORTED
-fld public static double WSAECONNREFUSED
-fld public static double WSAECONNRESET
-fld public static double WSAEDESTADDRREQ
-fld public static double WSAEDISCON
-fld public static double WSAEDQUOT
-fld public static double WSAEFAULT
-fld public static double WSAEHOSTDOWN
-fld public static double WSAEHOSTUNREACH
-fld public static double WSAEINPROGRESS
-fld public static double WSAEINTR
-fld public static double WSAEINVAL
-fld public static double WSAEINVALIDPROCTABLE
-fld public static double WSAEINVALIDPROVIDER
-fld public static double WSAEISCONN
-fld public static double WSAELOOP
-fld public static double WSAEMFILE
-fld public static double WSAEMSGSIZE
-fld public static double WSAENAMETOOLONG
-fld public static double WSAENETDOWN
-fld public static double WSAENETRESET
-fld public static double WSAENETUNREACH
-fld public static double WSAENOBUFS
-fld public static double WSAENOMORE
-fld public static double WSAENOPROTOOPT
-fld public static double WSAENOTCONN
-fld public static double WSAENOTEMPTY
-fld public static double WSAENOTSOCK
-fld public static double WSAEOPNOTSUPP
-fld public static double WSAEPFNOSUPPORT
-fld public static double WSAEPROCLIM
-fld public static double WSAEPROTONOSUPPORT
-fld public static double WSAEPROTOTYPE
-fld public static double WSAEPROVIDERFAILEDINIT
-fld public static double WSAEREFUSED
-fld public static double WSAEREMOTE
-fld public static double WSAESHUTDOWN
-fld public static double WSAESOCKTNOSUPPORT
-fld public static double WSAESTALE
-fld public static double WSAETIMEDOUT
-fld public static double WSAETOOMANYREFS
-fld public static double WSAEUSERS
-fld public static double WSAEWOULDBLOCK
-fld public static double WSANOTINITIALISED
-fld public static double WSASERVICE_NOT_FOUND
-fld public static double WSASYSCALLFAILURE
-fld public static double WSASYSNOTREADY
-fld public static double WSATYPE_NOT_FOUND
-fld public static double WSAVERNOTSUPPORTED
-fld public static double WSA_E_CANCELLED
-fld public static double WSA_E_NO_MORE
-fld public static double W_OK
-fld public static double X_OK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> DH_CHECK_P_NOT_PRIME
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> DH_CHECK_P_NOT_SAFE_PRIME
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> DH_NOT_SUITABLE_GENERATOR
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> DH_UNABLE_TO_CHECK_GENERATOR
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> E2BIG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EACCES
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EADDRINUSE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EADDRNOTAVAIL
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EAFNOSUPPORT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EAGAIN
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EALREADY
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EBADF
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EBADMSG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EBUSY
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ECANCELED
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ECHILD
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ECONNABORTED
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ECONNREFUSED
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ECONNRESET
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EDEADLK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EDESTADDRREQ
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EDOM
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EEXIST
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EFAULT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EFBIG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EHOSTUNREACH
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EIDRM
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EILSEQ
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EINPROGRESS
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EINTR
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EINVAL
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EIO
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EISCONN
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EISDIR
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ELOOP
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EMFILE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EMLINK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EMSGSIZE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENAMETOOLONG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENETDOWN
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENETRESET
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENETUNREACH
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENFILE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENGINE_METHOD_ALL
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENGINE_METHOD_CIPHERS
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENGINE_METHOD_DH
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENGINE_METHOD_DIGESTS
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENGINE_METHOD_DSA
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENGINE_METHOD_ECDH
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENGINE_METHOD_ECDSA
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENGINE_METHOD_NONE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENGINE_METHOD_PKEY_ASN1_METHS
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENGINE_METHOD_PKEY_METHS
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENGINE_METHOD_RAND
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENGINE_METHOD_STORE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOBUFS
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENODATA
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENODEV
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOENT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOEXEC
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOLCK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOLINK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOMEM
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOMSG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOPROTOOPT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOSPC
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOSR
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOSTR
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOSYS
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOTCONN
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOTDIR
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOTEMPTY
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOTSOCK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOTSUP
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENOTTY
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ENXIO
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EOPNOTSUPP
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EOVERFLOW
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EPERM
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EPIPE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EPROTO
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EPROTONOSUPPORT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EPROTOTYPE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ERANGE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EROFS
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ESPIPE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ESRCH
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ETIME
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ETIMEDOUT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> ETXTBSY
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EWOULDBLOCK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> EXDEV
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> F_OK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> NPN_ENABLED
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> O_APPEND
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> O_CREAT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> O_EXCL
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> O_RDONLY
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> O_RDWR
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> O_TRUNC
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> O_WRONLY
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> POINT_CONVERSION_COMPRESSED
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> POINT_CONVERSION_HYBRID
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> POINT_CONVERSION_UNCOMPRESSED
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> RSA_NO_PADDING
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> RSA_PKCS1_OAEP_PADDING
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> RSA_PKCS1_PADDING
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> RSA_PKCS1_PSS_PADDING
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> RSA_SSLV23_PADDING
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> RSA_X931_PADDING
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> R_OK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SIGABRT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SIGBREAK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SIGFPE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SIGHUP
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SIGILL
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SIGINT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SIGKILL
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SIGSEGV
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SIGTERM
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SIGWINCH
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_ALL
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_CIPHER_SERVER_PREFERENCE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_CISCO_ANYCONNECT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_COOKIE_EXCHANGE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_CRYPTOPRO_TLSEXT_BUG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_EPHEMERAL_RSA
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_LEGACY_SERVER_CONNECT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_MICROSOFT_BIG_SSLV3_BUFFER
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_MICROSOFT_SESS_ID_BUG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_MSIE_SSLV2_RSA_PADDING
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_NETSCAPE_CA_DN_BUG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_NETSCAPE_CHALLENGE_BUG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_NETSCAPE_DEMO_CIPHER_CHANGE_BUG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_NO_COMPRESSION
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_NO_QUERY_MTU
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_NO_SSLv2
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_NO_SSLv3
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_NO_TICKET
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_NO_TLSv1
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_NO_TLSv1_1
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_NO_TLSv1_2
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_PKCS1_CHECK_1
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_PKCS1_CHECK_2
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_SINGLE_DH_USE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_SINGLE_ECDH_USE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_SSLEAY_080_CLIENT_DH_BUG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_SSLREF2_REUSE_CERT_TYPE_BUG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_TLS_BLOCK_PADDING_BUG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_TLS_D5_BUG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> SSL_OP_TLS_ROLLBACK_BUG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> S_IFCHR
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> S_IFDIR
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> S_IFLNK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> S_IFMT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> S_IFREG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> UV_UDP_REUSEADDR
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEACCES
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEADDRINUSE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEADDRNOTAVAIL
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEAFNOSUPPORT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEALREADY
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEBADF
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAECANCELLED
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAECONNABORTED
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAECONNREFUSED
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAECONNRESET
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEDESTADDRREQ
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEDISCON
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEDQUOT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEFAULT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEHOSTDOWN
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEHOSTUNREACH
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEINPROGRESS
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEINTR
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEINVAL
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEINVALIDPROCTABLE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEINVALIDPROVIDER
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEISCONN
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAELOOP
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEMFILE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEMSGSIZE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAENAMETOOLONG
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAENETDOWN
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAENETRESET
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAENETUNREACH
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAENOBUFS
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAENOMORE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAENOPROTOOPT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAENOTCONN
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAENOTEMPTY
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAENOTSOCK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEOPNOTSUPP
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEPFNOSUPPORT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEPROCLIM
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEPROTONOSUPPORT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEPROTOTYPE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEPROVIDERFAILEDINIT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEREFUSED
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEREMOTE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAESHUTDOWN
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAESOCKTNOSUPPORT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAESTALE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAETIMEDOUT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAETOOMANYREFS
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEUSERS
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAEWOULDBLOCK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSANOTINITIALISED
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSASERVICE_NOT_FOUND
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSASYSCALLFAILURE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSASYSNOTREADY
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSATYPE_NOT_FOUND
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSAVERNOTSUPPORTED
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSA_E_CANCELLED
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> WSA_E_NO_MORE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> W_OK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> X_OK
 supr net.java.html.lib.Objs
 
 CLSS public final net.java.html.lib.node.crypto.$JsCallbacks$
@@ -1570,10 +1570,10 @@ supr java.lang.Object
 hfds VM,last,p
 
 CLSS public final net.java.html.lib.node.fs.Exports
-fld public static double F_OK
-fld public static double R_OK
-fld public static double W_OK
-fld public static double X_OK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> F_OK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> R_OK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> W_OK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> X_OK
 meth public static double openSync(java.lang.String,java.lang.String)
 meth public static double openSync(java.lang.String,java.lang.String,double)
 meth public static double openSync(java.lang.String,java.lang.String,java.lang.String)
@@ -1891,9 +1891,9 @@ hfds $AS
 hcls $Constructor
 
 CLSS public final net.java.html.lib.node.http.Exports
-fld public static java.lang.String[] METHODS
-fld public static net.java.html.lib.Objs STATUS_CODES
-fld public static net.java.html.lib.node.http.Agent globalAgent
+fld public static net.java.html.lib.Objs$Property<java.lang.String[]> METHODS
+fld public static net.java.html.lib.Objs$Property<net.java.html.lib.Objs> STATUS_CODES
+fld public static net.java.html.lib.Objs$Property<net.java.html.lib.node.http.Agent> globalAgent
 meth public static java.lang.Object createClient()
 meth public static java.lang.Object createClient(double)
 meth public static java.lang.Object createClient(double,java.lang.String)
@@ -2040,8 +2040,8 @@ hfds $AS
 hcls $Constructor
 
 CLSS public final net.java.html.lib.node.https.Exports
-fld public static net.java.html.lib.Objs Agent
-fld public static net.java.html.lib.node.http.Agent globalAgent
+fld public static net.java.html.lib.Objs$Property<net.java.html.lib.Objs> Agent
+fld public static net.java.html.lib.Objs$Property<net.java.html.lib.node.http.Agent> globalAgent
 meth public static net.java.html.lib.node.http.ClientRequest get(net.java.html.lib.node.http.RequestOptions)
 meth public static net.java.html.lib.node.http.ClientRequest get(net.java.html.lib.node.http.RequestOptions,net.java.html.lib.Function$A1<? super net.java.html.lib.node.http.IncomingMessage,? extends java.lang.Void>)
 meth public static net.java.html.lib.node.http.ClientRequest request(net.java.html.lib.node.http.RequestOptions)
@@ -2107,7 +2107,7 @@ supr java.lang.Object
 hfds VM,last,p
 
 CLSS public final net.java.html.lib.node.net.Exports
-fld public static net.java.html.lib.Objs Socket
+fld public static net.java.html.lib.Objs$Property<net.java.html.lib.Objs> Socket
 meth public static double isIP(java.lang.String)
 meth public static java.lang.Boolean isIPv4(java.lang.String)
 meth public static java.lang.Boolean isIPv6(java.lang.String)
@@ -2256,7 +2256,7 @@ hfds $AS
 hcls $Constructor
 
 CLSS public final net.java.html.lib.node.os.Exports
-fld public static java.lang.String EOL
+fld public static net.java.html.lib.Objs$Property<java.lang.String> EOL
 meth public static double freemem()
 meth public static double totalmem()
 meth public static double uptime()
@@ -2291,8 +2291,8 @@ hfds $AS
 hcls $Constructor
 
 CLSS public final net.java.html.lib.node.path.Exports
-fld public static java.lang.String delimiter
-fld public static java.lang.String sep
+fld public static net.java.html.lib.Objs$Property<java.lang.String> delimiter
+fld public static net.java.html.lib.Objs$Property<java.lang.String> sep
 meth public !varargs static java.lang.String join(java.lang.Object[])
 meth public !varargs static java.lang.String join(java.lang.String[])
 meth public !varargs static java.lang.String resolve(java.lang.Object[])
@@ -2325,8 +2325,8 @@ hfds $AS
 hcls $Constructor
 
 CLSS public final net.java.html.lib.node.path.posix.Exports
-fld public static java.lang.String delimiter
-fld public static java.lang.String sep
+fld public static net.java.html.lib.Objs$Property<java.lang.String> delimiter
+fld public static net.java.html.lib.Objs$Property<java.lang.String> sep
 meth public !varargs static java.lang.String join(java.lang.Object[])
 meth public !varargs static java.lang.String resolve(java.lang.Object[])
 meth public static java.lang.Boolean isAbsolute(java.lang.String)
@@ -2341,8 +2341,8 @@ meth public static net.java.html.lib.node.path.ParsedPath parse(java.lang.String
 supr net.java.html.lib.Objs
 
 CLSS public final net.java.html.lib.node.path.win32.Exports
-fld public static java.lang.String delimiter
-fld public static java.lang.String sep
+fld public static net.java.html.lib.Objs$Property<java.lang.String> delimiter
+fld public static net.java.html.lib.Objs$Property<java.lang.String> sep
 meth public !varargs static java.lang.String join(java.lang.Object[])
 meth public !varargs static java.lang.String resolve(java.lang.Object[])
 meth public static java.lang.Boolean isAbsolute(java.lang.String)
@@ -2357,7 +2357,7 @@ meth public static net.java.html.lib.node.path.ParsedPath parse(java.lang.String
 supr net.java.html.lib.Objs
 
 CLSS public final net.java.html.lib.node.punycode.Exports
-fld public static java.lang.Object version
+fld public static net.java.html.lib.Objs$Property<java.lang.Object> version
 meth public static java.lang.String decode(java.lang.String)
 meth public static java.lang.String encode(java.lang.String)
 meth public static java.lang.String toASCII(java.lang.String)
@@ -2691,7 +2691,7 @@ hfds $AS
 hcls $Constructor
 
 CLSS public final net.java.html.lib.node.string_decoder.Exports
-fld public static net.java.html.lib.Objs StringDecoder
+fld public static net.java.html.lib.Objs$Property<net.java.html.lib.Objs> StringDecoder
 supr net.java.html.lib.Objs
 
 CLSS public net.java.html.lib.node.string_decoder.NodeStringDecoder
@@ -2751,8 +2751,8 @@ hfds $AS
 hcls $Constructor
 
 CLSS public final net.java.html.lib.node.tls.Exports
-fld public static double CLIENT_RENEG_LIMIT
-fld public static double CLIENT_RENEG_WINDOW
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> CLIENT_RENEG_LIMIT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> CLIENT_RENEG_WINDOW
 meth public static net.java.html.lib.node.http.Server createServer(net.java.html.lib.node.tls.TlsOptions)
 meth public static net.java.html.lib.node.http.Server createServer(net.java.html.lib.node.tls.TlsOptions,net.java.html.lib.Function$A1<? super net.java.html.lib.node.tls.ClearTextStream,? extends java.lang.Void>)
 meth public static net.java.html.lib.node.tls.ClearTextStream connect(double)
@@ -3045,37 +3045,37 @@ hfds $AS
 hcls $Constructor
 
 CLSS public final net.java.html.lib.node.zlib.Exports
-fld public static double Z_ASCII
-fld public static double Z_BEST_COMPRESSION
-fld public static double Z_BEST_SPEED
-fld public static double Z_BINARY
-fld public static double Z_BLOCK
-fld public static double Z_BUF_ERROR
-fld public static double Z_DATA_ERROR
-fld public static double Z_DEFAULT_COMPRESSION
-fld public static double Z_DEFAULT_STRATEGY
-fld public static double Z_DEFLATED
-fld public static double Z_ERRNO
-fld public static double Z_FILTERED
-fld public static double Z_FINISH
-fld public static double Z_FIXED
-fld public static double Z_FULL_FLUSH
-fld public static double Z_HUFFMAN_ONLY
-fld public static double Z_MEM_ERROR
-fld public static double Z_NEED_DICT
-fld public static double Z_NO_COMPRESSION
-fld public static double Z_NO_FLUSH
-fld public static double Z_NULL
-fld public static double Z_OK
-fld public static double Z_PARTIAL_FLUSH
-fld public static double Z_RLE
-fld public static double Z_STREAM_END
-fld public static double Z_STREAM_ERROR
-fld public static double Z_SYNC_FLUSH
-fld public static double Z_TEXT
-fld public static double Z_TREES
-fld public static double Z_UNKNOWN
-fld public static double Z_VERSION_ERROR
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_ASCII
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_BEST_COMPRESSION
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_BEST_SPEED
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_BINARY
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_BLOCK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_BUF_ERROR
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_DATA_ERROR
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_DEFAULT_COMPRESSION
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_DEFAULT_STRATEGY
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_DEFLATED
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_ERRNO
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_FILTERED
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_FINISH
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_FIXED
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_FULL_FLUSH
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_HUFFMAN_ONLY
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_MEM_ERROR
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_NEED_DICT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_NO_COMPRESSION
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_NO_FLUSH
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_NULL
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_OK
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_PARTIAL_FLUSH
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_RLE
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_STREAM_END
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_STREAM_ERROR
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_SYNC_FLUSH
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_TEXT
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_TREES
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_UNKNOWN
+fld public static net.java.html.lib.Objs$Property<java.lang.Number> Z_VERSION_ERROR
 meth public static java.lang.Object deflateRawSync(net.java.html.lib.node.Buffer)
 meth public static java.lang.Object deflateRawSync(net.java.html.lib.node.Buffer,net.java.html.lib.node.zlib.ZlibOptions)
 meth public static java.lang.Object deflateSync(net.java.html.lib.node.Buffer)

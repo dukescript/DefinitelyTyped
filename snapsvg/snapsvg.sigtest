@@ -255,8 +255,8 @@ hfds $AS
 hcls $Constructor
 
 CLSS public final net.java.html.lib.snapsvg.Snap.Exports
-fld public static net.java.html.lib.snapsvg.Snap.Filter filter
-fld public static net.java.html.lib.snapsvg.Snap.Path path
+fld public static net.java.html.lib.Objs$Property<net.java.html.lib.snapsvg.Snap.Filter> filter
+fld public static net.java.html.lib.Objs$Property<net.java.html.lib.snapsvg.Snap.Path> path
 meth public static double acos(double)
 meth public static double angle(double,double,double,double)
 meth public static double angle(double,double,double,double,double)
