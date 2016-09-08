@@ -89,15 +89,15 @@ hfds $AS
 hcls $Constructor
 
 CLSS public final net.java.html.lib.node.Exports
-fld public static java.lang.Object exports
-fld public static java.lang.String ___dirname
-fld public static java.lang.String ___filename
-fld public static net.java.html.lib.Objs Buffer
-fld public static net.java.html.lib.Objs SlowBuffer
-fld public static net.java.html.lib.node.NodeJS.Global global
-fld public static net.java.html.lib.node.NodeJS.Process process
-fld public static net.java.html.lib.node.NodeModule module
-fld public static net.java.html.lib.node.NodeRequire require
+fld public static net.java.html.lib.Objs$Property<java.lang.Object> exports
+fld public static net.java.html.lib.Objs$Property<java.lang.String> ___dirname
+fld public static net.java.html.lib.Objs$Property<java.lang.String> ___filename
+fld public static net.java.html.lib.Objs$Property<net.java.html.lib.Objs> Buffer
+fld public static net.java.html.lib.Objs$Property<net.java.html.lib.Objs> SlowBuffer
+fld public static net.java.html.lib.Objs$Property<net.java.html.lib.node.NodeJS.Global> global
+fld public static net.java.html.lib.Objs$Property<net.java.html.lib.node.NodeJS.Process> process
+fld public static net.java.html.lib.Objs$Property<net.java.html.lib.node.NodeModule> module
+fld public static net.java.html.lib.Objs$Property<net.java.html.lib.node.NodeRequire> require
 meth public !varargs static java.lang.Object setImmediate(net.java.html.lib.Function$A1<? super net.java.html.lib.Array<java.lang.Object>,? extends java.lang.Void>,java.lang.Object[])
 meth public !varargs static net.java.html.lib.node.NodeJS.Timer setInterval(net.java.html.lib.Function$A1<? super net.java.html.lib.Array<java.lang.Object>,? extends java.lang.Void>,double,java.lang.Object[])
 meth public !varargs static net.java.html.lib.node.NodeJS.Timer setTimeout(net.java.html.lib.Function$A1<? super net.java.html.lib.Array<java.lang.Object>,? extends java.lang.Void>,double,java.lang.Object[])

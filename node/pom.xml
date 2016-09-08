@@ -64,6 +64,8 @@
                     </scripts>
                     -->
                     <package>net.java.html.lib.${typings}</package>
+                    <!-- global = require("net.java.html.lib.node") -->
+                    <globalModuleName>${project.artifactId}</globalModuleName>
                 </configuration>
             </plugin>
             <plugin>
