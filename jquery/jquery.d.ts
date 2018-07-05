@@ -32,7 +32,7 @@ interface JQueryAjaxSettings {
      */
     async?: boolean;
     /**
-     * A pre-request callback function that can be used to modify the jqXHR (in jQuery 1.4.x, XMLHTTPRequest) object before it is sent. Use this to set custom headers, etc. The jqXHR and settings objects are passed as arguments. This is an Ajax Event. Returning false in the beforeSend function will cancel the request. As of jQuery 1.5, the beforeSend option will be called regardless of the type of request.
+     * A pre-request callback function that can be used to modify the jqXHR (in jQuery 1.4.x, XMLHTTPRequest) object before it is sent. Use this to set custom headers, etc. The jqXHR and settings objects are passed as args. This is an Ajax Event. Returning false in the beforeSend function will cancel the request. As of jQuery 1.5, the beforeSend option will be called regardless of the type of request.
      */
     beforeSend? (jqXHR: JQueryXHR, settings: JQueryAjaxSettings): any;
     /**
@@ -40,7 +40,7 @@ interface JQueryAjaxSettings {
      */
     cache?: boolean;
     /**
-     * A function to be called when the request finishes (after success and error callbacks are executed). The function gets passed two arguments: The jqXHR (in jQuery 1.4.x, XMLHTTPRequest) object and a string categorizing the status of the request ("success", "notmodified", "error", "timeout", "abort", or "parsererror"). As of jQuery 1.5, the complete setting can accept an array of functions. Each function will be called in turn. This is an Ajax Event.
+     * A function to be called when the request finishes (after success and error callbacks are executed). The function gets passed two args: The jqXHR (in jQuery 1.4.x, XMLHTTPRequest) object and a string categorizing the status of the request ("success", "notmodified", "error", "timeout", "abort", or "parsererror"). As of jQuery 1.5, the complete setting can accept an array of functions. Each function will be called in turn. This is an Ajax Event.
      */
     complete? (jqXHR: JQueryXHR, textStatus: string): any;
     /**
@@ -70,7 +70,7 @@ interface JQueryAjaxSettings {
      */
     data?: any;
     /**
-     * A function to be used to handle the raw response data of XMLHttpRequest.This is a pre-filtering function to sanitize the response. You should return the sanitized data. The function accepts two arguments: The raw data returned from the server and the 'dataType' parameter.
+     * A function to be used to handle the raw response data of XMLHttpRequest.This is a pre-filtering function to sanitize the response. You should return the sanitized data. The function accepts two args: The raw data returned from the server and the 'dataType' parameter.
      */
     dataFilter? (data: any, ty: any): any;
     /**
@@ -78,7 +78,7 @@ interface JQueryAjaxSettings {
      */
     dataType?: string;
     /**
-     * A function to be called if the request fails. The function receives three arguments: The jqXHR (in jQuery 1.4.x, XMLHttpRequest) object, a string describing the type of error that occurred and an optional exception object, if one occurred. Possible values for the second argument (besides null) are "timeout", "error", "abort", and "parsererror". When an HTTP error occurs, errorThrown receives the textual portion of the HTTP status, such as "Not Found" or "Internal Server Error." As of jQuery 1.5, the error setting can accept an array of functions. Each function will be called in turn. Note: This handler is not called for cross-domain script and cross-domain JSONP requests. This is an Ajax Event.
+     * A function to be called if the request fails. The function receives three args: The jqXHR (in jQuery 1.4.x, XMLHttpRequest) object, a string describing the type of error that occurred and an optional exception object, if one occurred. Possible values for the second argument (besides null) are "timeout", "error", "abort", and "parsererror". When an HTTP error occurs, errorThrown receives the textual portion of the HTTP status, such as "Not Found" or "Internal Server Error." As of jQuery 1.5, the error setting can accept an array of functions. Each function will be called in turn. Note: This handler is not called for cross-domain script and cross-domain JSONP requests. This is an Ajax Event.
      */
     error? (jqXHR: JQueryXHR, textStatus: string, errorThrown: string): any;
     /**
@@ -130,7 +130,7 @@ interface JQueryAjaxSettings {
      */
     statusCode?: { [key: string]: any; };
     /**
-     * A function to be called if the request succeeds. The function gets passed three arguments: The data returned from the server, formatted according to the dataType parameter; a string describing the status; and the jqXHR (in jQuery 1.4.x, XMLHttpRequest) object. As of jQuery 1.5, the success setting can accept an array of functions. Each function will be called in turn. This is an Ajax Event.
+     * A function to be called if the request succeeds. The function gets passed three args: The data returned from the server, formatted according to the dataType parameter; a string describing the status; and the jqXHR (in jQuery 1.4.x, XMLHttpRequest) object. As of jQuery 1.5, the success setting can accept an array of functions. Each function will be called in turn. This is an Ajax Event.
      */
     success? (data: any, textStatus: string, jqXHR: JQueryXHR): any;
     /**
@@ -224,11 +224,11 @@ interface JQueryCallback {
     empty(): JQueryCallback;
 
     /**
-     * Call all of the callbacks with the given arguments
+     * Call all of the callbacks with the given args
      * 
-     * @param arguments The argument or list of arguments to pass back to the callback list.
+     * @param args The argument or list of args to pass back to the callback list.
      */
-    fire(...arguments: any[]): JQueryCallback;
+    fire(...args: any[]): JQueryCallback;
 
     /**
      * Determine if the callbacks have already been called at least once.
@@ -236,10 +236,10 @@ interface JQueryCallback {
     fired(): boolean;
 
     /**
-     * Call all callbacks in a list with the given context and arguments.
+     * Call all callbacks in a list with the given context and args.
      * 
      * @param context A reference to the context in which the callbacks in the list should be fired.
-     * @param arguments An argument, or array of arguments, to pass to the callbacks in the list.
+     * @param args An argument, or array of args, to pass to the callbacks in the list.
      */
     fireWith(context?: any, args?: any[]): JQueryCallback;
 
@@ -385,7 +385,7 @@ interface JQueryDeferred<T> extends JQueryGenericPromise<T> {
     /**
      * Call the progressCallbacks on a Deferred object with the given args.
      * 
-     * @param args Optional arguments that are passed to the progressCallbacks.
+     * @param args Optional args that are passed to the progressCallbacks.
      */
     notify(value?: any, ...args: any[]): JQueryDeferred<T>;
 
@@ -393,21 +393,21 @@ interface JQueryDeferred<T> extends JQueryGenericPromise<T> {
      * Call the progressCallbacks on a Deferred object with the given context and args.
      * 
      * @param context Context passed to the progressCallbacks as the this object.
-     * @param args Optional arguments that are passed to the progressCallbacks.
+     * @param args Optional args that are passed to the progressCallbacks.
      */
     notifyWith(context: any, value?: any[]): JQueryDeferred<T>;
 
     /**
      * Reject a Deferred object and call any failCallbacks with the given args.
      * 
-     * @param args Optional arguments that are passed to the failCallbacks.
+     * @param args Optional args that are passed to the failCallbacks.
      */
     reject(value?: any, ...args: any[]): JQueryDeferred<T>;
     /**
      * Reject a Deferred object and call any failCallbacks with the given context and args.
      * 
      * @param context Context passed to the failCallbacks as the this object.
-     * @param args An optional array of arguments that are passed to the failCallbacks.
+     * @param args An optional array of args that are passed to the failCallbacks.
      */
     rejectWith(context: any, value?: any[]): JQueryDeferred<T>;
 
@@ -415,7 +415,7 @@ interface JQueryDeferred<T> extends JQueryGenericPromise<T> {
      * Resolve a Deferred object and call any doneCallbacks with the given args.
      * 
      * @param value First argument passed to doneCallbacks.
-     * @param args Optional subsequent arguments that are passed to the doneCallbacks.
+     * @param args Optional subsequent args that are passed to the doneCallbacks.
      */
     resolve(value?: T, ...args: any[]): JQueryDeferred<T>;
 
@@ -423,7 +423,7 @@ interface JQueryDeferred<T> extends JQueryGenericPromise<T> {
      * Resolve a Deferred object and call any doneCallbacks with the given context and args.
      * 
      * @param context Context passed to the doneCallbacks as the this object.
-     * @param args An optional array of arguments that are passed to the doneCallbacks.
+     * @param args An optional array of args that are passed to the doneCallbacks.
      */
     resolveWith(context: any, value?: T[]): JQueryDeferred<T>;
 
@@ -922,7 +922,7 @@ interface JQueryStatic {
      *
      * @param fnction The function whose context will be changed.
      * @param context The object to which the context (this) of the function should be set.
-     * @param additionalArguments Any number of arguments to be passed to the function referenced in the function argument.
+     * @param additionalArguments Any number of args to be passed to the function referenced in the function argument.
      */
     proxy(fnction: (...args: any[]) => any, context: Object, ...additionalArguments: any[]): any;
     /**
@@ -930,7 +930,7 @@ interface JQueryStatic {
      *
      * @param context The object to which the context (this) of the function should be set.
      * @param name The name of the function whose context will be changed (should be a property of the context object).
-     * @param additionalArguments Any number of arguments to be passed to the function named in the name argument.
+     * @param additionalArguments Any number of args to be passed to the function named in the name argument.
      */
     proxy(context: Object, name: string, ...additionalArguments: any[]): any;
 
@@ -960,7 +960,7 @@ interface JQueryStatic {
     contains(container: Element, contained: Element): boolean;
 
     /**
-     * A generic iterator function, which can be used to seamlessly iterate over both objects and arrays. Arrays and array-like objects with a length property (such as a function's arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties.
+     * A generic iterator function, which can be used to seamlessly iterate over both objects and arrays. Arrays and array-like objects with a length property (such as a function's args object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties.
      * 
      * @param collection The object or array to iterate over.
      * @param callback The function that will be executed on every object.
@@ -971,7 +971,7 @@ interface JQueryStatic {
         ): any;
 
     /**
-     * A generic iterator function, which can be used to seamlessly iterate over both objects and arrays. Arrays and array-like objects with a length property (such as a function's arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties.
+     * A generic iterator function, which can be used to seamlessly iterate over both objects and arrays. Arrays and array-like objects with a length property (such as a function's args object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties.
      * 
      * @param collection The object or array to iterate over.
      * @param callback The function that will be executed on every object.
@@ -1229,7 +1229,7 @@ interface JQuery {
     /**
      * Adds the specified class(es) to each of the set of matched elements.
      *
-     * @param function A function returning one or more space-separated class names to be added to the existing class name(s). Receives the index position of the element in the set and the existing class name(s) as arguments. Within the function, this refers to the current element in the set.
+     * @param function A function returning one or more space-separated class names to be added to the existing class name(s). Receives the index position of the element in the set and the existing class name(s) as args. Within the function, this refers to the current element in the set.
      */
     addClass(func: (index: number, className: string) => string): JQuery;
 
@@ -1255,7 +1255,7 @@ interface JQuery {
      * Set one or more attributes for the set of matched elements.
      *
      * @param attributeName The name of the attribute to set.
-     * @param func A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old attribute value as arguments.
+     * @param func A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old attribute value as args.
      */
     attr(attributeName: string, func: (index: number, attr: string) => string|number): JQuery;
     /**
@@ -1285,13 +1285,13 @@ interface JQuery {
     /**
      * Set the HTML contents of each element in the set of matched elements.
      *
-     * @param func A function returning the HTML content to set. Receives the index position of the element in the set and the old HTML value as arguments. jQuery empties the element before calling the function; use the oldhtml argument to reference the previous content. Within the function, this refers to the current element in the set.
+     * @param func A function returning the HTML content to set. Receives the index position of the element in the set and the old HTML value as args. jQuery empties the element before calling the function; use the oldhtml argument to reference the previous content. Within the function, this refers to the current element in the set.
      */
     html(func: (index: number, oldhtml: string) => string): JQuery;
     /**
      * Set the HTML contents of each element in the set of matched elements.
      *
-     * @param func A function returning the HTML content to set. Receives the index position of the element in the set and the old HTML value as arguments. jQuery empties the element before calling the function; use the oldhtml argument to reference the previous content. Within the function, this refers to the current element in the set.
+     * @param func A function returning the HTML content to set. Receives the index position of the element in the set and the old HTML value as args. jQuery empties the element before calling the function; use the oldhtml argument to reference the previous content. Within the function, this refers to the current element in the set.
      */
 
     /**
@@ -1317,7 +1317,7 @@ interface JQuery {
      * Set one or more properties for the set of matched elements.
      *
      * @param propertyName The name of the property to set.
-     * @param func A function returning the value to set. Receives the index position of the element in the set and the old property value as arguments. Within the function, the keyword this refers to the current element.
+     * @param func A function returning the value to set. Receives the index position of the element in the set and the old property value as args. Within the function, the keyword this refers to the current element.
      */
     prop(propertyName: string, func: (index: number, oldPropertyValue: any) => any): JQuery;
 
@@ -1337,7 +1337,7 @@ interface JQuery {
     /**
      * Remove a single class, multiple classes, or all classes from each element in the set of matched elements.
      *
-     * @param function A function returning one or more space-separated class names to be removed. Receives the index position of the element in the set and the old class value as arguments.
+     * @param function A function returning one or more space-separated class names to be removed. Receives the index position of the element in the set and the old class value as args.
      */
     removeClass(func: (index: number, className: string) => string): JQuery;
 
@@ -1364,7 +1364,7 @@ interface JQuery {
     /**
      * Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.
      *
-     * @param func A function that returns class names to be toggled in the class attribute of each element in the matched set. Receives the index position of the element in the set, the old class value, and the switch as arguments.
+     * @param func A function that returns class names to be toggled in the class attribute of each element in the matched set. Receives the index position of the element in the set, the old class value, and the switch as args.
      * @param swtch A boolean value to determine whether the class should be added or removed.
      */
     toggleClass(func: (index: number, className: string, swtch: boolean) => string, swtch?: boolean): JQuery;
@@ -1382,7 +1382,7 @@ interface JQuery {
     /**
      * Set the value of each element in the set of matched elements.
      *
-     * @param func A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old value as arguments.
+     * @param func A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old value as args.
      */
     val(func: (index: number, value: string) => string): JQuery;
 
@@ -1404,7 +1404,7 @@ interface JQuery {
      * Set one or more CSS properties for the set of matched elements.
      *
      * @param propertyName A CSS property name.
-     * @param value A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old value as arguments.
+     * @param value A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old value as args.
      */
     css(propertyName: string, value: (index: number, value: string) => string|number): JQuery;
     /**
@@ -1427,7 +1427,7 @@ interface JQuery {
     /**
      * Set the CSS height of every matched element.
      *
-     * @param func A function returning the height to set. Receives the index position of the element in the set and the old height as arguments. Within the function, this refers to the current element in the set.
+     * @param func A function returning the height to set. Receives the index position of the element in the set and the old height as args. Within the function, this refers to the current element in the set.
      */
     height(func: (index: number, height: number) => number|string): JQuery;
 
@@ -1540,7 +1540,7 @@ interface JQuery {
     /**
      * Set the CSS width of each element in the set of matched elements.
      *
-     * @param func A function returning the width to set. Receives the index position of the element in the set and the old width as arguments. Within the function, this refers to the current element in the set.
+     * @param func A function returning the width to set. Receives the index position of the element in the set and the old width as args. Within the function, this refers to the current element in the set.
      */
     width(func: (index: number, width: number) => number|string): JQuery;
 
@@ -2596,9 +2596,9 @@ interface JQuery {
      * 
      * @param elements An array of elements to push onto the stack and make into a new jQuery object.
      * @param name The name of a jQuery method that generated the array of elements.
-     * @param arguments The arguments that were passed in to the jQuery method (for serialization).
+     * @param args The args that were passed in to the jQuery method (for serialization).
      */
-    pushStack(elements: any[], name: string, arguments: any[]): JQuery;
+    pushStack(elements: any[], name: string, args: any[]): JQuery;
 
     /**
      * Insert content, specified by the parameter, after each element in the set of matched elements.
@@ -2624,7 +2624,7 @@ interface JQuery {
     /**
      * Insert content, specified by the parameter, to the end of each element in the set of matched elements.
      * 
-     * param func A function that returns an HTML string, DOM element(s), or jQuery object to insert at the end of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as arguments. Within the function, this refers to the current element in the set.
+     * param func A function that returns an HTML string, DOM element(s), or jQuery object to insert at the end of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as args. Within the function, this refers to the current element in the set.
      */
     append(func: (index: number, html: string) => string|Element|JQuery): JQuery;
 
@@ -2693,7 +2693,7 @@ interface JQuery {
     /**
      * Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.
      * 
-     * param func A function that returns an HTML string, DOM element(s), or jQuery object to insert at the beginning of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as arguments. Within the function, this refers to the current element in the set.
+     * param func A function that returns an HTML string, DOM element(s), or jQuery object to insert at the beginning of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as args. Within the function, this refers to the current element in the set.
      */
     prepend(func: (index: number, html: string) => string|Element|JQuery): JQuery;
 
@@ -2744,7 +2744,7 @@ interface JQuery {
     /**
      * Set the content of each element in the set of matched elements to the specified text.
      * 
-     * @param func A function returning the text content to set. Receives the index position of the element in the set and the old text value as arguments.
+     * @param func A function returning the text content to set. Receives the index position of the element in the set and the old text value as args.
      */
     text(func: (index: number, text: string) => string): JQuery;
 
@@ -2981,25 +2981,25 @@ interface JQuery {
     has(contained: Element): JQuery;
 
     /**
-     * Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given arguments.
+     * Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given args.
      * 
      * @param selector A string containing a selector expression to match elements against.
      */
     is(selector: string): boolean;
     /**
-     * Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given arguments.
+     * Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given args.
      * 
      * @param func A function used as a test for the set of elements. It accepts one argument, index, which is the element's index in the jQuery collection.Within the function, this refers to the current DOM element.
      */
     is(func: (index: number, element: Element) => boolean): boolean;
     /**
-     * Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given arguments.
+     * Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given args.
      * 
      * @param obj An existing jQuery object to match the current set of elements against.
      */
     is(obj: JQuery): boolean;
     /**
-     * Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given arguments.
+     * Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given args.
      * 
      * @param elements One or more elements to match the current set of elements against.
      */
