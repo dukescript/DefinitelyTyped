@@ -124,9 +124,21 @@
                         <junitArtifactName>com.dukescript.api:junit-osgi</junitArtifactName>
                         <systemPropertyVariables>
                             <vmtest.js>brwsr</vmtest.js>
-                            <vmtest.precompiled>.*</vmtest.precompiled>
+                            <vmtest.precompiled>net.java.html.lib</vmtest.precompiled>
                         </systemPropertyVariables>
+                        <additionalClasspathElements>
+                            <path>${project.build.directory}/${project.build.finalName}-bck2brwsr.jar</path>
+                        </additionalClasspathElements>
                     </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>test</goal>
+                            </goals>
+                            <id>default-test</id>
+                            <phase>verify</phase>
+                        </execution>
+                    </executions>
                 </plugin>
                 <plugin>
                     <groupId>com.dukescript.libraries</groupId>
