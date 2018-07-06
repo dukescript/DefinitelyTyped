@@ -57,26 +57,54 @@ public class SnapSvgTest {
     }
 
     @Test
-    public void drawSomethingSimple() throws Exception {
+    public Runnable[] drawSomethingSimple() throws Exception {
         Paper s = Exports.Snap("#demo");
-        Element bigCircle = s.circle(150, 150, 100);
-        bigCircle.attr(values(
-            "fill", "#bada55",
-            "stroke", "#000",
-            "strokeWidth", 5
-        ));
 
-        Element smallCircle = s.circle(100, 150, 70);
-        Element discs = Element.$as(s.group(smallCircle, s.circle(200, 150, 70)));
-        discs.attr(values(
-            "fill", "#fff"
-        ));
+        Element[] elements = { null, null, null };
 
-        bigCircle.attr(values(
-            "mask", discs
-        ));
-
-        smallCircle.animate(values("r", 50), 1000);
+        return new Runnable[] {
+            () -> {
+                if (elements[0] == null) try {
+                    elements[0] = s.circle(150, 150, 100);
+                } catch (NullPointerException ex) {
+                    ex.printStackTrace();
+                }
+            },
+            () -> {
+                if (elements[0] == null) try {
+                    elements[0] = s.circle(150, 150, 100);
+                } catch (NullPointerException ex) {
+                    ex.printStackTrace();
+                }
+            },
+            () -> {
+                Element bigCircle = elements[0];
+                bigCircle.attr(values(
+                    "fill", "#bada55",
+                    "stroke", "#000",
+                    "strokeWidth", 5
+                ));
+                elements[0] = bigCircle;
+            },
+            () -> {
+                Element smallCircle = s.circle(100, 150, 70);
+                Element discs = Element.$as(s.group(smallCircle, s.circle(200, 150, 70)));
+                discs.attr(values(
+                    "fill", "#fff"
+                ));
+                elements[1] = smallCircle;
+                elements[2] = discs;
+            },
+            () -> {
+                Element bigCircle = elements[0];
+                Element smallCircle = elements[1];
+                Element discs = elements[2];
+                bigCircle.attr(values(
+                    "mask", discs
+                ));
+                smallCircle.animate(values("r", 50), 1000);
+            }
+        };
     }
 
     private static Objs values(Object... attrs) {
